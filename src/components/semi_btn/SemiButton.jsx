@@ -1,92 +1,101 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import SemiSVG from './SemiSVG'
 
 const SemiButton = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [hoveredSide, setHoveredSide] = useState(null);
 
-  // Pin coordinates based on the SVG layout
-  const pins = [
-    { id: "pin1", cx: 24.5, cy: 3.5 },
-    { id: "pin2", cx: 40.5, cy: 3.5 },
-    { id: "pin3", cx: 56.5, cy: 3.5 },
-    { id: "pin4", cx: 72.5, cy: 3.5 },
-    { id: "pin5", cx: 88.5, cy: 3.5 },
-    { id: "pin6", cx: 104.5, cy: 3.5 },
-    { id: "pin7", cx: 120.5, cy: 3.5 },
-    { id: "pin8", cx: 24.5, cy: 141.5 },
-    { id: "pin9", cx: 40.5, cy: 141.5 },
-    { id: "pin10", cx: 56.5, cy: 141.5 },
-    { id: "pin11", cx: 72.5, cy: 141.5 },
-    { id: "pin12", cx: 88.5, cy: 141.5 },
-    { id: "pin13", cx: 104.5, cy: 141.5 },
-    { id: "pin14", cx: 120.5, cy: 141.5 },
-    { id: "pin15", cx: 3.5, cy: 24.5 },
-    { id: "pin16", cx: 3.5, cy: 40.5 },
-    { id: "pin17", cx: 3.5, cy: 56.5 },
-    { id: "pin18", cx: 3.5, cy: 72.5 },
-    { id: "pin19", cx: 3.5, cy: 88.5 },
-    { id: "pin20", cx: 3.5, cy: 104.5 },
-    { id: "pin21", cx: 3.5, cy: 120.5 },
-    { id: "pin22", cx: 141.5, cy: 24.5 },
-    { id: "pin23", cx: 141.5, cy: 40.5 },
-    { id: "pin24", cx: 141.5, cy: 56.5 },
-    { id: "pin25", cx: 141.5, cy: 72.5 },
-    { id: "pin26", cx: 141.5, cy: 88.5 },
-    { id: "pin27", cx: 141.5, cy: 104.5 },
-    { id: "pin28", cx: 141.5, cy: 120.5 },
-  ];
-
-  // Function to handle hover state change
-  const handleMouseEnter = () => {
-    setIsHovered(true);
+  // Coordinates for pins on each side
+  const pinCoordinates = {
+    top: [
+      { x: 68, y: 58 },
+      { x: 86, y: 58 },
+      { x: 103, y: 58 },
+      { x: 123, y: 58 },
+      { x: 139, y: 58 },
+      { x: 155, y: 58 },
+      { x: 176, y: 58 }
+    ],
+    right: [
+      { x: 189, y: 72 },
+      { x: 189, y: 86 },
+      { x: 189, y: 103 },
+      { x: 189, y: 123 },
+      { x: 189, y: 139 },
+      { x: 189, y: 155 },
+      { x: 189, y: 176 }
+    ],
+    bottom: [
+      { x: 176, y: 189 },
+      { x: 155, y: 189 },
+      { x: 139, y: 189 },
+      { x: 123, y: 189 },
+      { x: 103, y: 189 },
+      { x: 86, y: 189 },
+      { x: 68, y: 189 }
+    ],
+    left: [
+      { x: 58, y: 176 },
+      { x: 58, y: 155 },
+      { x: 58, y: 139 },
+      { x: 58, y: 123 },
+      { x: 58, y: 103 },
+      { x: 58, y: 86 },
+      { x: 58, y: 72 }
+    ]
   };
 
-  const handleMouseLeave = () => {
-    setIsHovered(false);
+  // Determine line end point (extend further out)
+  const getLineEndPoint = (pin, side) => {
+    const distance = 30; // Length of line
+    switch(side) {
+      case 'top': return { x: pin.x, y: pin.y - distance };
+      case 'right': return { x: pin.x + distance, y: pin.y };
+      case 'bottom': return { x: pin.x, y: pin.y + distance };
+      case 'left': return { x: pin.x - distance, y: pin.y };
+    }
   };
 
   return (
-    <div
-      className="semiButton"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      <svg width="145" height="145" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
-        {/* Pins */}
-        {pins.map((pin) => (
-          <circle
-            key={pin.id}
-            id={pin.id}
-            cx={pin.cx}
-            cy={pin.cy}
-            r="3"
-            fill="#585858"
-            className="pin"
-          />
-        ))}
-
-        {/* Lines and circles (points) */}
-        {pins.map((pin, index) => (
-          <React.Fragment key={pin.id}>
-            <line
-              className={`line ${isHovered ? "animate" : ""}`}
-              x1={pin.cx}
-              y1={pin.cy}
-              x2={pin.cx}
-              y2={pin.cy}
-              stroke="#585858"
-              strokeWidth="1"
-              style={{ transitionDelay: `${index * 0.1}s` }}
-            />
-            <circle
-              className={`circle ${isHovered ? "animate" : ""}`}
-              cx={pin.cx}
-              cy={pin.cy}
-              r="2"
-              fill="#585858"
-              style={{ transitionDelay: `${index * 0.1}s` }}
-            />
-          </React.Fragment>
-        ))}
+    <div className="flex justify-center items-center h-screen bg-gray-100">
+      <svg 
+        width="246" 
+        height="246" 
+        viewBox="0 0 246 246" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        onMouseEnter={() => setHoveredSide('top')}
+        onMouseLeave={() => setHoveredSide(null)}
+        className="cursor-pointer"
+      >
+        {/* Original SVG content */}
+        {/* ... (you can paste the original SVG paths here) */}
+        <SemiSVG />
+        
+        {/* Hover effect lines */}
+        {hoveredSide && pinCoordinates[hoveredSide].map((pin, index) => {
+          const endPoint = getLineEndPoint(pin, hoveredSide);
+          return (
+            <g key={index}>
+              <line
+                x1={pin.x}
+                y1={pin.y}
+                x2={endPoint.x}
+                y2={endPoint.y}
+                stroke="blue"
+                strokeWidth="2"
+                strokeLinecap="round"
+                className="transition-all duration-300"
+              />
+              <circle
+                cx={endPoint.x}
+                cy={endPoint.y}
+                r="3"
+                fill="blue"
+                className="transition-all duration-300"
+              />
+            </g>
+          );
+        })}
       </svg>
     </div>
   );

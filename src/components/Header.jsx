@@ -61,91 +61,31 @@ const Header = () => {
               onMouseLeave={() => setMenuHover(false)}
               >
               <Link to='/portfolio' className='pd-10 df aln-itm-c'>
-              作品<FaAngleDown size={16} className='pd-l-10'/>
+                2025 活動內容
               </Link>
-
-              <ul className={`fd-c artW-sub ${menuHover===true ? 'df' : 'dn'}`}>
-                {/* 歷代平面經典總覽 */}
-                <li
-                  className='bd-b'
-                  style={{width:'200px', position:'relative'}}
-                  onMouseEnter={() => setSubMenuHover(true)}
-                  onMouseLeave={() => setSubMenuHover(false)}
-                  >
-                  <Link className='pd-10 df jc-sb aln-itm-c'>
-                    歷代平面經典總覽<FaAngleRight size={16} className='pd-l-10'/>
-                  </Link>
-                  <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
-                    <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
-                        1968-2001
-                      </Link>
-                    </li>
-                    <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
-                        2002-2019
-                      </Link> 
-                    </li>
-                    <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
-                        2020-2024
-                      </Link>
-                    </li>
-                    <li className='pd-y-10' style={{width:'200px'}}>
-                      <Link to='/portfolio/unxiangarea' className='pd-y-10'>
-                        無相之境
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-
-                {/* 歷代立體經典總覽 */}
-                <li
-                  className=''
-                  style={{width:'200px', position:'relative'}}
-                  onMouseEnter={() => setSubMenuCubeHover(true)}
-                  onMouseLeave={() => setSubMenuCubeHover(false)}
-                  >
-
-                  {/* 歷代立體經典總覽 */}
-                  <Link to='/portfolio/threeD' className='pd-10 df jc-sb aln-itm-c'>
-                    歷代立體經典總覽<FaAngleRight size={16} className='pd-l-10'/>
-                  </Link>
-                  {/* <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
-                    <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
-                        <h4>To be Determined 01</h4>
-                      </Link>
-                    </li>
-                    <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
-                        <h4>To be Determined 02</h4>
-                      </Link> 
-                    </li>
-                    <li className='pd-y-10' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
-                        <h4>To be Determined 03</h4>
-                      </Link>
-                    </li>
-                  </ul> */}
-                </li>
-              </ul>
             </li>
             <li className='pd-w-10'>
               {/* <Link to='/experiences' className='pd-10' onClick={() => handleMenubarClose('Experiences')}>資歷</Link> */}
-              <Link to='/experiences' className='pd-10' onClick={() => handleMenubarClose('Experiences')}>資歷</Link>
+              <Link to='/experiences' className='pd-10' onClick={() => handleMenubarClose('Experiences')}>過去活動回顧</Link>
             </li>
             {/* <li className='pd-w-10'>
               <Link to='/transaction/input' className='pd-10' onClick={() => handleMenubarClose('Critics')}>ECpay</Link>
             </li> */}
             <li className='pd-w-10'>
-              <Link to='/critics' className='pd-10' onClick={() => handleMenubarClose('Critics')}>藝評</Link>
+              <Link to='/critics' className='pd-10' onClick={() => handleMenubarClose('Critics')}>線上課程面費資源</Link>
             </li>
             {/* <li className='pd-w-10'>
               <Link to='/collections' className='pd-10' onClick={() => handleMenubarClose('Collections')}>收藏</Link>
             </li> */}
             <li className='pd-w-10'>
-              <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>聯絡</Link>
+              <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>緣起、宗旨與主辦單位</Link>
+            </li>
+            <li className='pd-w-10'>
+              <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>緣起、宗旨與主辦單位</Link>
+            </li><li className='pd-w-10'>
+              <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>常見問題</Link>
+            </li><li className='pd-w-10'>
+              <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>聯絡我們</Link>
             </li>
             <li className='pd-w-10'>
               {/* <select
