@@ -55,6 +55,15 @@
   z-index: 100;
 }
 
+.curriculumItm div{
+}
+
+.curriculumItm{
+  background-color: #d5d5d5;
+  width: 33%;
+  margin-bottom: 5px;
+}
+
 /* =========================================== */
 /* SemiButton.css */
 
@@ -364,6 +373,10 @@
 
 .txt-aln-c{
   text-align: center;
+}
+
+.txt-aln-s{
+  text-align: start;
 }
 
 /* Box-shadow */

@@ -12,9 +12,6 @@ const Home = () => {
       <Event_2025 />
       <Event_Review />
       <Online_Free_Resource />
-      <Origin />
-      <FAQ />
-      <Contact />
     </>
   )
 }
