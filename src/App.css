@@ -26,19 +26,6 @@
   height: 60%;
 }
 
-.preface{
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
-
-.catergory{
-  width: 80px;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
 .pd-x-container{
   padding: 0 80px;
 }
@@ -49,10 +36,6 @@
 
 .title-btm{
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-}
-
-.period-img{
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .NavLink{
@@ -68,39 +51,66 @@
   transform: translateY(-5%);
 }
 
-.artW-sub{
-  position: absolute;
-  top: 100%;
-  left: -50%;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 10;
-}
-
-.periods-sub{
-  position: absolute;
-  top: -1px;
-  left: 100%;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 15;
-}
-
-.periodTitle{
-  font-size: 20px;
-  font-weight: 900;
-  font-style: italic;
-}
-
 .menuBar{
   z-index: 100;
 }
 
-/* .menuActive{
+/* =========================================== */
+/* SemiButton.css */
 
-} */
+.semi_btn{
+  background-color: #b25151;
+}
+
+.semiButton {
+  position: relative;
+  display: inline-block;
+}
+
+.pin {
+  transition: all 0.3s ease;
+}
+
+.line {
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.5s ease;
+}
+
+.circle {
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.5s ease;
+}
+
+.semiButton:hover .line,
+.semiButton:hover .circle {
+  opacity: 1;
+}
+
+.semiButton:hover .line.animate {
+  transform: scaleX(1) scaleY(1);
+}
+
+.semiButton:hover .circle.animate {
+  transform: scale(2); /* Circle grows at the end of the line */
+}
+
+.semiButton .line {
+  transform-origin: center center;
+}
+
+.semiButton .circle {
+  transform-origin: center center;
+}
+
+/* Example of line animation */
+.line.animate {
+  transform: translateY(50px); /* Move the line vertically or adjust for your case */
+}
+
+.circle.animate {
+  transform: scale(1.5); /* Grow the circle */
+}
+/* ================================================ */
 
 .outerLink{
   width: fit-content;
