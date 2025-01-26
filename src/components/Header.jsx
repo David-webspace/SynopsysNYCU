@@ -40,14 +40,14 @@ const Header = () => {
         df jc-sb aln-itm-c fw pd-x-container
         ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}  
       `}>
-        
+
         {/* Logo Container */}
         <Link to='/'>
           <div className="Logo df aln-itm-c">
             <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/>
             <div style={{width:'300px'}}>
               <h3 style={{fontSize:'18px'}}>新思科技 X 陽明交大</h3>
-              <h3 style={{fontSize:'18px'}}>Synopsys X NYCU</h3>
+              <h3 style={{fontSize:'16px'}}>Synopsys X NYCU</h3>
             </div>
           </div>
         </Link>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Curriculum = () => {
   return (
-    <>
+    <div className="mg-b-50">
       <h2>課表</h2>
       <table
         style={{
@@ -58,7 +58,7 @@ const Curriculum = () => {
           </tr>
         </tbody>
       </table>
-    </>
+    </div>
   );
 };
 
