@@ -36,7 +36,7 @@ function App() {
 
       {/* <SemiButton /> */}
       {/* {location.pathname != '/' && <Header />} */}
-      
+
       <Header />
       <Footer />
     </>

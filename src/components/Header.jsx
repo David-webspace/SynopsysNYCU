@@ -40,6 +40,7 @@ const Header = () => {
         df jc-sb aln-itm-c fw pd-x-container
         ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}  
       `}>
+        
         {/* Logo Container */}
         <Link to='/'>
           <div className="Logo df aln-itm-c">
@@ -53,30 +54,25 @@ const Header = () => {
 
         <nav className='fh'>
           <ul className='fh df jc-sb aln-itm-c'>
-
-            <li
-              className={`pd-w-10`}
-              style={{position:'relative'}}
-              onMouseEnter={() => setMenuHover(true)}
-              onMouseLeave={() => setMenuHover(false)}
-              >
+            <li className={`pd-w-10`} style={{position:'relative'}}>
               <Link to='/event2025' className='pd-10 df aln-itm-c'>
                 2025 活動內容
               </Link>
             </li>
             <li className='pd-w-10'>
-              <Link to='/event-review' className='pd-10' onClick={() => handleMenubarClose('Experiences')}>過去活動回顧</Link>
+              <Link to='/event-review' className='pd-10'>過去活動回顧</Link>
             </li>
             <li className='pd-w-10'>
-              <Link to='/online-resource' className='pd-10' onClick={() => handleMenubarClose('Critics')}>線上課程面費資源</Link>
+              <Link to='/online-resource' className='pd-10'>線上課程面費資源</Link>
             </li>
             <li className='pd-w-10'>
-              <Link to='/origin' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>緣起、宗旨與主辦單位</Link>
+              <Link to='/origin' className='pd-10'>緣起、宗旨與主辦單位</Link>
             </li>
             <li className='pd-w-10'>
-              <Link to='/faqs' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>常見問題</Link>
-            </li><li className='pd-w-10'>
-              <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>聯絡我們</Link>
+              <Link to='/faqs' className='pd-10'>常見問題</Link>
+            </li>
+            <li className='pd-w-10'>
+              <Link to='/contacts' className='pd-10'>聯絡我們</Link>
             </li>
             <li className='pd-w-10'>
               {/* <select
