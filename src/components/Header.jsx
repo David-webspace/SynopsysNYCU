@@ -60,7 +60,7 @@ const Header = () => {
               onMouseEnter={() => setMenuHover(true)}
               onMouseLeave={() => setMenuHover(false)}
               >
-              <Link to='/portfolio' className='pd-10 df aln-itm-c'>
+              <Link to='/event2025' className='pd-10 df aln-itm-c'>
                 2025 活動內容
               </Link>
             </li>
