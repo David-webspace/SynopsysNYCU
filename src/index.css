@@ -14,7 +14,8 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* variables */
-  --content-grey: rgba(0, 0, 0, 0.6)
+  --content-grey: rgba(0, 0, 0, 0.6);
+  --tag-BG:rgb(224, 105, 0);
 
 }
 
@@ -143,6 +144,7 @@ option{
 tr{
   
 }
+
 td{
   /* border: 1px solid rgb(0, 0, 0); */
   padding: 8px;
