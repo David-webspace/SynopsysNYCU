@@ -5,10 +5,11 @@ import ScrollPage from '../hooks/ScrollPage'
 
 const Home = () => {
   return (
-    <div style={{marginTop:'100vh', paddingTop:"150px"}}>
+    <div style={{marginTop:'100vh', paddingTop:"0px"}}>
       <ScrollPage />
       <Opening />
-      <Indicator />
+      {/* <Indicator /> */}
+      <Event_Content />
       <Event_Content />
     </div>
   )

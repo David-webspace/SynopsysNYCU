@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 
 const ScrollPage = () => {
+
+  const ScreenHeight = window.innerHeight
+
+
   useEffect(() => {
     const handleScroll = (event) => {
       // Prevent default scrolling
@@ -10,7 +14,7 @@ const ScrollPage = () => {
       const deltaY = event.deltaY;
 
       // Calculate the scroll speed multiplier
-      const speedMultiplier = 1.5
+      const speedMultiplier = 1
 
       // Scroll down or up by 100vh
       if (deltaY > 0) {
