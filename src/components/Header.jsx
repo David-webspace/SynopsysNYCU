@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FaAngleDown, FaAngleRight, FaBars } from "react-icons/fa";
+import { FaApple } from "react-icons/fa";
+import FAQ from './FAQ';
 
 
 const Header = () => {
@@ -44,7 +45,12 @@ const Header = () => {
         {/* Logo Container */}
         <Link to='/'>
           <div className="Logo df aln-itm-c">
-            <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/>
+            {/* <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/> */}
+            <FaApple 
+              size={40}
+              color='var(--black-0)'
+              className='mg-r-20'
+            />
             <div style={{width:'300px'}}>
               <h3 style={{fontSize:'18px'}}>新思科技 X 陽明交大</h3>
               <h3 style={{fontSize:'16px'}}>Synopsys X NYCU</h3>
