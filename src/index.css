@@ -14,10 +14,11 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* variables */
+  --black-0: rgb(0, 0, 0);
   --content-grey: rgba(0, 0, 0, 0.6);
   --tag-BG:rgb(224, 105, 0);
   --openingLogo: rgb(244, 244, 244);
-
+  --openingBG-mask: rgba(0, 0, 0, 0.4);
 }
 
 *{
