@@ -65,25 +65,16 @@ const Header = () => {
               </Link>
             </li>
             <li className='pd-w-10'>
-              {/* <Link to='/experiences' className='pd-10' onClick={() => handleMenubarClose('Experiences')}>資歷</Link> */}
-              <Link to='/experiences' className='pd-10' onClick={() => handleMenubarClose('Experiences')}>過去活動回顧</Link>
-            </li>
-            {/* <li className='pd-w-10'>
-              <Link to='/transaction/input' className='pd-10' onClick={() => handleMenubarClose('Critics')}>ECpay</Link>
-            </li> */}
-            <li className='pd-w-10'>
-              <Link to='/critics' className='pd-10' onClick={() => handleMenubarClose('Critics')}>線上課程面費資源</Link>
-            </li>
-            {/* <li className='pd-w-10'>
-              <Link to='/collections' className='pd-10' onClick={() => handleMenubarClose('Collections')}>收藏</Link>
-            </li> */}
-            <li className='pd-w-10'>
-              <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>緣起、宗旨與主辦單位</Link>
+              <Link to='/event-review' className='pd-10' onClick={() => handleMenubarClose('Experiences')}>過去活動回顧</Link>
             </li>
             <li className='pd-w-10'>
-              <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>緣起、宗旨與主辦單位</Link>
-            </li><li className='pd-w-10'>
-              <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>常見問題</Link>
+              <Link to='/online-resource' className='pd-10' onClick={() => handleMenubarClose('Critics')}>線上課程面費資源</Link>
+            </li>
+            <li className='pd-w-10'>
+              <Link to='/origin' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>緣起、宗旨與主辦單位</Link>
+            </li>
+            <li className='pd-w-10'>
+              <Link to='/faqs' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>常見問題</Link>
             </li><li className='pd-w-10'>
               <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>聯絡我們</Link>
             </li>

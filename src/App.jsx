@@ -8,6 +8,9 @@ import SemiButton from './components/semi_btn/SemiButton'
 import Event_2025 from './pages/Event_2025'
 import Event_Review from './pages/Event_Review'
 import Online_Free_Resource from './pages/Online_Free_Resource'
+import Contact from './components/Contact'
+import FAQ from './components/FAQ'
+import Origin from './components/Origin'
 // import { useTranslation } from 'react-i18next'
 // import './i18n'
 
@@ -25,9 +28,15 @@ function App() {
         <Route path='/event-review' element={<Event_Review />} />
         <Route path='/online-resource' element={<Online_Free_Resource />} />
 
+        <Route path='/origin' element={<Origin />} />
+        <Route path='/faqs' element={<FAQ />} />
+        <Route path='/contacts' element={<Contact />} />
+
       </Routes>
+
       {/* <SemiButton /> */}
       {/* {location.pathname != '/' && <Header />} */}
+      
       <Header />
       <Footer />
     </>
