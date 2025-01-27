@@ -19,7 +19,6 @@ function App() {
 
   const locaiton = useLocation();
 
-
   return (
     <>
       <Routes>
