@@ -100,7 +100,7 @@ const Opening = () => {
                 <p>Educational Slogan</p>
                 <p>Educational Slogan</p>
                 <p>Educational Slogan</p>
-                <p>Educational Slogan</p>
+                <p>Educational Slogancsnzjkcnsdkj</p>
             </div>
         )}
 
