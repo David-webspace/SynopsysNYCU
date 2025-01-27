@@ -1,5 +1,5 @@
 import './App.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Route, Routes, useLocation, useParams } from 'react-router'
 import { Home } from './pages'
 import Header from './components/Header'
@@ -16,6 +16,10 @@ import Backend from './pages/Backend'
 // import './i18n'
 
 function App() {
+
+  useEffect(() => {
+    fetch('http://localhost:8081/users')
+  }, [])
 
   const locaiton = useLocation();
 
