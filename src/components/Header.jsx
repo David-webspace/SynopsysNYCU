@@ -14,27 +14,6 @@ const Header = () => {
     return selectedValue; // Return the selected value from state
   };
 
-  const [menuHover, setMenuHover] = useState(false);
-  const [subMenuHover, setSubMenuHover] = useState(false);
-  const [subMenuCubeHover, setSubMenuCubeHover] = useState(false);
-  const [subOpen, setSubOpen] = useState(false)
-  const [menuBarStatus, setMenuBarStatus] = useState(false)
-  const [menuItem, setMenuItem] = useState('Artworks')
-
-  const menubarToggle = () => {
-    setMenuBarStatus(!menuBarStatus)
-  }
-
-  const handleMenubarClose = (menu) => {
-    setMenuBarStatus(false)
-    setSubOpen(false)
-    setMenuItem(menu)
-  }
-
-  const handleSubOpen = () => {
-    setSubOpen(!subOpen)
-  }
-
   return (
     <>
       <header className={`

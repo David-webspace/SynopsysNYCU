@@ -104,19 +104,6 @@ const Opening = () => {
             </div>
         )}
 
-        {/* {showMask && (
-            <div className="OpeningBG">
-                <div
-                    style={{
-                        width:"100%",
-                        height:"100%",
-                        backgroundColor:"var(--openingBG-mask)",
-                        transition:"all 1s ease-in-out"
-                    }}>
-                </div>
-            </div>
-        )} */}
-
         <div className="OpeningBG">
             <div
                 style={{
