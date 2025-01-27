@@ -11,6 +11,7 @@ import Online_Free_Resource from './pages/Online_Free_Resource'
 import Contact from './components/Contact'
 import FAQ from './components/FAQ'
 import Origin from './components/Origin'
+import Backend from './pages/Backend'
 // import { useTranslation } from 'react-i18next'
 // import './i18n'
 
@@ -31,6 +32,9 @@ function App() {
         <Route path='/origin' element={<Origin />} />
         <Route path='/faqs' element={<FAQ />} />
         <Route path='/contacts' element={<Contact />} />
+
+
+        <Route path='/backend' element={<Backend />}/>
 
       </Routes>
 
