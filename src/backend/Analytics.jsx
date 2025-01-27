@@ -33,7 +33,7 @@ const Analytics = () => {
 
   return (
     <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      <h1>網頁分析功能範例</h1>
+      <h1>網頁分析功能</h1>
       <p>您總共造訪了該頁面：<strong>{visitCount}</strong> 次。</p>
       <p>您總共點擊按鈕：<strong>{clickCount}</strong> 次。</p>
       <button onClick={handleButtonClick} style={{ padding: "10px 20px", fontSize: "16px" }}>
