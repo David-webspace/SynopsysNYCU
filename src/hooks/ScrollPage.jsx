@@ -1,50 +1,64 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 const ScrollPage = () => {
 
-  const ScreenHeight = window.innerHeight
-
+  const isScrollingRef = useRef(false);
+  const scrollTimeoutRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = (event) => {
-      // Prevent default scrolling
       event.preventDefault();
 
-      // Determine the scroll direction
-      const deltaY = event.deltaY;
-
-      // Calculate the scroll speed multiplier
-      const speedMultiplier = 1
-
-      // Scroll down or up by 100vh
-      if (deltaY > 0) {
-        // Scroll to the next section
-        window.scrollBy({
-          top: window.innerHeight * speedMultiplier,
-          left: 0,
-          behavior: "smooth",
-        });
-      } else {
-        // Scroll to the previous section
-        window.scrollBy({
-          top: -window.innerHeight * speedMultiplier,
-          left: 0,
-          behavior: "smooth",
-        });
+      // If already scrolling, return
+      if (isScrollingRef.current) return;
+      // console.log("isScrollingRef.current = ", isScrollingRef.current)
+      
+      // Clear any existing timeout
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current);
       }
+
+      const deltaY = event.deltaY;
+      const viewportHeight = window.innerHeight;
+      const currentScroll = window.scrollY;
+      
+      // Calculate the target scroll position
+      const targetScroll = deltaY > 0
+        ? Math.ceil(currentScroll / viewportHeight) * viewportHeight + viewportHeight
+        : Math.floor(currentScroll / viewportHeight) * viewportHeight - viewportHeight;
+      // console.log("targetScroll = ", targetScroll)
+
+      // Set scrolling flag
+      isScrollingRef.current = true;
+
+      // Perform the scroll
+      window.scrollTo({
+        top: targetScroll,
+        behavior: 'smooth'
+      });
+
+      // Reset the scrolling flag after animation
+      scrollTimeoutRef.current = setTimeout(() => {
+        isScrollingRef.current = false;
+      }, 1700); // Adjust this value based on your needs
     };
 
     // Add the scroll listener
     window.addEventListener("wheel", handleScroll, { passive: false });
 
-    // Cleanup the listener on component unmount
+    // Cleanup
     return () => {
       window.removeEventListener("wheel", handleScroll);
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current);
+      }
     };
   }, []);
 
   return (
-   <></>
+    <div className="min-h-screen">
+      {/* Your content goes here */}
+    </div>
   );
 };
 

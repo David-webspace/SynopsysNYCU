@@ -11,6 +11,8 @@ const Home = () => {
       {/* <Indicator /> */}
       <Event_Content />
       <Event_Content />
+      <Event_Content />
+      <Event_Content />
     </div>
   )
 }
