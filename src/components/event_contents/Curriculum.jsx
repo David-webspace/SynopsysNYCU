@@ -3,7 +3,7 @@ import React from "react";
 const Curriculum = () => {
   return (
     <div className="mg-b-50">
-      <h2>課表</h2>
+      <h2 className="mg-b-30 topicTag">課表</h2>
       <table
         style={{
           borderCollapse: "collapse",

@@ -1,41 +1,66 @@
 [
     {
-        "batch":[
+        "id": 1,
+        "type": "ChineseVer",
+        "content":[
             {
-                "id": 1,
-                "batch": "第一梯次"
+                "type": "batch",
+                "topic": "活動日期",
+                "text":[
+                    {
+                        "id": 1,
+                        "batch": "第一梯次 7/25(Thur.) - 7/27(Sat.)"
+                    },
+                    {
+                        "id": 2,
+                        "batch": "第二梯次 7/29(Mon.) - 7/31(Wed.)"
+                    }
+                ]
             },
             {
-                "id": 2,
-                "batch": "第二梯次"
-            }
-        ],
-        "location": "國立陽明交通大學新竹光復校區(原交大校區)",
-        "fee":[
-            {
-                "id": 1,
-                "type": "定價",
-                "price": "NT$ 8800"
+                "type": "location",
+                "topic": "活動地點",
+                "text":[
+                    {
+                        "id": 1,
+                        "location": "國立陽明交通大學新竹光復校區(原交大校區)"
+                    }
+                ]
             },
             {
-                "id": 2,
-                "type": "早鳥優惠價",
-                "price": "NT$ 8200"
+                "type": "fee",
+                "topic": "活動費用",
+                "text":[
+                    {
+                        "id": 1,
+                        "type": "定價",
+                        "price": "NT$ 8800"
+                    },
+                    {
+                        "id": 2,
+                        "type": "早鳥優惠價",
+                        "price": "NT$ 8200"
+                    },
+                    {
+                        "id": 3,
+                        "type": "全額補助",
+                        "price": "免費(30名)"
+                    }
+                ]
             },
             {
-                "id": 3,
-                "type": "全額補助",
-                "price": "免費(30名)"
-            }
-        ],
-        "organizer":[
-            {
-                "id": 1,
-                "name": "台灣新思科技股份有限公司"
-            },
-            {
-                "id": 2,
-                "name": "台灣交通大學校友總會"
+                "type": "organizer",
+                "topic": "活動主辦",
+                "text":[
+                    {
+                        "id": 1,
+                        "organizer": "台灣新思科技股份有限公司"
+                    },
+                    {
+                        "id": 2,
+                        "organizer": "台灣交通大學校友總會"
+                    }
+                ]
             }
         ]
     }
