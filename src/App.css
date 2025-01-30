@@ -34,6 +34,11 @@
   height: 60%;
 }
 
+.menuItemActive{
+  border-bottom: 1px solid rgb(121, 121, 121);
+  transition: all 0.4s ease-in-out;
+}
+
 .OpeningLogo{
   position: absolute;
   width: 100%;
