@@ -17,9 +17,9 @@ import Backend from './pages/Backend'
 
 function App() {
 
-  useEffect(() => {
-    fetch('http://localhost:8081/users')
-  }, [])
+  // useEffect(() => {
+  //   fetch('http://localhost:8081/visit')
+  // }, [])
 
   const locaiton = useLocation();
 
@@ -38,6 +38,7 @@ function App() {
 
 
         <Route path='/backend' element={<Backend />}/>
+        <Route path='/visit' element={<Backend />}/>
 
       </Routes>
 
