@@ -6,7 +6,13 @@ const Event_Content = () => {
   const ScreenHeight = window.innerHeight
 
   return (
-    <div className='df jc-sb aln-itm-c OuterLink' style={{height:`${ScreenHeight-138}px`, paddingTop:"300px"}}>
+    <div
+      className='df jc-sb aln-itm-c OuterLink'
+      style={{
+          // height:`${ScreenHeight-138}px`,
+          height:ScreenHeight,
+          paddingTop:"80px"
+    }}>
       <Link to='/event2025' style={{width:'33.33%', position:"relative"}}>
         <h2>2025 活動內容</h2>
         <div style={{position:"relative"}}>
