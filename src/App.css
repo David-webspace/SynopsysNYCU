@@ -74,6 +74,18 @@
   position: absolute;
 }
 
+.iconList{
+  width: 520px;
+  padding: 10px auto;
+  margin-bottom: 20px;
+  transition: .2s;
+}
+
+.iconListActive{
+  background-color: #f6f6f6;
+  border-left: 4px solid rgb(0, 0, 0);
+}
+
 .OuterLink{}
 
 .OuterLink h2{
@@ -242,6 +254,10 @@
 
 .pd-l-20{
   padding-left: 20px;
+}
+
+.pd-l-50{
+  padding-left: 50px;
 }
 
 .pd-w-10{

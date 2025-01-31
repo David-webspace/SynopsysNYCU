@@ -8,7 +8,7 @@ const Home = () => {
     <div style={{marginTop:'100vh', paddingTop:"0px"}}>
       <ScrollPage />
       <Opening />
-      {/* <Indicator /> */}
+      <Indicator />
       <Event_Content />
       <Event_Content />
       <Event_Content />
