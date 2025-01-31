@@ -86,8 +86,6 @@
   border-left: 4px solid rgb(0, 0, 0);
 }
 
-.OuterLink{}
-
 .OuterLink h2{
   color: #ffffff;
   position: absolute;
@@ -118,9 +116,6 @@
   z-index: 100;
 }
 
-.curriculumItm div{
-}
-
 .curriculumItm{
   background-color: #d5d5d5;
   width: 33%;
@@ -142,53 +137,29 @@
 }
 
 .semiButton {
-  position: relative;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
   display: inline-block;
+  z-index: 35;
 }
 
-.pin {
-  transition: all 0.3s ease;
+.outerBox{
+  width: 100px;
+  height: 100px;
+  background-color: #d9d9d9;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
-.line {
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.5s ease;
+.innerBox{
+  width: 85px;
+  height: 85px;
+  background-color: #f0f0f0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.circle {
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.5s ease;
-}
-
-.semiButton:hover .line,
-.semiButton:hover .circle {
-  opacity: 1;
-}
-
-.semiButton:hover .line.animate {
-  transform: scaleX(1) scaleY(1);
-}
-
-.semiButton:hover .circle.animate {
-  transform: scale(2); /* Circle grows at the end of the line */
-}
-
-.semiButton .line {
-  transform-origin: center center;
-}
-
-.semiButton .circle {
-  transform-origin: center center;
-}
-
-/* Example of line animation */
-.line.animate {
-  transform: translateY(50px); /* Move the line vertically or adjust for your case */
-}
-
-.circle.animate {
-  transform: scale(1.5); /* Grow the circle */
-}
 /* ================================================ */
 
 .outerLink{
