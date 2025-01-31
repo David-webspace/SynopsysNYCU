@@ -26,7 +26,7 @@ const Header = () => {
   const menuItemRender = menuItems.map((menu, index) => {
     return(
       <li key={index} onClick={()=>{setMenuItem(menu.id)}} className='pd-w-10'>
-        <Link to={`/${menu.url}`} className={`pd-10 db ${menu.id==menuItem ? 'menuItemActive' : ''}`}>
+        <Link to={`/SynopsysNYCU/${menu.url}`} className={`pd-10 db ${menu.id==menuItem ? 'menuItemActive' : ''}`}>
           {t(menu.menu)}
         </Link>
       </li>
@@ -41,7 +41,7 @@ const Header = () => {
       `}>
 
         {/* Logo Container */}
-        <Link to='/'>
+        <Link to='/SynopsysNYCU/'>
           <div className="Logo df aln-itm-c">
             {/* <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/> */}
             <FaApple 

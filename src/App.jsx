@@ -26,19 +26,19 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/SynopsysNYCU/' element={<Home />} />
 
-        <Route path='/event2025' element={<Event_2025 />} />
-        <Route path='/event-review' element={<Event_Review />} />
-        <Route path='/online-resource' element={<Online_Free_Resource />} />
+        <Route path='/SynopsysNYCU/event2025' element={<Event_2025 />} />
+        <Route path='/SynopsysNYCU/event-review' element={<Event_Review />} />
+        <Route path='/SynopsysNYCU/online-resource' element={<Online_Free_Resource />} />
 
-        <Route path='/origin' element={<Origin />} />
-        <Route path='/faqs' element={<FAQ />} />
-        <Route path='/contacts' element={<Contact />} />
+        <Route path='/SynopsysNYCU/origin' element={<Origin />} />
+        <Route path='/SynopsysNYCU/faqs' element={<FAQ />} />
+        <Route path='/SynopsysNYCU/contacts' element={<Contact />} />
 
 
-        <Route path='/backend' element={<Backend />}/>
-        <Route path='/visit' element={<Backend />}/>
+        <Route path='/SynopsysNYCU/backend' element={<Backend />}/>
+        <Route path='/SynopsysNYCU/visit' element={<Backend />}/>
 
       </Routes>
 
