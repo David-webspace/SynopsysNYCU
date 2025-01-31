@@ -1,0 +1,81 @@
+[
+    {
+        "id": 1,
+        "topic": "台灣半導體產業鍊全解析",
+        "episode": [
+            {
+                "EP": "EP1",
+                "content": "解構半導體產業鍊",
+                "youtubeEmbed": "https://www.youtube.com/embed/TnrM5T4I1Vo?si=I_f7u4iP7oyTdNq4"
+            },
+            {
+                "EP": "EP2",
+                "content": "公司之間的互動與面臨的挑戰",
+                "youtubeEmbed": "https://www.youtube.com/embed/Dr2GI6byax0?si=Fxz_Sk-5xDmaC7cS"
+            },
+            {
+                "EP": "EP3",
+                "content": "給高中生的話",
+                "youtubeEmbed": "https://www.youtube.com/embed/LrZaifvGec8?si=RMIRiRrCzvtLstwJ"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "topic": "淺談晶片設計與台灣產業現況",
+        "episode": [
+            {
+                "EP": "EP1",
+                "content": "半導體與晶片設計",
+                "youtubeEmbed": "https://www.youtube.com/embed/gLP06GUmkng?si=98XQTzIf7q2XI4pD"
+            },
+            {
+                "EP": "EP2",
+                "content": "台灣產業現況",
+                "youtubeEmbed": "https://www.youtube.com/embed/F1tEFiMFruY?si=CwMr6KVGOGmleiHx"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "topic": "IC設計流程簡介",
+        "episode": [
+            {
+                "EP": "EP1",
+                "content": "解構半導體產業鍊",
+                "youtubeEmbed": "https://www.youtube.com/embed/F1tEFiMFruY?si=CwMr6KVGOGmleiHx"
+            },
+            {
+                "EP": "EP2",
+                "content": "公司之間的互動與面臨的挑戰",
+                "youtubeEmbed": "https://www.youtube.com/embed/eOmXyRzAdv4?si=fVNRDqD5H_bLAn7e"
+            },
+            {
+                "EP": "EP3",
+                "content": "給高中生的話",
+                "youtubeEmbed": "https://www.youtube.com/embed/uj75DSqMOf8?si=C3W2Go7dTPtv-buw"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "topic": "邏輯設計入門",
+        "episode": [
+            {
+                "EP": "EP1",
+                "content": "數位系統基礎",
+                "youtubeEmbed": "https://www.youtube.com/embed/DndxecasK6Q?si=Q4UcVDAZrObvbOhk"
+            },
+            {
+                "EP": "EP2",
+                "content": "從十進位制邁向二進位制",
+                "youtubeEmbed": "https://www.youtube.com/embed/Z7n-hHQ-_Co?si=GcQ5jSRqqbJnIaXm"
+            },
+            {
+                "EP": "EP3",
+                "content": "交換電路和基本邏輯",
+                "youtubeEmbed": "https://www.youtube.com/embed/dR_jfq_QoB4?si=JtXL8oAite_OrkUL"
+            }
+        ]
+    }
+]

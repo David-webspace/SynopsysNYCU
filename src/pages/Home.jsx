@@ -10,9 +10,6 @@ const Home = () => {
       <Opening />
       <Indicator />
       <Event_Content />
-      <Event_Content />
-      <Event_Content />
-      <Event_Content />
     </div>
   )
 }
