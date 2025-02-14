@@ -4,7 +4,7 @@ const Review_Highlight = () => {
   return (
 
     <div>
-        <div>
+        <div className='mg-b-30'>
             <h2>2024回顧</h2>
             <h3>亮點摘要：製作線上課程、改為三天兩夜增進課程完整度。</h3>
             <h3>時間：7/25-7/31</h3>
