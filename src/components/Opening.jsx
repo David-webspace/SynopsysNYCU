@@ -78,7 +78,7 @@ const Opening = () => {
                     transition: 'all 0.5s ease-in-out'
                 }}
             >
-                <p>Educational Slogan</p>
+                <p>IC, the future</p>
             </div>
         )}
 
