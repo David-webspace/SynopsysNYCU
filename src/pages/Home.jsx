@@ -6,7 +6,7 @@ import ScrollPage from '../hooks/ScrollPage'
 const Home = () => {
   return (
     <div style={{marginTop:'100vh', paddingTop:"0px"}}>
-      <ScrollPage />
+      {/* <ScrollPage /> */}
       <Opening />
       <Indicator />
       <Event_Content />

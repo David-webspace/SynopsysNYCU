@@ -11,7 +11,8 @@ const Curriculum = () => {
           borderCollapse: "collapse",
           width: "100%",
           border: "none",
-          textAlign:"center"
+          textAlign:"center",
+          marginBottom:"100px"
         }}
       >
         <thead>

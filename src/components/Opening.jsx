@@ -78,7 +78,7 @@ const Opening = () => {
                     transition: 'all 0.5s ease-in-out'
                 }}
             >
-                <p>IC, the future</p>
+                <h1 style={{fontSize:"50px"}}>IC, the future</h1>
             </div>
         )}
 
