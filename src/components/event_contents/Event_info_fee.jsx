@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import eventInfos from '../../datas/event_info.json'
 
 const Event_info_fee = () => {

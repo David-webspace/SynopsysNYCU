@@ -1,9 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Curriculum = () => {
+
+  const [courseTab, setCourseTab] = useState('Chinese')
+
+  // const handleCourseTab = () => {
+
+  // }
+
   return (
     <div className="mg-b-50">
+
       <h2 className="mg-b-30 topicTag">課表</h2>
+
+      <ul className="df mg-b-30">
+        <li
+          className={`mg-r-20 ${courseTab == 'Chinese' ? 'menuItemActive' : '' }`}
+          style={{fontSize:"24px", cursor:"pointer"}}
+          onClick={()=>setCourseTab('Chinese')}
+        >
+          中文梯次課表
+        </li>
+        <li
+          className={`${courseTab == 'English' ? 'menuItemActive' : '' }`}
+          style={{fontSize:"24px", cursor:"pointer"}} 
+          onClick={()=>setCourseTab('English')}
+        >
+          英文梯次課表
+        </li>
+      </ul>
 
       {/* Chinese Lecture, Chinese version curriculum */}
       <table
@@ -11,9 +36,10 @@ const Curriculum = () => {
           borderCollapse: "collapse",
           width: "100%",
           border: "none",
-          textAlign:"center",
-          marginBottom:"100px"
+          textAlign:"center"
+          // marginBottom:"100px"
         }}
+        className={`${courseTab == 'Chinese' ? '' : 'dn'}`}
       >
         <thead>
           <tr style={{backgroundColor: "#E57D3D", color: "white"}}>
@@ -81,6 +107,7 @@ const Curriculum = () => {
           border: "none",
           textAlign:"center"
         }}
+        className={`${courseTab == 'English' ? '' : 'dn'}`}
       >
         <thead>
           <tr style={{backgroundColor: "#E57D3D", color: "white"}}>

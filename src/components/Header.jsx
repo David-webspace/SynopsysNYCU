@@ -17,7 +17,7 @@ const Header = () => {
   }
 
   const [selectedValue, setSelectedValue] = useState('ch'); // Initialize with default value
-  const [menuItem, setMenuItem] = useState('event2025')  //Initialize the value of menuItem
+  const [menuItem, setMenuItem] = useState('')  //Initialize the value of menuItem
 
   const getSelectedValue = () => {
     return selectedValue; // Return the selected value from state
