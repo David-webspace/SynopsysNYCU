@@ -13,6 +13,7 @@ import FAQ from './pages/FAQ'
 import Origin from './pages/Origin'
 import Backend from './pages/Backend'
 import SemiButton2 from './components/semi_btn/SemiButton2'
+import FooterContact from './components/FooterContact'
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
       {/* {location.pathname != '/' && <Header />} */}
 
       <Header />
+      <FooterContact />
       <Footer />
     </>
   )

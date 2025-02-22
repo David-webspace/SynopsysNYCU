@@ -21,6 +21,10 @@
   padding: 0 80px;
 }
 
+.pd-x-align{
+  padding: 0 255px;
+}
+
 .pd-y-container{
   padding-top: 100px;
 }
@@ -169,6 +173,19 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   color: #979797;
+}
+
+.footerContact{
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin: 160px 0 100px;
+  position:absolute;
+  width: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Font, Letter */
@@ -453,16 +470,30 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width:1250px){
+  .pd-x-align{
+    padding: 0 180px;
+  }
+}
+
 @media (max-width:1024px){
   .Logo{
     width: 232px;
     height: 80px;
+  }
+  
+  .pd-x-align{
+    padding: 0 120px;
   }
 }
 
 @media (max-width:768px){
   .pd-x-container{
     padding: 0 40px;
+  }
+
+  .pd-x-align{
+    padding: 0 80px;
   }
 
   .menuMobile{
@@ -480,15 +511,9 @@
     padding: 0 20px;
   }
 
-  /* .artW-sub{
-    position: absolute;
-    top: 100%;
-    left: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-  } */
+  .pd-x-align{
+    padding: 0 20px;
+  }
 }
 
 @media (max-width:375px){
