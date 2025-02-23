@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../i18n'
 import { useTranslation } from 'react-i18next'
+import { FaFacebook } from "react-icons/fa";
 
 const Contacts = () => {
 
@@ -15,10 +16,10 @@ const Contacts = () => {
       <h1 className='fw-b' style={{marginBottom:'20px'}}>{t('聯繫我們')}</h1>
       <h1 className='fw-b' style={{marginBottom:'80px'}}>{t('歡迎合作邀約')}</h1>
       <div style={{marginBottom:'80px'}}>
-        <h3 className='mg-b-20'>{t('經紀人：楊素敏小姐')}</h3>
+        <h3 className='mg-b-20'>{t('聯絡人：謝沅佑先生 高湘琪小姐')}</h3>
         <h3 className='mg-b-20'>{t('主辦單位：台灣新思科技股份有限公司、台灣交通大學校友總會、半導體與晶片設計科普夏令營籌備團隊')}</h3>
         <h3 className='mg-b-20'>{t('聯絡電話：０９１１８６８６４９')}</h3>
-        <h3 className='mg-b-20'>{t('工作室地址：新竹市東區學府路１９號')}</h3>
+        <h3 className='mg-b-20'>{t('營隊地址：新竹市東區大學路1001號 國立陽明交通大學')}</h3>
         <h3 className='mg-b-20'>{t('EMAIL：nycuxsynopsys.semi@gmail.com')}</h3>
       </div>
 

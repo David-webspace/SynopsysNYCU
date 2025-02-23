@@ -285,6 +285,10 @@
 }
 
 /* Margin */
+.mg-r-10{
+  margin-right: 10px;
+}
+
 .mg-r-20{
   margin-right: 20px;
 }

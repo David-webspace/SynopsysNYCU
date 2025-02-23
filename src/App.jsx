@@ -14,6 +14,7 @@ import Origin from './pages/Origin'
 import Backend from './pages/Backend'
 import SemiButton2 from './components/semi_btn/SemiButton2'
 import FooterContact from './components/FooterContact'
+import ScrolltoTop from './hooks/ScrolltoTop'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <>
+      <ScrolltoTop />
       <Routes>
         <Route path='/SynopsysNYCU/' element={<Home />} />
 
