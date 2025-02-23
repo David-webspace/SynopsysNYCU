@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { FaApple } from "react-icons/fa";
+import { FaApple, FaMicrochip } from "react-icons/fa";
 
 const Opening = () => {
 
@@ -60,7 +60,7 @@ const Opening = () => {
                 zIndex:45
             }}
         >
-            <FaApple 
+            <FaMicrochip
                 size={128}
                 color='var(--openingLogo)'
             />

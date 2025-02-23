@@ -3,7 +3,7 @@ import { FaFacebook, FaYoutube, FaMapMarkerAlt } from 'react-icons/fa'
 
 const FooterContact = () => {
   return (
-    <div className='footerContact pd-x-align' style={{zIndex:"80"}}>
+    <div className='footerContact pd-x-align'>
         <div className='mg-b-20'>
             <h2 className='mg-b-10'>主辦單位:</h2>
             <h4>台灣新思科技股份有限公司</h4>

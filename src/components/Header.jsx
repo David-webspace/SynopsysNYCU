@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FaApple } from "react-icons/fa";
+import { FaApple, FaMicrochip } from "react-icons/fa";
 import menuItems from '../datas/menuList.json'
 import '../i18n'
 import { useTranslation } from 'react-i18next'
@@ -44,7 +44,7 @@ const Header = () => {
         <Link to='/SynopsysNYCU/'>
           <div className="Logo df aln-itm-c">
             {/* <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/> */}
-            <FaApple 
+            <FaMicrochip
               size={40}
               color='var(--black-0)'
               className='mg-r-20'

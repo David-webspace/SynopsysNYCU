@@ -1,6 +1,7 @@
 import React from 'react'
 import Online_Resource from '../components/Online_Resource'
 import onlineResource from '../datas/onlineResource.json'
+import { FaMapPin } from "react-icons/fa";
 
 const Online_Free_Resource = () => {
 
@@ -75,7 +76,7 @@ const Online_Free_Resource = () => {
           handleScrollToElement(resource.id)
         }}
       >
-        <h3>{resource.topic}</h3>
+        <h3><FaMapPin size={16}/> {resource.topic}</h3>
         <h4>{episodeRender}</h4>
       </a>
     )
