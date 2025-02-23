@@ -3,6 +3,8 @@ import Online_Resource from '../components/Online_Resource'
 import onlineResource from '../datas/onlineResource.json'
 
 const Online_Free_Resource = () => {
+
+  // ===========================resourceRender ===============================
   const resourceRender = onlineResource.map((resource, index) => {
     const youtubeRender = resource.episode.map((episode, episodeIndex) => {
       return(
@@ -22,7 +24,8 @@ const Online_Free_Resource = () => {
               picture-in-picture;
               web-share"
             referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
+            allowfullscreen
+          >
           </iframe>
         </div>
       )
@@ -30,19 +33,61 @@ const Online_Free_Resource = () => {
 
     return(
       <div key={index}>
-        <h2 className='mg-b-20'>前導課程 {resource.topic}</h2>
+        <h2 className='mg-b-20' id={`${resource.id}`}>前導課程 {resource.topic}</h2>
         {youtubeRender}
       </div>
     )
   })
 
+  // ===========================indexRender ===============================
+  const handleScrollToElement = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const topOffset = 100; // Adjust this value to control the space between the top of the viewport and the element
+      const elementPosition = element.getBoundingClientRect().top; //This gives the distance from the top of the viewport to target element
+      const offsetPosition = elementPosition + window.pageYOffset - topOffset;
+      //pageYOffset gets the current scroll postion of the page
+      //topOffset is the extra amount by which you want to adjust the scroll pisition. In this case, you're moving it down by 100px.
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  }
+  }
+
+  const indexRender = onlineResource.map((resource, index) => {
+    const episodeRender = resource.episode.map((episode, episodeIndex) => {
+      return(
+        <div key={episodeIndex}>
+          <h4>{episode.EP} {episode.content}</h4>
+        </div>
+      )
+    })
+
+    return(
+      <a
+        key={index} 
+        className='mg-b-20 db'
+        href={`#${resource.id}`}
+        onClick={(e) => {
+          e.preventDefault();
+          handleScrollToElement(resource.id)
+        }}
+      >
+        <h3>{resource.topic}</h3>
+        <h4>{episodeRender}</h4>
+      </a>
+    )
+  })
+
   return (
-    <div>
+    <div style={{position:"relative"}}>
       <div className='df fd-c aln-itm-c'>
-        <h2>線上課程免費資源</h2>
+        <h1 className='mg-b-50'>線上課程免費資源</h1>
         {resourceRender}
       </div>
-      {/* <Online_Resource /> */}
+      <div className='indexNav'>{indexRender}</div>
 
     </div>
   )

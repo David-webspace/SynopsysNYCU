@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "analytics",
         "topic": "台灣半導體產業鍊全解析",
         "episode": [
             {
@@ -21,7 +21,7 @@
         ]
     },
     {
-        "id": 2,
+        "id": "condition",
         "topic": "淺談晶片設計與台灣產業現況",
         "episode": [
             {
@@ -37,7 +37,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": "IC-process",
         "topic": "IC設計流程簡介",
         "episode": [
             {
@@ -58,7 +58,7 @@
         ]
     },
     {
-        "id": 4,
+        "id": "logicDsign",
         "topic": "邏輯設計入門",
         "episode": [
             {

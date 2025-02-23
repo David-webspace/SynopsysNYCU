@@ -201,6 +201,14 @@
   border-radius: 5px;
 }
 
+.indexNav{
+  width: 300px;
+  position:fixed;
+  top: 160px;
+  /* bottom: 160px; */
+  left: 50px;
+}
+
 /* Font, Letter */
 .lt-sc{
   letter-spacing: 2px;
