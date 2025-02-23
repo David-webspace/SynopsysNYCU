@@ -14,7 +14,7 @@ const Reflection = () => {
         style={{
           width:"48%",
           float: isOdd ? "left" : "right",
-          transform: isOdd ? "" : "translateY(80%)",
+          transform: isOdd ? "" : "translateY(60%)",
           marginBottom:"8%"
         }}
       >
