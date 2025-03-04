@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Online_Resource from '../components/Online_Resource'
 import onlineResource from '../datas/onlineResource.json'
 import { FaMapPin } from "react-icons/fa";
 
 const Online_Free_Resource = () => {
+
+  const [selectSourceItem, setSelectSourceItem] = useState('')
+  
+  const handleSelectedSource = (source) => {
+    setSelectSourceItem(source)
+  }
 
   // ===========================resourceRender ===============================
   const resourceRender = onlineResource.map((resource, index) => {
@@ -70,10 +76,12 @@ const Online_Free_Resource = () => {
       <a
         key={index} 
         className='mg-b-20 db'
+        style={{color:`${selectSourceItem == resource.id ? '#383838' : ''}`}}
         href={`#${resource.id}`}
         onClick={(e) => {
           e.preventDefault();
           handleScrollToElement(resource.id)
+          handleSelectedSource(resource.id)
         }}
       >
         <h3><FaMapPin size={16}/> {resource.topic}</h3>
@@ -84,7 +92,7 @@ const Online_Free_Resource = () => {
 
   return (
     <div style={{position:"relative"}}>
-      <div className='df fd-c aln-itm-c'>
+      <div className={`df fd-c aln-itm-c`}>
         <h1 className='mg-b-50'>線上課程免費資源</h1>
         {resourceRender}
       </div>
