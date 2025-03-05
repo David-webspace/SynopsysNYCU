@@ -26,7 +26,7 @@ const Indicator = () => {
       <li
         key={index} 
         className={`
-          pd-l-50 iconList
+          iconList
           ${icon.icon.name == iconHover ? 'iconListActive' : ''}
           ${icon.icon.name == iconActive ? 'iconListActive' : ''}
         `}
