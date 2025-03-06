@@ -16,7 +16,11 @@
   /* variables */
   --black-0: rgb(0, 0, 0);
   --content-grey: rgba(0, 0, 0, 0.6);
-  --tag-BG:rgb(224, 105, 0);
+  --grey-1:#d2d2d2;
+  --grey-2:#dcdcdc;
+  --tag-BG:#e06900;
+  --table-tr:#e06900;
+  --table-tab:#ff973b;
   --openingLogo: rgb(244, 244, 244);
   --openingBG-mask: rgba(0, 0, 0, 0.4);
 }

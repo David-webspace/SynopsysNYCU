@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router'
 import { Link } from 'react-router-dom'
 import { FaApple, FaMicrochip } from "react-icons/fa";
@@ -7,12 +7,12 @@ import { FaEarthAfrica } from "react-icons/fa6";
 import menuItems from '../datas/menuList.json'
 import '../i18n'
 import { useTranslation } from 'react-i18next'
+// import ReloadMenu from '../hooks/ReloadMenu';
 
 
 const Header = () => {
 
   const ScreenWidth = window.innerWidth
-  const location = useLocation();
   
   const { t, i18n } = useTranslation()
   const changeLanguage = (lng) => {
@@ -20,25 +20,51 @@ const Header = () => {
   }
   
   const [langActive, setLangActive] = useState(false)
-  const [selectedValue, setSelectedValue] = useState('ch'); // Initialize with default value
   const [menuItem, setMenuItem] = useState('')  //Initialize the value of menuItem
   const [lngSubClose, setLngSubClose] = useState(false)
 
-  // if (location.pathname != '/'){
-  //   setMenuItem('default')
-  // }
+  // ==================== Reload function ====================
 
-  
+  // const handleReloadMenu = () => {
+  //   return(
+  //     <ReloadMenu menuItem={menuItem}/>
+  //   )
+  // }
+  useEffect(() => {
+    const pathname = location.pathname;
+    handleReloadMenu(pathname);
+  }, [location.pathname]);
+
+  const handleReloadMenu = (pathname) => {
+    switch(pathname){
+      case '/SynopsysNYCU/event2025':
+        setMenuItem('event2025');
+        break;
+      case '/SynopsysNYCU/event-review':
+        setMenuItem('pastHeights')
+        break;
+      case '/SynopsysNYCU/online-resource':
+        setMenuItem('onlineResources')
+        break;
+      case '/SynopsysNYCU/origin':
+        setMenuItem('origin')
+        break;
+      case '/SynopsysNYCU/faqs':
+        setMenuItem('faqs')
+        break;
+      case '/SynopsysNYCU/contacts':
+        setMenuItem('contactUs')
+        break;
+    }
+  }
+
+  // ==================== Language Select ====================
   const handleLanguageSelect = () => {
     setLangActive(!langActive)
   }
-
   const handleCloseLng = () => {
     setLngSubClose(false)
   }
-  const getSelectedValue = () => {
-    return selectedValue; // Return the selected value from state
-  };
 
   const menuItemRender = menuItems.map((menu, index) => {
     return(

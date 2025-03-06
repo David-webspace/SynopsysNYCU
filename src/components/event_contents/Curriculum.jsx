@@ -9,17 +9,17 @@ const Curriculum = () => {
 
       <h2 className="mg-b-30 topicTag">課表</h2>
 
-      <ul className="df mg-b-30">
+      <ul className="df">
         <li
-          className={`mg-r-10 ${courseTab == 'Chinese' ? 'tabItemActive' : '' }`}
-          style={{fontSize:"24px", cursor:"pointer", padding:"3px 10px"}}
+          className="tabItemDefault"
+          style={{backgroundColor: `${courseTab == 'Chinese' ? 'var(--table-tr)' : 'var(--grey-2)'}`}}
           onClick={()=>setCourseTab('Chinese')}
         >
           中文梯次課表
         </li>
         <li
-          className={`${courseTab == 'English' ? 'tabItemActive' : '' }`}
-          style={{fontSize:"24px", cursor:"pointer", padding:"3px 10px"}} 
+          className="tabItemDefault"
+          style={{backgroundColor: `${courseTab == 'English' ? 'var(--table-tr)' : 'var(--grey-2)'}`}}
           onClick={()=>setCourseTab('English')}
         >
           英文梯次課表
@@ -37,8 +37,8 @@ const Curriculum = () => {
         }}
         className={`${courseTab == 'Chinese' ? '' : 'dn'}`}
       >
-        <thead>
-          <tr style={{backgroundColor: "#E57D3D", color: "white"}}>
+        <thead style={{outline:"3px var(--table-tr)"}}>
+          <tr style={{backgroundColor: "var(--table-tr)", color: "white"}}>
             <th>Time</th>
             <th>D1</th>
             <th>D2</th>
@@ -106,7 +106,7 @@ const Curriculum = () => {
         className={`${courseTab == 'English' ? '' : 'dn'}`}
       >
         <thead>
-          <tr style={{backgroundColor: "#E57D3D", color: "white"}}>
+          <tr style={{backgroundColor: "var(--table-tr)", color: "white"}}>
             <th>Time</th>
             <th>D1</th>
             <th>D2</th>
