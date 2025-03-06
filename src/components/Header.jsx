@@ -12,9 +12,7 @@ import { useTranslation } from 'react-i18next'
 const Header = () => {
 
   const ScreenWidth = window.innerWidth
-  // const location = useLocation();
-  // location.pathname != '/'
-
+  const location = useLocation();
   
   const { t, i18n } = useTranslation()
   const changeLanguage = (lng) => {
@@ -23,8 +21,13 @@ const Header = () => {
   
   const [langActive, setLangActive] = useState(false)
   const [selectedValue, setSelectedValue] = useState('ch'); // Initialize with default value
-  const [menuItem, setMenuItem] = useState('default')  //Initialize the value of menuItem
+  const [menuItem, setMenuItem] = useState('')  //Initialize the value of menuItem
   const [lngSubClose, setLngSubClose] = useState(false)
+
+  // if (location.pathname != '/'){
+  //   setMenuItem('default')
+  // }
+
   
   const handleLanguageSelect = () => {
     setLangActive(!langActive)
@@ -84,9 +87,9 @@ const Header = () => {
 
         {/* Language Select */}
         <ul style={{position:'relative'}} className='df fd-c pd-w-10 fh jc-c aln-itm-c'>
-          <Link onClick={handleLanguageSelect} >
+          <div onClick={handleLanguageSelect} >
             <FaEarthAfrica size={20}/>
-          </Link>
+          </div>
           <ul
             className='df fd-c'
             style={{

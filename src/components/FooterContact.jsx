@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FaFacebook, FaYoutube, FaMapMarkerAlt } from 'react-icons/fa'
 
 const FooterContact = () => {
@@ -12,10 +13,10 @@ const FooterContact = () => {
         </div>
         <div>
           <ul className='df'>
-            <li className='mg-r-20'><FaFacebook size={20}/></li>
-            <li className='mg-r-20'><FaYoutube size={20}/></li>
-            <li className='mg-r-20'><FaMapMarkerAlt size={20}/></li>
-            <li className='mg-r-20'></li>
+            <a href='https://www.facebook.com/NYCU.SYNOPSYS.SEMICONDUCTOR.ICDESIGN/' target='_blank' className='mg-r-20'><FaFacebook size={20}/></a>
+            <a href='https://www.youtube.com/@nycu_synopsys_semi' target='_blank' className='mg-r-20'><FaYoutube size={20}/></a>
+            <a href='https://maps.app.goo.gl/A4tttWxRBfXKYTRf8' target='_blank' className='mg-r-20'><FaMapMarkerAlt size={20}/></a>
+            <a href='' target='_blank' className='mg-r-20'></a>
           </ul>
         </div>
     </div>

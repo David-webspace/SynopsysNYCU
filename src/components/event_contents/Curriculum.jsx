@@ -4,26 +4,22 @@ const Curriculum = () => {
 
   const [courseTab, setCourseTab] = useState('Chinese')
 
-  // const handleCourseTab = () => {
-
-  // }
-
   return (
-    <div className="mg-b-50">
+    <div className="mg-b-50" id="curriculum">
 
       <h2 className="mg-b-30 topicTag">課表</h2>
 
       <ul className="df mg-b-30">
         <li
-          className={`mg-r-20 ${courseTab == 'Chinese' ? 'menuItemActive' : '' }`}
-          style={{fontSize:"24px", cursor:"pointer"}}
+          className={`mg-r-10 ${courseTab == 'Chinese' ? 'tabItemActive' : '' }`}
+          style={{fontSize:"24px", cursor:"pointer", padding:"3px 10px"}}
           onClick={()=>setCourseTab('Chinese')}
         >
           中文梯次課表
         </li>
         <li
-          className={`${courseTab == 'English' ? 'menuItemActive' : '' }`}
-          style={{fontSize:"24px", cursor:"pointer"}} 
+          className={`${courseTab == 'English' ? 'tabItemActive' : '' }`}
+          style={{fontSize:"24px", cursor:"pointer", padding:"3px 10px"}} 
           onClick={()=>setCourseTab('English')}
         >
           英文梯次課表

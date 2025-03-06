@@ -29,10 +29,10 @@ const Event_rule = () => {
   })
 
   return (
-    <>
+    <div id='eventRules'>
       <h2 className='mg-b-30 topicTag'>活動辦法與細則</h2>
       {ruleRender}
-    </>
+    </div>
   )
 }
 

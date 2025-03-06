@@ -54,7 +54,7 @@ const Event_info_fee = () => {
   })
 
   return (
-    <div className='mg-b-50'>
+    <div className='mg-b-50' id='eventInfo'>
       <h2 className='mg-b-30 topicTag'>活動資訊＆收費</h2>
       {infosRender}
     </div>

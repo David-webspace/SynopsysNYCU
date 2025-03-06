@@ -45,9 +45,10 @@ function App() {
         {/* <SemiButton2 /> */}
         
       </div>
-      {/* {location.pathname != '/' && <Header />} */}
 
-      <Header />
+
+      {location.pathname != '/SynopsysNYCU/' && <Header />}
+      {/* <Header /> */}
       <FooterContact />
       <Footer />
     </>

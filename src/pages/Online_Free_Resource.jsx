@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import Online_Resource from '../components/Online_Resource'
 import onlineResource from '../datas/onlineResource.json'
 import { FaMapPin } from "react-icons/fa";
 
 const Online_Free_Resource = () => {
 
-  const [selectSourceItem, setSelectSourceItem] = useState('')
+  const [selectSourceItem, setSelectSourceItem] = useState('analytics')
   
   const handleSelectedSource = (source) => {
     setSelectSourceItem(source)
@@ -56,11 +55,11 @@ const Online_Free_Resource = () => {
       //pageYOffset gets the current scroll postion of the page
       //topOffset is the extra amount by which you want to adjust the scroll pisition. In this case, you're moving it down by 100px.
 
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
-    });
-  }
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
   }
 
   const indexRender = onlineResource.map((resource, index) => {
@@ -76,7 +75,7 @@ const Online_Free_Resource = () => {
       <a
         key={index} 
         className='mg-b-20 db'
-        style={{color:`${selectSourceItem == resource.id ? '#383838' : '#b1b1b1'}`}}
+        style={{color:`${selectSourceItem == resource.id ? '#383838' : '#b7b7b7'}`}}
         href={`#${resource.id}`}
         onClick={(e) => {
           e.preventDefault();
@@ -97,7 +96,6 @@ const Online_Free_Resource = () => {
         {resourceRender}
       </div>
       <div className='indexNav'>{indexRender}</div>
-
     </div>
   )
 }

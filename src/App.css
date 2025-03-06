@@ -47,6 +47,11 @@
   transition: all 0.4s ease-in-out;
 }
 
+.tabItemActive{
+  background-color: #fff;
+  /* transition: all 0.4s ease-in-out; */
+}
+
 .OpeningLogo{
   position: absolute;
   width: 100%;
@@ -222,6 +227,15 @@
   width: 300px;
   position:sticky;
   bottom: 250px;
+  left: 0;
+  margin-left: -100px;
+}
+
+.indexEvent{
+  /* width: 1px; */
+  display: inline-block;
+  position:sticky;
+  bottom: 550px;
   left: 0;
   margin-left: -100px;
 }
