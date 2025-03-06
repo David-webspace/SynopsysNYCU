@@ -94,13 +94,12 @@ const Opening = () => {
                     transition: 'all 1s ease'
                 }}
             >
-                <p>Educational Slogan</p>
-                <p>Educational Slogan</p>
-                <p>Educational Slogan</p>
-                <p>Educational Slogan</p>
-                <p>Educational Slogan</p>
-                <p>Educational Slogan</p>
-                <p>Educational Slogancsnzjkcnsdkj</p>
+                <p>Powering Tomorrow with Cutting-Edge IC Innovation.</p>
+                <p>Shaping the Future of Semiconductors, One Chip at a Time.</p>
+                <p>Driving Progress Through Advanced IC Technology.</p>
+                <p>Empowering the Digital Age with Semiconductor Excellence.</p>
+                <p>Building Smarter Solutions for a Semiconductor-Powered World.</p>
+                <p>Revolutionizing the Future with Next-Gen IC Design.</p>
             </div>
         )}
 

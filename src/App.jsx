@@ -18,7 +18,7 @@ import ScrolltoTop from './hooks/ScrolltoTop'
 
 function App() {
 
-  const locaiton = useLocation();
+  const location = useLocation();
 
   return (
     <>

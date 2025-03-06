@@ -6,6 +6,10 @@
   transition: 0.2s;
 }
 
+.pointer{
+  cursor: pointer;
+}
+
 .pointer:hover{
   cursor: pointer;
   transition: 0.4s;
@@ -30,7 +34,7 @@
 }
 
 .Logo{
-  width: 360px;
+  /* width: 360px; */
   height: 80px;
 }
 
@@ -39,7 +43,7 @@
 }
 
 .menuItemActive{
-  border-bottom: 1px solid rgb(121, 121, 121);
+  /* border-bottom: 1px solid rgb(121, 121, 121); */
   transition: all 0.4s ease-in-out;
 }
 
@@ -65,7 +69,8 @@
   top: 0;
   left: 0;
   z-index: 40;
-  background-image: url("https://images.pexels.com/photos/1242348/pexels-photo-1242348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  /* background-image: url("https://images.pexels.com/photos/1242348/pexels-photo-1242348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+  background-image: url("https://images.pexels.com/photos/1432797/pexels-photo-1432797.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -118,6 +123,16 @@
 
 .menuBar{
   z-index: 100;
+}
+
+.lngSub{
+  width: 100px;
+  background-color: #e3e3e3;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #d5d5d5;
+  transform: translateX(-50%);
+  cursor: pointer;
 }
 
 .curriculumItm{
@@ -187,7 +202,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 50;
+  /* z-index:20; */
 }
 
 .reflectionArrange{
