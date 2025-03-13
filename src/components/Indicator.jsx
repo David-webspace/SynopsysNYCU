@@ -7,7 +7,7 @@ const Indicator = () => {
 
   const ScreenHeight = window.innerHeight
 
-  const [iconActive, setIconActive] = useState('')
+  const [iconActive, setIconActive] = useState('leader')
   const [iconHover, setIconHover] = useState('')
 
   const iconList = [
@@ -51,7 +51,7 @@ const Indicator = () => {
   })
 
   return (
-    <div style={{height:ScreenHeight, paddingTop:"20px"}} className='df fd-c jc-c'>
+    <div style={{height:ScreenHeight, width:"100%", paddingTop:"20px"}} className='df fd-c jc-c'>
         <h2 className='mg-b-30'>我們的特色</h2>
         <div className='df'>
           <ul className='df fd-c' style={{width:"60%"}}>

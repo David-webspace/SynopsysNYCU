@@ -30,7 +30,7 @@ function App() {
         <Route path='/SynopsysNYCU/event-review' element={<Event_Review />} />
         <Route path='/SynopsysNYCU/online-resource' element={<Online_Free_Resource />} />
 
-        <Route path='/SynopsysNYCU/' element={<Origin />} />
+        <Route path='/SynopsysNYCU/origin' element={<Origin />} />
         <Route path='/SynopsysNYCU/faqs' element={<FAQ />} />
         <Route path='/SynopsysNYCU/contacts' element={<Contact />} />
 
