@@ -1,0 +1,304 @@
+[
+    {
+        "id": "ch",
+        "schedule": [
+            {
+                "day": "1",
+                "class": [
+                    {
+                        "titleCh": "學員報到",
+                        "buildingCh": "工程一館｜B1報到區",
+                        "time": "09:30-10:00"
+                    },
+                    {
+                        "titleCh": "開幕式暨半導體產業沙龍",
+                        "buildingCh": "工程一館|合勤講堂",
+                        "time": "10:00-12:00"
+                    },
+                    {
+                        "titleCh": "午餐",
+                        "buildingCh": "工程四館2F｜220教室",
+                        "time": "12:00-13:30"
+                    },
+                    {
+                        "titleCh": "半導體技術發展",
+                        "buildingCh": "工程四館B1｜合勤講堂",
+                        "time": "13:30-14:30"
+                    },
+                    {
+                        "titleCh": "數位邏輯基礎到數位電路設計",
+                        "buildingCh": "工程四館B1｜合勤講堂",
+                        "time": "14:30-17:30"
+                    },
+                    {
+                        "titleCh": "晚餐",
+                        "buildingCh": "科學三館｜教室",
+                        "time": "17:30-18:30"
+                    },
+                    {
+                        "titleCh": "交流活動",
+                        "buildingCh": "科學三館｜教室",
+                        "time": "18:30-21:00"
+                    },
+                    {
+                        "titleCh": "就寢休息",
+                        "buildingCh": "宿舍",
+                        "time": "21:00-隔日"
+                    }
+                ]
+                
+            },
+            {
+                "day": "2",
+                "class": [
+                    {
+                        "titleCh": "早餐",
+                        "buildingCh": "工程四館2F｜220教室",
+                        "time": "08:00-08:30"
+                    },
+                    {
+                        "titleCh": "半導體製程概論（柏村）",
+                        "buildingCh": "工程一館|合勤講堂",
+                        "time": "08:30-10:30"
+                    },
+                    {
+                        "titleCh": "數位電路設計實驗（一）",
+                        "buildingCh": "工程四館2F｜220教室",
+                        "time": "10:30-12:30"
+                    },
+                    {
+                        "titleCh": "午餐",
+                        "buildingCh": "工程四館2F｜220教室",
+                        "time": "12:00-13:30"
+                    },
+                    {
+                        "titleCh": "數位電路設計實驗（二）",
+                        "buildingCh": "資訊技術中心｜電腦教室",
+                        "time": "13:30-17:30"
+                    },
+                    {
+                        "titleCh": "晚餐",
+                        "buildingCh": "科學三館｜教室",
+                        "time": "17:30-18:30"
+                    },
+                    {
+                        "titleCh": "準備成果發表",
+                        "buildingCh": "科學三館｜教室",
+                        "time": "18:30-21:00"
+                    },
+                    {
+                        "titleCh": "就寢休息",
+                        "buildingCh": "宿舍",
+                        "time": "21:00-隔日"
+                    }
+                ]
+            },
+            {
+                "day": "3",
+                "class": [
+                    {
+                        "titleCh": "早餐",
+                        "buildingCh": "工程四館2F｜220教室",
+                        "time": "08:30-09:30"
+                    },
+                    {
+                        "titleCh": "成果發表",
+                        "buildingCh": "二餐1001空間",
+                        "time": "09:30-12:00"
+                    },
+                    {
+                        "titleCh": "午餐",
+                        "buildingCh": "二餐1001空間",
+                        "time": "12:00-13:30"
+                    },
+                    {
+                        "titleCh": "總經理演講",
+                        "buildingCh": "二餐1001空間",
+                        "time": "13:30-14:30"
+                    },
+                    {
+                        "titleCh": "閉幕式",
+                        "buildingCh": "二餐1001空間",
+                        "time": "14:30-17:30"
+                    },
+                    {
+                        "titleCh": "賦歸",
+                        "buildingCh": "同學自行離開交大博愛校區",
+                        "time": "17:30 ～"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "en",
+        "schedule": [
+            {
+                "day": "1",
+                "class": [
+                    {
+                        "titleCh": "學員報到",
+                        "buildingCh": "工程一館|B1報到區",
+                        "time": "09:30-10:00"
+                    },
+                    {
+                        "titleCh": "開幕式暨半導體產業沙龍",
+                        "buildingCh": "工程一館|合勤講堂",
+                        "time": "10:00-12:00"
+                    },
+                    {
+                        "titleCh": "午餐",
+                        "buildingCh": "工程四館2F｜220教室",
+                        "time": "12:00-13:30"
+                    },
+                    {
+                        "titleCh": "半導體技術發展",
+                        "buildingCh": "工程四館B1｜合勤講堂",
+                        "time": "13:30-14:30"
+                    },
+                    {
+                        "titleCh": "數位邏輯基礎到數位電路設計",
+                        "buildingCh": "工程四館B1｜合勤講堂",
+                        "time": "14:30-17:30"
+                    },
+                    {
+                        "titleCh": "晚餐",
+                        "buildingCh": "科學三館｜教室",
+                        "time": "17:30-18:30"
+                    },
+                    {
+                        "titleCh": "交流活動",
+                        "buildingCh": "科學三館｜教室",
+                        "time": "18:30-21:00"
+                    },
+                    {
+                        "titleCh": "就寢休息",
+                        "buildingCh": "宿舍",
+                        "time": "21:00-隔日"
+                    }
+                ]
+                
+            },
+            {
+                "day": "2",
+                "class": [
+                    {
+                        "titleCh": "早餐",
+                        "buildingCh": "工程四館2F｜220教室",
+                        "time": "08:00-08:30"
+                    },
+                    {
+                        "titleCh": "半導體製程概論（柏村）",
+                        "buildingCh": "工程一館|合勤講堂",
+                        "time": "08:30-10:30"
+                    },
+                    {
+                        "titleCh": "數位電路設計實驗（一）",
+                        "buildingCh": "工程四館2F｜220教室",
+                        "time": "10:30-12:30"
+                    },
+                    {
+                        "titleCh": "午餐",
+                        "buildingCh": "工程四館2F｜220教室",
+                        "time": "12:00-13:30"
+                    },
+                    {
+                        "titleCh": "數位電路設計實驗（二）",
+                        "buildingCh": "資訊技術中心｜電腦教室",
+                        "time": "13:30-17:30"
+                    },
+                    {
+                        "titleCh": "晚餐",
+                        "buildingCh": "科學三館｜教室",
+                        "time": "17:30-18:30"
+                    },
+                    {
+                        "titleCh": "準備成果發表",
+                        "buildingCh": "科學三館｜教室",
+                        "time": "18:30-21:00"
+                    },
+                    {
+                        "titleCh": "就寢休息",
+                        "buildingCh": "宿舍",
+                        "time": "21:00-隔日"
+                    }
+                ]
+            },
+            {
+                "day": "3",
+                "class": [
+                    {
+                        "titleCh": "早餐",
+                        "buildingCh": "工程四館2F｜220教室",
+                        "time": "08:30-09:30"
+                    },
+                    {
+                        "titleCh": "企業領袖面對面",
+                        "buildingCh": "09:00台積 11:00奈中",
+                        "time": "09:30-12:00"
+                    },
+                    {
+                        "titleCh": "午餐",
+                        "buildingCh": "Pending",
+                        "time": "12:00-13:30"
+                    },
+                    {
+                        "titleCh": "TSMC台積創新管",
+                        "buildingCh": "Pending",
+                        "time": "13:00-17:30"
+                    },
+                    {
+                        "titleCh": "晚餐",
+                        "buildingCh": "二餐1001空間",
+                        "time": "17:30-18:30"
+                    },
+                    {
+                        "titleCh": "科學趣味競賽",
+                        "buildingCh": "Pending",
+                        "time": "18:30-21:00"
+                    },
+                    {
+                        "titleCh": "就寢休息",
+                        "buildingCh": "宿舍",
+                        "time": "21:00 ～"
+                    }
+                ]
+            },
+            {
+                "day": "4",
+                "class": [
+                    {
+                        "titleCh": "早餐",
+                        "buildingCh": "工程四館2F｜220教室",
+                        "time": "08:30-09:30"
+                    },
+                    {
+                        "titleCh": "成果發表",
+                        "buildingCh": "中正堂前廣場/遊覽車",
+                        "time": "09:30-12:00"
+                    },
+                    {
+                        "titleCh": "午餐",
+                        "buildingCh": "博愛校區賢齊館",
+                        "time": "12:00-13:30"
+                    },
+                    {
+                        "titleCh": "總經理演講",
+                        "buildingCh": "博愛校區賢齊館",
+                        "time": "13:30-14:30"
+                    },
+                    {
+                        "titleCh": "閉幕式",
+                        "buildingCh": "博愛校區賢齊館",
+                        "time": "14:30-17:30"
+                    },
+                    {
+                        "titleCh": "賦歸",
+                        "buildingCh": "同學自行離開交大博愛校區",
+                        "time": "17:30 ～"
+                    }
+                ]
+            }
+        ]
+    }
+]

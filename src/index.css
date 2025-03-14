@@ -18,6 +18,8 @@
   --content-grey: rgba(0, 0, 0, 0.6);
   --grey-1:#d2d2d2;
   --grey-2:#dcdcdc;
+  --grey-3:#c6c6c6;
+  --grey-4:#a9a9a9;
   --tag-BG:#e06900;
   --table-tr:#e06900;
   --table-tab:#ff973b;
@@ -154,7 +156,7 @@ option{
 /* ========== table ============= */
 
 tr{
-  
+  font-size: 14px;
 }
 
 td{
