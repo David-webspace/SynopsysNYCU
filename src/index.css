@@ -16,10 +16,12 @@
   /* variables */
   --black-0: rgb(0, 0, 0);
   --content-grey: rgba(0, 0, 0, 0.6);
+  --grey-0:#ebebeb;
   --grey-1:#d2d2d2;
   --grey-2:#dcdcdc;
   --grey-3:#c6c6c6;
   --grey-4:#a9a9a9;
+  --brown-1:#e2e0de;
   --tag-BG:#e06900;
   --table-tr:#e06900;
   --table-tab:#ff973b;

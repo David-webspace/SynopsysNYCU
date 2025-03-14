@@ -7,7 +7,7 @@
                 "class": [
                     {
                         "titleCh": "學員報到",
-                        "buildingCh": "工程一館｜B1報到區",
+                        "buildingCh": "工程一館|B1報到區",
                         "time": "09:30-10:00"
                     },
                     {
@@ -17,27 +17,27 @@
                     },
                     {
                         "titleCh": "午餐",
-                        "buildingCh": "工程四館2F｜220教室",
+                        "buildingCh": "工程四館2F|220教室",
                         "time": "12:00-13:30"
                     },
                     {
                         "titleCh": "半導體技術發展",
-                        "buildingCh": "工程四館B1｜合勤講堂",
+                        "buildingCh": "工程四館B1|合勤講堂",
                         "time": "13:30-14:30"
                     },
                     {
                         "titleCh": "數位邏輯基礎到數位電路設計",
-                        "buildingCh": "工程四館B1｜合勤講堂",
+                        "buildingCh": "工程四館B1|合勤講堂",
                         "time": "14:30-17:30"
                     },
                     {
                         "titleCh": "晚餐",
-                        "buildingCh": "科學三館｜教室",
+                        "buildingCh": "科學三館|教室",
                         "time": "17:30-18:30"
                     },
                     {
                         "titleCh": "交流活動",
-                        "buildingCh": "科學三館｜教室",
+                        "buildingCh": "科學三館|教室",
                         "time": "18:30-21:00"
                     },
                     {
@@ -53,7 +53,7 @@
                 "class": [
                     {
                         "titleCh": "早餐",
-                        "buildingCh": "工程四館2F｜220教室",
+                        "buildingCh": "工程四館2F|220教室",
                         "time": "08:00-08:30"
                     },
                     {
@@ -63,27 +63,27 @@
                     },
                     {
                         "titleCh": "數位電路設計實驗（一）",
-                        "buildingCh": "工程四館2F｜220教室",
+                        "buildingCh": "工程四館2F|220教室",
                         "time": "10:30-12:30"
                     },
                     {
                         "titleCh": "午餐",
-                        "buildingCh": "工程四館2F｜220教室",
+                        "buildingCh": "工程四館2F|220教室",
                         "time": "12:00-13:30"
                     },
                     {
                         "titleCh": "數位電路設計實驗（二）",
-                        "buildingCh": "資訊技術中心｜電腦教室",
+                        "buildingCh": "資訊技術中心|電腦教室",
                         "time": "13:30-17:30"
                     },
                     {
                         "titleCh": "晚餐",
-                        "buildingCh": "科學三館｜教室",
+                        "buildingCh": "科學三館|教室",
                         "time": "17:30-18:30"
                     },
                     {
                         "titleCh": "準備成果發表",
-                        "buildingCh": "科學三館｜教室",
+                        "buildingCh": "科學三館|教室",
                         "time": "18:30-21:00"
                     },
                     {
@@ -98,7 +98,7 @@
                 "class": [
                     {
                         "titleCh": "早餐",
-                        "buildingCh": "工程四館2F｜220教室",
+                        "buildingCh": "工程四館2F|220教室",
                         "time": "08:30-09:30"
                     },
                     {
@@ -148,27 +148,27 @@
                     },
                     {
                         "titleCh": "午餐",
-                        "buildingCh": "工程四館2F｜220教室",
+                        "buildingCh": "工程四館2F|220教室",
                         "time": "12:00-13:30"
                     },
                     {
                         "titleCh": "半導體技術發展",
-                        "buildingCh": "工程四館B1｜合勤講堂",
+                        "buildingCh": "工程四館B1|合勤講堂",
                         "time": "13:30-14:30"
                     },
                     {
                         "titleCh": "數位邏輯基礎到數位電路設計",
-                        "buildingCh": "工程四館B1｜合勤講堂",
+                        "buildingCh": "工程四館B1|合勤講堂",
                         "time": "14:30-17:30"
                     },
                     {
                         "titleCh": "晚餐",
-                        "buildingCh": "科學三館｜教室",
+                        "buildingCh": "科學三館|教室",
                         "time": "17:30-18:30"
                     },
                     {
                         "titleCh": "交流活動",
-                        "buildingCh": "科學三館｜教室",
+                        "buildingCh": "科學三館|教室",
                         "time": "18:30-21:00"
                     },
                     {
@@ -184,7 +184,7 @@
                 "class": [
                     {
                         "titleCh": "早餐",
-                        "buildingCh": "工程四館2F｜220教室",
+                        "buildingCh": "工程四館2F|220教室",
                         "time": "08:00-08:30"
                     },
                     {
@@ -194,27 +194,27 @@
                     },
                     {
                         "titleCh": "數位電路設計實驗（一）",
-                        "buildingCh": "工程四館2F｜220教室",
+                        "buildingCh": "工程四館2F|220教室",
                         "time": "10:30-12:30"
                     },
                     {
                         "titleCh": "午餐",
-                        "buildingCh": "工程四館2F｜220教室",
+                        "buildingCh": "工程四館2F|220教室",
                         "time": "12:00-13:30"
                     },
                     {
                         "titleCh": "數位電路設計實驗（二）",
-                        "buildingCh": "資訊技術中心｜電腦教室",
+                        "buildingCh": "資訊技術中心|電腦教室",
                         "time": "13:30-17:30"
                     },
                     {
                         "titleCh": "晚餐",
-                        "buildingCh": "科學三館｜教室",
+                        "buildingCh": "科學三館|教室",
                         "time": "17:30-18:30"
                     },
                     {
                         "titleCh": "準備成果發表",
-                        "buildingCh": "科學三館｜教室",
+                        "buildingCh": "科學三館|教室",
                         "time": "18:30-21:00"
                     },
                     {
@@ -229,7 +229,7 @@
                 "class": [
                     {
                         "titleCh": "早餐",
-                        "buildingCh": "工程四館2F｜220教室",
+                        "buildingCh": "工程四館2F|220教室",
                         "time": "08:30-09:30"
                     },
                     {
@@ -269,7 +269,7 @@
                 "class": [
                     {
                         "titleCh": "早餐",
-                        "buildingCh": "工程四館2F｜220教室",
+                        "buildingCh": "工程四館2F|220教室",
                         "time": "08:30-09:30"
                     },
                     {
