@@ -8,9 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "cp CNAME dist/ && gh-pages -d dist",
+    "preview": "vite preview",
     "test": "vitest",
     "test:coverage": "vitest run --coverage"
   },
