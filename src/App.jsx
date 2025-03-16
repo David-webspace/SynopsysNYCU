@@ -13,6 +13,7 @@ import FAQ from './pages/FAQ'
 import Origin from './pages/Origin'
 import Backend from './pages/Backend'
 import SemiButton2 from './components/semi_btn/SemiButton2'
+import SemiSVG from './components/semi_btn/SemiSVG'
 import FooterContact from './components/FooterContact'
 import ScrolltoTop from './hooks/ScrolltoTop'
 
@@ -24,30 +25,31 @@ function App() {
     <>
       <ScrolltoTop />
       <Routes>
-        <Route path='/SynopsysNYCU/' element={<Home />} />
+        <Route path='/' element={<Home />} />
 
-        <Route path='/SynopsysNYCU/event2025' element={<Event_2025 />} />
-        <Route path='/SynopsysNYCU/event-review' element={<Event_Review />} />
-        <Route path='/SynopsysNYCU/online-resource' element={<Online_Free_Resource />} />
+        <Route path='/event2025' element={<Event_2025 />} />
+        <Route path='/event-review' element={<Event_Review />} />
+        <Route path='/online-resource' element={<Online_Free_Resource />} />
 
-        <Route path='/SynopsysNYCU/origin' element={<Origin />} />
-        <Route path='/SynopsysNYCU/faqs' element={<FAQ />} />
-        <Route path='/SynopsysNYCU/contacts' element={<Contact />} />
+        <Route path='/origin' element={<Origin />} />
+        <Route path='/faqs' element={<FAQ />} />
+        <Route path='/contacts' element={<Contact />} />
 
 
-        <Route path='/SynopsysNYCU/backend' element={<Backend />}/>
-        <Route path='/SynopsysNYCU/visit' element={<Backend />}/>
+        <Route path='/backend' element={<Backend />}/>
+        <Route path='/visit' element={<Backend />}/>
 
       </Routes>
 
       <div className='semiButton'>
         {/* <SemiButton /> */}
         {/* <SemiButton2 /> */}
+        {/* <SemiSVG /> */}
         
       </div>
 
 
-      {location.pathname != '/SynopsysNYCU/' && <Header />}
+      {location.pathname != '/' && <Header />}
       {/* <Header /> */}
       <FooterContact />
       <Footer />

@@ -94,12 +94,12 @@ const Opening = () => {
                     transition: 'all 1s ease'
                 }}
             >
-                <p>Powering Tomorrow with Cutting-Edge IC Innovation.</p>
-                <p>Shaping the Future of Semiconductors, One Chip at a Time.</p>
-                <p>Driving Progress Through Advanced IC Technology.</p>
+                <p>一顆晶片，看見未來</p>
+                <p>半導體是科技的核心，我們結合業界龍頭 Synopsys 與頂尖學術機構陽明交大，打造全台第一專注於 IC 設計與半導體製程的營隊，讓國高中生學習基礎知識、拓展產業視野，成為引領未來的關鍵人才。</p>
+                {/* <p>Driving Progress Through Advanced IC Technology.</p>
                 <p>Empowering the Digital Age with Semiconductor Excellence.</p>
                 <p>Building Smarter Solutions for a Semiconductor-Powered World.</p>
-                <p>Revolutionizing the Future with Next-Gen IC Design.</p>
+                <p>Revolutionizing the Future with Next-Gen IC Design.</p> */}
             </div>
         )}
 

@@ -37,22 +37,22 @@ const Header = () => {
 
   const handleReloadMenu = (pathname) => {
     switch(pathname){
-      case '/SynopsysNYCU/event2025':
+      case '/event2025':
         setMenuItem('event2025');
         break;
-      case '/SynopsysNYCU/event-review':
+      case '/event-review':
         setMenuItem('pastHeights')
         break;
-      case '/SynopsysNYCU/online-resource':
+      case '/online-resource':
         setMenuItem('onlineResources')
         break;
-      case '/SynopsysNYCU/origin':
+      case '/origin':
         setMenuItem('origin')
         break;
-      case '/SynopsysNYCU/faqs':
+      case '/faqs':
         setMenuItem('faqs')
         break;
-      case '/SynopsysNYCU/contacts':
+      case '/contacts':
         setMenuItem('contactUs')
         break;
     }
@@ -70,7 +70,7 @@ const Header = () => {
     return(
       <li key={index} onClick={()=>{setMenuItem(menu.id)}} className='pd-w-10'>
         <Link
-          to={`/SynopsysNYCU/${menu.url}`} 
+          to={`/${menu.url}`} 
           className={`pd-10 db ${menu.id==menuItem ? 'menuItemActive' : ''}`}
           style={{color:`${menu.id==menuItem ? '#383838' : ''}`}}
         >
@@ -90,7 +90,7 @@ const Header = () => {
         <div className='df aln-itm-c fw'>
 
           {/* Logo Container */}
-          <Link to='/SynopsysNYCU/' style={{marginRight:'0px'}}>
+          <Link to='/' style={{marginRight:'0px'}}>
             <div className="Logo df aln-itm-c">
               {/* <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/> */}
               <FaMicrochip
