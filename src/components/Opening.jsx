@@ -88,6 +88,7 @@ const Opening = () => {
                     position: "absolute",
                     top: "50%",
                     left: "50%",
+                    padding:"0 10% 0 0",
                     fontSize: "24px",
                     color: "#fff",
                     zIndex:45,
@@ -108,10 +109,14 @@ const Opening = () => {
                 style={{
                     width:"100%",
                     height:"100%",
+                    overflow:"hidden",
                     backgroundColor: showMask ? 'var(--openingBG-mask)' : '',
                     // backgroundColor:{`${showMask ? 'var(--openingBG-mask)' : ''}`},
                     transition:"all 1s ease-in-out"
                 }}>
+                    <video style={{width:"100%"}} autoPlay muted loop>
+                        <source src='/homevideo.mp4' type='video/mp4' style={{width:"100%"}}/>
+                    </video>
             </div>
         </div>
     </div>
