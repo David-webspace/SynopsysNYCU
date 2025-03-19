@@ -82,8 +82,12 @@
   top: 0;
   left: 0;
   z-index: 40;
+<<<<<<< HEAD
   /* background-image: url("https://images.pexels.com/photos/1242348/pexels-photo-1242348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
   /* background-image: url("https://images.pexels.com/photos/1432797/pexels-photo-1432797.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
+=======
+  /* background-image: url("https://images.pexels.com/photos/6985132/pex/sels-photo-6985132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
+>>>>>>> d69bd490df02c9aa51fd295ba86e859820802c0f
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -104,9 +108,16 @@
 }
 
 .iconListActive{
+<<<<<<< HEAD
   background-color: rgb(246, 246, 246);
   filter: blur(0.1);
   border-left: 4px solid rgb(0, 0, 0);
+=======
+  /* background-color: rgb(246, 246, 246); */
+  background-color: rgba(255, 255, 255, 0.1);
+  filter: blur(0.2);
+  /* border-left: 4px solid rgb(0, 0, 0); */
+>>>>>>> d69bd490df02c9aa51fd295ba86e859820802c0f
 }
 
 .OuterLink h2{
@@ -158,7 +169,12 @@
 .topicTag{
   display: inline-block;
   color: #ffffff;
+<<<<<<< HEAD
   background-color: #250094;
+=======
+  /* background-color: #250094; */
+  background-color: #E9A621;
+>>>>>>> d69bd490df02c9aa51fd295ba86e859820802c0f
   padding: 5px 10px;
 }
 
@@ -205,18 +221,31 @@
 }
 
 .footerContact{
+<<<<<<< HEAD
   /* background-color: rgba(0, 0, 0, 0.05); */
   background-color: rgba(226, 226, 226, 1);
   padding-top: 50px;
   padding-bottom: 100px;
   margin: 160px 0 100px;
+=======
+  /* background-color: var(--blue-2); */
+  
+  padding-top: 50px;
+  padding-bottom: 100px;
+  /* margin: 160px 0 100px; */
+  margin-top: 260px;
+>>>>>>> d69bd490df02c9aa51fd295ba86e859820802c0f
   position:absolute;
   width: 100%;
   left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+<<<<<<< HEAD
   /* z-index:20; */
+=======
+  border-top: 1px solid var(--grey-1);
+>>>>>>> d69bd490df02c9aa51fd295ba86e859820802c0f
 }
 
 .reflectionArrange{
@@ -228,7 +257,11 @@
 
 .reflectionTxt{
   padding: 16px;
+<<<<<<< HEAD
   background-color: rgba(0, 0, 0, 0.05);
+=======
+  background-color: rgba(255, 255, 255, 0.1);
+>>>>>>> d69bd490df02c9aa51fd295ba86e859820802c0f
   border-radius: 5px;
 }
 

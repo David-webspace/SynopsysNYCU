@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 
 const FAQ = () => {
   return (
@@ -24,6 +25,37 @@ const FAQ = () => {
       <h3 className='mg-b-10'>基礎知識、產業理解、結訓證明。</h3>
       <h3 className='mg-b-20'>足夠讓學員結訓後能夠繼續進行自學的基礎知識，輔助生涯規劃所需的產業發展歷程與未來方向理解，數位電路設計的體驗以及結訓證明。</h3>
       
+=======
+import faqs from './../datas/faqs.json'
+
+const FAQ = () => {
+
+  const faqRender = faqs.map((faq, index) => {
+    return(
+      <div>
+        <h3
+          className='mg-b-20'
+          style={{
+            color:"#000",
+            marginTop:"50px", 
+            padding:"8px 20px",
+            backgroundColor:"var(--grey-1)",
+            display:"inline-block",
+            borderRadius:"20px"
+          }}>
+            <b>{faq.faq}</b>
+          </h3>
+        <h3 className='mg-b-10'>{faq.answer1}</h3>
+        <h3 className='mg-b-20'>{faq.answer2}</h3>
+      </div>
+    )
+  })
+
+  return (
+    <div>
+      <h1 className='mg-b-30'>常見問題：</h1>
+      {faqRender}
+>>>>>>> d69bd490df02c9aa51fd295ba86e859820802c0f
     </div>
   )
 }
