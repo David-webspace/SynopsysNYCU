@@ -75,7 +75,10 @@ const Online_Free_Resource = () => {
       <a
         key={index} 
         className='mg-b-20 db'
-        style={{color:`${selectSourceItem == resource.id ? '#383838' : '#b7b7b7'}`}}
+        // white version
+        // style={{color:`${selectSourceItem == resource.id ? '#383838' : '#b7b7b7'}`}}
+        // dark version
+        style={{color:`${selectSourceItem == resource.id ? 'var(--purple-1)' : '#fff'}`}}
         href={`#${resource.id}`}
         onClick={(e) => {
           e.preventDefault();

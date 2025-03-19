@@ -10,6 +10,8 @@
     "lint": "eslint .",
     "predeploy": "npm run build",
     "deploy": "cp CNAME dist/ && gh-pages -d dist",
+    "deploy:staging": "cp CNAME dist/ && gh-pages -d dist -b staging",
+    "deploy:prod": "cp CNAME dist/ && gh-pages -d dist -b main",
     "preview": "vite preview",
     "test": "vitest",
     "test:coverage": "vitest run --coverage"
