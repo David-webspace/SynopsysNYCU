@@ -13,7 +13,8 @@ const Curriculum = () => {
   // Separate components
   const ClassBlock = ({ title, building, time }) => (
     <div style={{
-      backgroundColor: "var(--brown-1)",
+      backgroundColor: "var(--grey-trans-1)",
+      filter:"blur(0.7)",
       padding: "8px 10px",
       marginBottom: "10px",
       textAlign: "center",
@@ -31,7 +32,8 @@ const Curriculum = () => {
       <h3 style={{
         margin: "0 20px 10px 0",
         padding: "2px",
-        backgroundColor: "var(--grey-0)",
+        backgroundColor: "var(--grey-trans-1)",
+        filter:"blur(0.2)",
         borderRadius: "8px",
         border: "1px solid var(--grey-3)"
       }}>
@@ -57,7 +59,7 @@ const Curriculum = () => {
     <li
       className="tabItemDefault"
       style={{
-        backgroundColor: isActive ? 'var(--table-tr)' : 'var(--grey-2)',
+        backgroundColor: isActive ? 'var(--grey-trans-1)' : 'var(--grey-trans-2)',
         transition:"0.8s"
       }}
       onClick={onClick}

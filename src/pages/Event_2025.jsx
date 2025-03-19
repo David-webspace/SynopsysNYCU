@@ -38,7 +38,7 @@ const Event_2025 = () => {
       <a
         key={index} 
         className='mg-b-20 db'
-        style={{color:`${selectIndexItem == item.id ? '#383838' : '#b7b7b7'}`}}
+        style={{color:`${selectIndexItem == item.id ? 'var(--purple-1)' : 'var(--white)'}`}}
         href={`#${item.id}`}
         onClick={(e) => {
           e.preventDefault();

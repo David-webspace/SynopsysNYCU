@@ -158,7 +158,8 @@
 .topicTag{
   display: inline-block;
   color: #ffffff;
-  background-color: #250094;
+  /* background-color: #250094; */
+  background-color: #E9A621;
   padding: 5px 10px;
 }
 
@@ -210,14 +211,14 @@
   padding-top: 50px;
   padding-bottom: 100px;
   /* margin: 160px 0 100px; */
-  margin-top: 160px;
+  margin-top: 260px;
   position:absolute;
   width: 100%;
   left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* z-index:20; */
+  border-top: 1px solid var(--grey-1);
 }
 
 .reflectionArrange{

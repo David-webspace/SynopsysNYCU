@@ -37,9 +37,12 @@
   --grey-3:#c6c6c6;
   --grey-4:#a9a9a9;
   --grey-5: #383838;
+  --grey-trans-1: rgba(255, 255, 255, 0.3);
+  --grey-trans-2: rgba(255, 255, 255, 0.1);
   --brown-1:#e2e0de;
   --purple-1: rgba(230, 100, 230, 0.763);
   --tag-BG:#e06900;
+  --tag-orange-1: #CA7508;
   --table-tr:#e06900;
   --table-tab:#ff973b;
   --openingLogo: rgb(244, 244, 244);
@@ -74,7 +77,7 @@ a:hover {
 }
 
 body {
-  margin: 150px 0 280px;
+  margin: 150px 0 660px;
   padding: 0 180px;
   min-width: 320px;
   min-height: 100vh;
