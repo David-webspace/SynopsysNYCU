@@ -82,7 +82,8 @@
   top: 0;
   left: 0;
   z-index: 40;
-  /* background-image: url("https://images.pexels.com/photos/6985132/pex/sels-photo-6985132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
+  /* background-image: url("https://images.pexels.com/photos/1242348/pexels-photo-1242348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+  /* background-image: url("https://images.pexels.com/photos/1432797/pexels-photo-1432797.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -103,10 +104,9 @@
 }
 
 .iconListActive{
-  /* background-color: rgb(246, 246, 246); */
-  background-color: rgba(255, 255, 255, 0.1);
-  filter: blur(0.2);
-  /* border-left: 4px solid rgb(0, 0, 0); */
+  background-color: rgb(246, 246, 246);
+  filter: blur(0.1);
+  border-left: 4px solid rgb(0, 0, 0);
 }
 
 .OuterLink h2{
@@ -205,12 +205,11 @@
 }
 
 .footerContact{
-  /* background-color: var(--blue-2); */
-  
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  background-color: rgba(226, 226, 226, 1);
   padding-top: 50px;
   padding-bottom: 100px;
-  /* margin: 160px 0 100px; */
-  margin-top: 160px;
+  margin: 160px 0 100px;
   position:absolute;
   width: 100%;
   left: 0;
@@ -229,7 +228,7 @@
 
 .reflectionTxt{
   padding: 16px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
   border-radius: 5px;
 }
 
