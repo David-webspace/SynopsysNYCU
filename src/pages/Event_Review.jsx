@@ -9,11 +9,6 @@ const Event_Review = () => {
     <div>
       <Reflection />
       <Review_Highlight />
-<<<<<<< HEAD
-      {/* <Review2024 /> */}
-      {/* <Review2023 /> */}
-=======
->>>>>>> d69bd490df02c9aa51fd295ba86e859820802c0f
     </div>
   )
 }
