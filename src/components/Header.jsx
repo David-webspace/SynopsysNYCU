@@ -72,11 +72,7 @@ const Header = () => {
         <Link
           to={`/${menu.url}`} 
           className={`pd-10 db ${menu.id==menuItem ? 'menuItemActive' : ''}`}
-<<<<<<< HEAD
-          style={{color:`${menu.id==menuItem ? '#383838' : ''}`}}
-=======
           style={{color:`${menu.id==menuItem ? 'var(--purple-1)' : ''}`}}
->>>>>>> d69bd490df02c9aa51fd295ba86e859820802c0f
         >
           {t(menu.menu)}
         </Link>
@@ -99,17 +95,10 @@ const Header = () => {
               {/* <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/> */}
               <FaMicrochip
                 size={40}
-<<<<<<< HEAD
-                color='var(--black-0)'
-                className='mg-r-20'
-              />
-              <div style={{width:'200px'}}>
-=======
                 color='var(--white)'
                 className='mg-r-20'
               />
               <div style={{width:'200px', color:"#fff"}}>
->>>>>>> d69bd490df02c9aa51fd295ba86e859820802c0f
                 <h3 style={{fontSize:'14px'}}>新思科技 X 陽明交大</h3>
                 <h3 style={{fontSize:'14px'}}>Synopsys X NYCU</h3>
               </div>
