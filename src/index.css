@@ -77,8 +77,10 @@ a:hover {
 }
 
 body {
+
+  /* Maintenance Test Close
   margin: 150px 0 660px;
-  padding: 0 180px;
+  padding: 0 180px; */
   min-width: 320px;
   min-height: 100vh;
 }

@@ -5,12 +5,18 @@ import ScrollPage from '../hooks/ScrollPage'
 
 const Home = () => {
   return (
-    <div style={{marginTop:'100vh'}} className='xContainer'>
-      <ScrollPage />
-      <Opening />
-      <Indicator />
-      <Event_Content />
+    // <div style={{marginTop:'100vh'}} className='xContainer'>
+    //   <ScrollPage />
+    //   <Opening />
+    //   <Indicator />
+    //   <Event_Content />
+     
+    // </div>
+
+    <div className='df jc-c aln-itm-c' style={{width:"100vw", height:"100vh"}}>
+      <h1>Coming Soon!</h1>
     </div>
+
   )
 }
 
