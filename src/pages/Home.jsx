@@ -53,7 +53,7 @@ const Home = () => {
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScG196gYjMEf62hNkytam3tLChveSGopPgyPkzIBOrgc1WYPA/viewform?pli=1" target='_blank'>
             <img src="roll_QRCODE.svg" alt="" style={{width:"80px", height:"80px", marginBottom:"20px"}}/>
           </a>
-          <p>Registraiton Form</p>
+          <p>Registration Form</p>
         </div>
       </div>
     </div>
