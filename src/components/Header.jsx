@@ -1,9 +1,9 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useLocation } from 'react-router'
 import { Link } from 'react-router-dom'
 import { FaApple, FaMicrochip } from "react-icons/fa";
-import { FaEarthAfrica } from "react-icons/fa6";
+import { FaEarthAfrica, FaBasketball } from "react-icons/fa6";
 import menuItems from '../datas/menuList.json'
 import '../i18n'
 import { useTranslation } from 'react-i18next'
@@ -13,23 +13,12 @@ import { useTranslation } from 'react-i18next'
 const Header = () => {
 
   const ScreenWidth = window.innerWidth
+  const location = useLocation();
   
-  const { t, i18n } = useTranslation()
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng)
-  }
-  
-  const [langActive, setLangActive] = useState(false)
   const [menuItem, setMenuItem] = useState('')  //Initialize the value of menuItem
   const [lngSubClose, setLngSubClose] = useState(false)
 
   // ==================== Reload function ====================
-
-  // const handleReloadMenu = () => {
-  //   return(
-  //     <ReloadMenu menuItem={menuItem}/>
-  //   )
-  // }
   useEffect(() => {
     const pathname = location.pathname;
     handleReloadMenu(pathname);
@@ -59,12 +48,39 @@ const Header = () => {
   }
 
   // ==================== Language Select ====================
+  const { t, i18n } = useTranslation()
+  const [langActive, setLangActive] = useState(false)
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setLangActive(false)
+    console.log('Language Changed')
+  }
+
   const handleLanguageSelect = () => {
     setLangActive(!langActive)
+    console.log('Language Clicked')
   }
   const handleCloseLng = () => {
     setLngSubClose(false)
   }
+  const languageSelectorRef = useRef(null);  // Add this ref
+
+  // Add this useEffect for click outside handling
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (languageSelectorRef.current && !languageSelectorRef.current.contains(event.target)) {
+        setLangActive(false);
+        console.log('Click Outside')
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
 
   const menuItemRender = menuItems.map((menu, index) => {
     return(
@@ -80,6 +96,8 @@ const Header = () => {
     )
   })
 
+ 
+
   return (
     <>
       <header className={`
@@ -87,7 +105,7 @@ const Header = () => {
         ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}  
       `}>
 
-        <div className='df aln-itm-c fw'>
+        <div className={`aln-itm-c fw ${location.pathname !== '/' ? 'df' : 'dn'}`}>
 
           {/* Logo Container */}
           <Link to='/' style={{marginRight:'0px'}}>
@@ -112,9 +130,14 @@ const Header = () => {
         
 
         {/* Language Select */}
-        <ul style={{position:'relative'}} className='df fd-c pd-w-10 fh jc-c aln-itm-c'>
+        <ul
+          ref={languageSelectorRef}
+          style={{position:'relative'}}
+          className='df fd-c pd-w-10 fh jc-c aln-itm-c'
+        >
           <div onClick={handleLanguageSelect} >
-            <FaEarthAfrica size={20}/>
+            {/* <FaEarthAfrica size={20}/> */}
+            <FaBasketball size={20}/>
           </div>
           <ul
             className='df fd-c'
@@ -126,10 +149,16 @@ const Header = () => {
             }}
             onClick={()=>handleCloseLng(false)}
           >
-            <li className='lngSub pointer' onClick={() => {changeLanguage('ch')}}>
+            <li
+              className='lngSub pointer'
+              onClick={() => {changeLanguage('ch')}}
+            >
               {t('中文')}
             </li>
-            <li className='lngSub pointer' onClick={() => {changeLanguage('en')}}>
+            <li
+              className='lngSub pointer'
+              onClick={() => {changeLanguage('en')}}
+            >
               {t('英文')}
             </li>
           </ul>

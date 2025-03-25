@@ -16,7 +16,7 @@
 }
 
 .pointer:hover h2{
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   transition: 0.4s;
 }
 
@@ -141,7 +141,7 @@
 
 .lngSub{
   width: 100px;
-  background-color: #e3e3e3;
+  background-color: rgba(227, 227, 227, 0.2);
   padding: 10px;
   text-align: center;
   border: 1px solid #d5d5d5;

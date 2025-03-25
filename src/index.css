@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   font-family: "Inter", sans-serif;
@@ -77,12 +79,18 @@ a:hover {
 }
 
 body {
-
-  /* Maintenance Test Close
-  margin: 150px 0 660px;
-  padding: 0 180px; */
+  /* Maintenance Test Close*/
+  /* margin: 150px 0 660px;
+  padding: 0 180px; 
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100vh; */
+}
+
+.maintenanceText{
+  font-size: 20px;
+  font-weight: 200;
+  font-family: "Boldonse", system-ui;
+  margin-bottom: 20px;
 }
 
 header{
