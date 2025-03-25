@@ -45,13 +45,13 @@ const Home = () => {
       <div className='qrContainer df jc-c pd-30' style={{width:"100%"}}>
         <div className='df fd-c aln-itm-c' style={{width:"200px"}}>
           <a href="https://www.facebook.com/NYCU.SYNOPSYS.SEMICONDUCTOR.ICDESIGN/" target='_blank'>
-            <img src="public/fb_QRCODE.svg" alt="" style={{width:"80px", height:"80px", marginBottom:"20px"}}/>
+            <img src="fb_QRCODE.svg" alt="" style={{width:"80px", height:"80px", marginBottom:"20px"}}/>
           </a>
           <p>Facebook</p>
         </div>
         <div className='df fd-c aln-itm-c' style={{width:"200px"}}>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScG196gYjMEf62hNkytam3tLChveSGopPgyPkzIBOrgc1WYPA/viewform?pli=1" target='_blank'>
-            <img src="public/roll_QRCODE.svg" alt="" style={{width:"80px", height:"80px", marginBottom:"20px"}}/>
+            <img src="roll_QRCODE.svg" alt="" style={{width:"80px", height:"80px", marginBottom:"20px"}}/>
           </a>
           <p>Registraiton Form</p>
         </div>
