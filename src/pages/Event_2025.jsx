@@ -52,7 +52,7 @@ const Event_2025 = () => {
   })
 
   return (
-    <div style={{position:"relative"}}>
+    <div style={{position:"relative"}} className='xContainer'>
       <div style={{marginLeft:"100px"}}>
         <Curriculum />
         <Event_info_fee />

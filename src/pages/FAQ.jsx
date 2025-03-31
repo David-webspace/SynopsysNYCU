@@ -25,7 +25,7 @@ const FAQ = () => {
   })
 
   return (
-    <div>
+    <div className='xContainer'>
       <h1 className='mg-b-30'>常見問題：</h1>
       {faqRender}
     </div>

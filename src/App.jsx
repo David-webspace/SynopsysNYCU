@@ -35,7 +35,6 @@ function App() {
         <Route path='/faqs' element={<FAQ />} />
         <Route path='/contacts' element={<Contact />} />
 
-
         <Route path='/backend' element={<Backend />}/>
         <Route path='/visit' element={<Backend />}/>
 

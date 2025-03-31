@@ -58,9 +58,10 @@
   box-sizing: border-box;
 }
 
-/* .xContainer{
+.xContainer{
   padding: 0 180px;
-} */
+  margin: 150px 0 0px;
+}
 
 a {
   font-weight: 500;
