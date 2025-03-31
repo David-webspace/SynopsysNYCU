@@ -51,8 +51,8 @@ function App() {
 
       {location.pathname != '/' && <Header />}
       {/* <Header /> */}
-      {/* <FooterContact />
-      <Footer /> */}
+      <FooterContact />
+      <Footer />
     </>
   )
 }
