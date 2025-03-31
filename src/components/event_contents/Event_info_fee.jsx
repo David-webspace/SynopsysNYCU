@@ -36,7 +36,7 @@ const Event_info_fee = () => {
       return(
         <div key={contentIndex} className='mg-b-30'>
           <h3 
-            style={{backgroundColor:"var(--tag-BG)", width:"120px", color:"#ffffff"}}
+            style={{backgroundColor:"var(--tag-orange-1)", width:"120px", color:"#ffffff"}}
             className='pd-5 mg-b-10'
           >
             {content.topic}

@@ -10,6 +10,11 @@
     "lint": "eslint .",
     "predeploy": "npm run build",
     "deploy": "cp CNAME dist/ && gh-pages -d dist",
+<<<<<<< HEAD
+=======
+    "deploy:staging": "echo 'staging.semiconductorcamp.com' > dist/CNAME && gh-pages -d dist -b staging",
+    "deploy:prod": "echo 'semiconductorcamp.com' > dist/CNAME && gh-pages -d dist -b main",
+>>>>>>> gh-pages
     "preview": "vite preview",
     "test": "vitest",
     "test:coverage": "vitest run --coverage"
