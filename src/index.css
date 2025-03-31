@@ -23,12 +23,6 @@
   --grey-2:#dcdcdc;
   --grey-3:#c6c6c6;
   --grey-4:#a9a9a9;
-<<<<<<< HEAD
-=======
-  --grey-5: #383838;
-  --grey-trans-1: rgba(255, 255, 255, 0.3);
-  --grey-trans-2: rgba(255, 255, 255, 0.1);
->>>>>>> gh-pages
   --brown-1:#e2e0de;
   --tag-BG:#e06900;
   --tag-orange-1: #CA7508;
@@ -65,15 +59,9 @@ a:hover {
 }
 
 body {
-<<<<<<< HEAD
-  margin: 150px 0 280px;
-  /* padding: 0 255px; */
-  padding: 0 180px;
-=======
   /* Maintenance Test Close*/
   /* margin: 150px 0 660px;
   padding: 0 180px; 
->>>>>>> gh-pages
   min-width: 320px;
   min-height: 100vh; */
 }
