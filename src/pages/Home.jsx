@@ -41,7 +41,7 @@ const Home = () => {
           2025 半導體與晶片設計科普夏令營
         </h1>
       </div>
-      <h1 className='maintenanceText'>Coming Soon !</h1>
+      <h1 className='maintenanceText' style={{letterSpacing:"3px"}}>COMING SOON !</h1>
       <div className='qrContainer df jc-c pd-30' style={{width:"100%"}}>
         <div className='df fd-c aln-itm-c' style={{width:"200px"}}>
           <a href="https://www.facebook.com/NYCU.SYNOPSYS.SEMICONDUCTOR.ICDESIGN/" target='_blank'>
