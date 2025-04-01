@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaDiceD20, FaCommentDollar, FaErlang, FaSchool, FaChalkboardTeacher } from "react-icons/fa";
 import { TbBackground } from 'react-icons/tb';
+import FeatureSlider from './FeatureSlider';
 // import iconList from '../datas/iconList.json'
 
 const Indicator = () => {
@@ -52,13 +53,14 @@ const Indicator = () => {
 
   return (
     <div style={{height:ScreenHeight, width:"100%"}} className='df fd-c jc-c'>
-        <h2 className='mg-b-30'>我們的特色</h2>
-        <div className='df'>
+        {/* <h1 className='mg-b-30'>我們的特色</h1> */}
+        {/* <div className='df'>
           <ul className='df fd-c' style={{width:"60%"}}>
             {pointerRender}
           </ul>
           {bgRender}
-        </div>
+        </div> */}
+        <FeatureSlider />
     </div>
   )
 }
