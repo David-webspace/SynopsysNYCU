@@ -8,7 +8,6 @@ const Home = () => {
   const ScreenWidth = window.innerWidth
 
   return (
-    <>
     
     <div className='df fd-c jc-c aln-itm-c' style={{height:"100vh"}}>
       <div className='txt-aln-c mg-b-30'>
@@ -51,7 +50,6 @@ const Home = () => {
         </div>
       </div>
     </div>
-    </>
 
   )
 }
