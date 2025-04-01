@@ -86,7 +86,7 @@ const Header = () => {
     return(
       <li key={index} onClick={()=>{setMenuItem(menu.id)}} className='pd-w-10'>
         <Link
-          to={`/${menu.url}`} 
+          to={`/dev/${menu.url}`} 
           className={`pd-10 db ${menu.id==menuItem ? 'menuItemActive' : ''}`}
           style={{color:`${menu.id==menuItem ? 'var(--purple-1)' : ''}`}}
         >
@@ -108,7 +108,7 @@ const Header = () => {
         <div className={`aln-itm-c fw ${location.pathname !== '/' ? 'df' : 'dn'}`}>
 
           {/* Logo Container */}
-          <Link to='/' style={{marginRight:'0px'}}>
+          <Link to='/dev' style={{marginRight:'0px'}}>
             <div className="Logo df aln-itm-c">
               {/* <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/> */}
               <FaMicrochip

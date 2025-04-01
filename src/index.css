@@ -59,7 +59,7 @@
 }
 
 .xContainer{
-  padding: 0 180px;
+  padding: 160px 180px;
 }
 
 a {
@@ -101,6 +101,7 @@ header{
   /* background-color: var(--blue-1); */
   /* background-color: rgb(0, 0, 80); */
   padding: 60px auto;
+  z-index: 50;
 }
 
 header a{
