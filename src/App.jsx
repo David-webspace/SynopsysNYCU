@@ -19,6 +19,13 @@ import Homedev from './pages/Homedev'
 function App() {
 
   const location = useLocation();
+  // Add this to handle GitHub Pages refresh
+  useEffect(() => {
+    const path = window.location.pathname;
+    if (path.startsWith('/dev') && !window.location.hash) {
+      window.history.replaceState(null, '', `/#${path}`);
+    }
+  }, []);
 
   return (
     <>
@@ -26,19 +33,20 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/dev' element={<Homedev />} />
-
-        <Route path='/dev/event2025' element={<Event_2025 />} />
-        <Route path='/dev/event-review' element={<Event_Review />} />
-        <Route path='/dev/online-resource' element={<Online_Free_Resource />} />
-
-        <Route path='/dev/origin' element={<Origin />} />
-        <Route path='/dev/faqs' element={<FAQ />} />
-        <Route path='/dev/contacts' element={<Contact />} />
-
-
-        <Route path='/dev/backend' element={<Backend />}/>
-        <Route path='/dev/visit' element={<Backend />}/>
-
+        <Route path='/dev/*' element={
+          <Routes>
+            <Route path='/event2025' element={<Event_2025 />} />
+            <Route path='/event-review' element={<Event_Review />} />
+            <Route path='/online-resource' element={<Online_Free_Resource />} />
+    
+            <Route path='/origin' element={<Origin />} />
+            <Route path='/faqs' element={<FAQ />} />
+            <Route path='/contacts' element={<Contact />} />
+    
+            <Route path='/backend' element={<Backend />}/>
+            <Route path='/visit' element={<Backend />}/>
+          </Routes>
+        } />
       </Routes>
 
       <div className='semiButton'>
