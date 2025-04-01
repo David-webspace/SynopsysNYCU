@@ -1,7 +1,8 @@
 import Event_Content from '../components/Event_Content'
 import Indicator from '../components/Indicator';
 import Opening from '../components/Opening';
-import ScrollPage from '../hooks/ScrollPage'
+import ScrollPage from '../hooks/ScrollPage';
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
@@ -20,7 +21,7 @@ const Home = () => {
             ScreenWidth>1024 ? '32px' : ''
           }`}}
         >
-          <a href="/dev" style={{color:"#fff", textDecoration:"none"}}>新思科技 Ｘ 陽明交通大學</a>
+          <Link to="/dev/" style={{color:"#fff", textDecoration:"none"}}>新思科技 Ｘ 陽明交通大學</Link>
           
         </h1>
         <h1
