@@ -36,38 +36,30 @@ const Opening = () => {
         }
     }, [])
 
-
-
-
   return (
     <div
         style={{
-            position:"absolute",
-            top:"0",
-            left:"0",
-            width:"100vw",
+            width:"100%",
             height:"100vh",
-            // backgroundColor: bgColor,
             transition:"background-color 0.5s ease" //smooth transition for background color
         }}
     >
         <div
-            // className={`${iconPosition === "top-left" ? '' : 'OpeningLogo'}`}
             className='OpeningLogo'
             style={{
                 position: "absolute",
                 top: iconPosition === "top-left" ? '0px' : '',
                 left: iconPosition === "top-left" ? '0px' : '',
-                transform: iconPosition === "top-left" ? 'translate(-40%, -40%)' : 'none',
-                transition: iconPosition === "top-left" ? 'all 1.5s ease-in-out' : '', // smooth movement for icon
+                transform: iconPosition === "top-left" ? 'translate(-40%, -30%)' : '',
+                transition: iconPosition === "top-left" ? 'all 1.5s ease-in-out' : '',
                 zIndex:45
             }}
         >
-            {/* <FaMicrochip
-                size={128}
+            <FaMicrochip
+                size={72}
                 color='var(--openingLogo)'
-            /> */}
-            <img src="/semiconductorLogo.svg" alt="" style={{width:"5%", color:"#fff"}}/>
+              
+            />
         </div>
 
         {showSlogan && (
@@ -108,8 +100,8 @@ const Opening = () => {
         <div className="OpeningBG">
             <div
                 style={{
-                    width:"100%",
-                    height:"100%",
+                    // width:"100%",
+                    // height:"100%",
                     overflow:"hidden",
                     // backgroundColor: showMask ? 'var(--openingBG-mask)' : '',
                     // backgroundColor:{`${showMask ? 'var(--openingBG-mask)' : ''}`},

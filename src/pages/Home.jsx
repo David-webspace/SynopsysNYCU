@@ -21,7 +21,7 @@ const Home = () => {
             ScreenWidth>1024 ? '32px' : ''
           }`}}
         >
-          <Link to="/dev/" style={{color:"#fff", textDecoration:"none"}}>新思科技 Ｘ 陽明交通大學</Link>
+          <Link to="/dev/" style={{color:"#fff", textDecoration:"none", cursor:"auto"}}>新思科技 Ｘ 陽明交通大學</Link>
           
         </h1>
         <h1

@@ -62,6 +62,10 @@
   padding: 160px 180px;
 }
 
+.yContainer{
+  padding: 0px 180px;
+}
+
 a {
   font-weight: 500;
   color: #878787;

@@ -8,7 +8,7 @@ const Homedev = () => {
   const ScreenWidth = window.innerWidth
 
   return (
-    <div style={{marginTop:'100vh'}} className='xContainer'>
+    <div className='xContainer' style={{marginTop:"-160px"}}>
         <ScrollPage />
         <Opening />
         <Indicator />
