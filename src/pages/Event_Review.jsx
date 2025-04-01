@@ -1,6 +1,6 @@
 import React from 'react'
-import Reflection from '../components/event_review/reflection'
-import Review_Highlight from '../components/event_review/review_highlight'
+import Reflection from '../components/event-review/reflection'
+import Review_Highlight from '../components/event-review/review_highlight'
 
 const Event_Review = () => {
   return (
