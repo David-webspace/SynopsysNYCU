@@ -1,6 +1,6 @@
 {
   "name": "semiconductor",
-  "homepage": "http://dev.semiconductorcamp.com",
+  "homepage": "http://semiconductorcamp.com/dev",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "predeploy": "npm run build",
     "deploy": "cp CNAME dist/ && gh-pages -d dist",
-    "deploy:dev": "echo 'dev.semiconductorcamp.com' > dist/CNAME && gh-pages -d dist -b gh-pages-dev",
+    "deploy:dev": "echo 'dev.semiconductorcamp.com' > dist/CNAME && gh-pages -d dist -b gh-pages --dest dev",
     "preview": "vite preview",
     "test": "vitest",
     "test:coverage": "vitest run --coverage"
