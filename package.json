@@ -9,9 +9,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "predeploy": "npm run build",
-    "deploy": "cp CNAME dist/ && gh-pages -d dist",
-    "deploy:dev": "echo 'dev.semiconductorcamp.com' > dist/CNAME && gh-pages -d dist -b develop",
-    "deploy:prod": "echo 'semiconductorcamp.com' > dist/CNAME && gh-pages -d dist -b gh-pages",
+    "deploy": "cp CNAME dist/ && main -d dist",
+    "deploy:dev": "dist/CNAME && gh-pages -d dist -b develop",
+    "deploy:prod": "dist/CNAME && gh-pages -d dist -b gh-pages",
     "preview": "vite preview",
     "test": "vitest",
     "test:coverage": "vitest run --coverage"

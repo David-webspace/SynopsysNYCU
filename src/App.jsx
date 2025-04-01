@@ -25,7 +25,7 @@ function App() {
       <ScrolltoTop />
       <Routes>
         <Route path='/' element={<Home />} />
-        {/* <Route path='/dev/' element={<Homedev />} /> */}
+        <Route path='/dev' element={<Homedev />} />
 
         <Route path='/dev/event2025' element={<Event_2025 />} />
         <Route path='/dev/event-review' element={<Event_Review />} />
