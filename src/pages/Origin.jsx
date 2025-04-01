@@ -7,7 +7,7 @@ const Origin = () => {
   const { t, i18n } = useTranslation()
 
   return (
-    <div>
+    <div className='xContainer'>
       <div className='mg-b-50'>
         <h1 className='mg-b-30'>{t('緣起與宗旨')}</h1>
         {/* <h3 className='mg-b-10'>活動宗旨：</h3> */}

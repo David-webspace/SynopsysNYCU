@@ -58,9 +58,9 @@
   box-sizing: border-box;
 }
 
-/* .xContainer{
+.xContainer{
   padding: 0 180px;
-} */
+}
 
 a {
   font-weight: 500;

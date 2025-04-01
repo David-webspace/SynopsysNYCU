@@ -4,7 +4,7 @@ import Review_Highlight from '../components/event_review/review_highlight'
 
 const Event_Review = () => {
   return (
-    <div>
+    <div className='xContainer'>
       <Reflection />
       <Review_Highlight />
     </div>
