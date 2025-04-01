@@ -7,61 +7,61 @@
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "733cd598",
+      "fileHash": "31b7af1c",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "afe6abc8",
+      "fileHash": "247c4db6",
       "needsInterop": true
     },
     "react-router-dom": {
       "src": "../../node_modules/react-router-dom/dist/index.mjs",
       "file": "react-router-dom.js",
-      "fileHash": "e4e13891",
+      "fileHash": "c931bfc1",
       "needsInterop": false
     },
     "react-router": {
       "src": "../../node_modules/react-router/dist/development/index.mjs",
       "file": "react-router.js",
-      "fileHash": "0149cc7d",
+      "fileHash": "0b3c31ea",
       "needsInterop": false
     },
     "react-icons/fa": {
       "src": "../../node_modules/react-icons/fa/index.mjs",
       "file": "react-icons_fa.js",
-      "fileHash": "29c16153",
+      "fileHash": "1aa6c4cc",
       "needsInterop": false
     },
     "react-i18next": {
       "src": "../../node_modules/react-i18next/dist/es/index.js",
       "file": "react-i18next.js",
-      "fileHash": "e4ac051d",
+      "fileHash": "cb7ca515",
       "needsInterop": false
     },
     "react-icons/fa6": {
       "src": "../../node_modules/react-icons/fa6/index.mjs",
       "file": "react-icons_fa6.js",
-      "fileHash": "7da66814",
+      "fileHash": "69dbaf12",
       "needsInterop": false
     },
     "i18next": {
       "src": "../../node_modules/i18next/dist/esm/i18next.js",
       "file": "i18next.js",
-      "fileHash": "f8cca896",
+      "fileHash": "7d980780",
       "needsInterop": false
     },
     "axios": {
       "src": "../../node_modules/axios/index.js",
       "file": "axios.js",
-      "fileHash": "0948b506",
+      "fileHash": "beb5db58",
       "needsInterop": false
     },
     "react-icons/tb": {
       "src": "../../node_modules/react-icons/tb/index.mjs",
       "file": "react-icons_tb.js",
-      "fileHash": "69fce5b0",
+      "fileHash": "6111d0cb",
       "needsInterop": false
     }
   },
