@@ -21,8 +21,7 @@ const Home = () => {
             ScreenWidth>1024 ? '32px' : ''
           }`}}
         >
-          <Link to="/dev/" style={{color:"#fff", textDecoration:"none", cursor:"auto"}}>新思科技 Ｘ 陽明交通大學</Link>
-          
+          新思科技 Ｘ 陽明交通大學
         </h1>
         <h1
           className='mg-b-20' 
@@ -51,6 +50,17 @@ const Home = () => {
           <p>Registration Form</p>
         </div>
       </div>
+      <Link to='/dev/' 
+        style={{
+          position:"absolute",
+          bottom:"10px",
+          right:"10px",
+          width:"30px",
+          height:"30px",
+          zIndex:50
+        }}
+      >
+      </Link>
     </div>
 
   )
