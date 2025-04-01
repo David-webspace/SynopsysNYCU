@@ -10,14 +10,6 @@ const Home = () => {
   return (
     <>
     
-    <div style={{marginTop:'100vh'}} className='xContainer'>
-      <ScrollPage />
-      <Opening />
-      <Indicator />
-      <Event_Content />
-     
-    </div>
-
     <div className='df fd-c jc-c aln-itm-c' style={{height:"100vh"}}>
       <div className='txt-aln-c mg-b-30'>
         <h1
