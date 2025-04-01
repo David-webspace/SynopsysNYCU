@@ -20,7 +20,8 @@ const Home = () => {
             ScreenWidth>1024 ? '32px' : ''
           }`}}
         >
-          新思科技 Ｘ 陽明交通大學
+          <a href="/dev" style={{color:"#fff", textDecoration:"none"}}>新思科技 Ｘ 陽明交通大學</a>
+          
         </h1>
         <h1
           className='mg-b-20' 
