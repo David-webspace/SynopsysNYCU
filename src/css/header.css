@@ -1,0 +1,23 @@
+.Logo{
+    /* width: 360px; */
+    height: 80px;
+}
+
+.Logo img{
+    height: 60%;
+}
+
+.menuItemActive{
+    /* border-bottom: 1px solid rgb(121, 121, 121); */
+    transition: all 0.4s ease-in-out;
+}
+
+.lngSub{
+    width: 100px;
+    background-color: rgba(227, 227, 227, 0.2);
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #d5d5d5;
+    transform: translateX(-50%);
+    cursor: pointer;
+}

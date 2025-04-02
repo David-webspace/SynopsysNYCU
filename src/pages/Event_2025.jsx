@@ -3,6 +3,7 @@ import Curriculum from '../components/event_contents/Curriculum'
 import Event_info_fee from '../components/event_contents/Event_info_fee'
 import Event_rule from '../components/event_contents/Event_rule'
 import { FaMapPin } from "react-icons/fa";
+import '../css/event2025.css'
 
 const Event_2025 = () => {
 

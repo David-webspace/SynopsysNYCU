@@ -1,4 +1,5 @@
 import './App.css'
+import './css/semi_btn.css'
 import { useEffect, useState } from 'react'
 import { Route, Routes, useLocation, useParams } from 'react-router'
 import { Home } from './pages'

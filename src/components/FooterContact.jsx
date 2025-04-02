@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaFacebook, FaYoutube, FaMapMarkerAlt } from 'react-icons/fa'
+import '../css/footer_contact.css'
 
 const FooterContact = () => {
   return (

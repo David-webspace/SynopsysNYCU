@@ -1,0 +1,13 @@
+.iconList{
+    width: 520px;
+    padding: 10px 50px;
+    /* margin-bottom: 20px; */
+    transition: .2s;
+  }
+  
+  .iconListActive{
+    /* background-color: rgb(246, 246, 246); */
+    background-color: rgba(255, 255, 255, 0.1);
+    filter: blur(0.2);
+    /* border-left: 4px solid rgb(0, 0, 0); */
+  }

@@ -3,6 +3,7 @@ import { FaDiceD20, FaCommentDollar, FaErlang, FaSchool, FaChalkboardTeacher } f
 import { TbBackground } from 'react-icons/tb';
 import FeatureSlider from './FeatureSlider';
 // import iconList from '../datas/iconList.json'
+import '../css/Indicator.css'
 
 const Indicator = () => {
 

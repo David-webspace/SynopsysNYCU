@@ -1,119 +1,54 @@
 import React, { useEffect, useState } from 'react'
-import { FaApple, FaMicrochip } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom'
+import '../css/opening.css'
 
 const Opening = () => {
-
-    const [bgColor, setBgColor] = useState("transparent")
-    const [iconPosition, setIconPosition] = useState("center")
-    const [showSlogan, setShowSlogan] = useState(false)
-    const [showText, setShowText] = useState(false)
-    const [showMask, setShowMask] = useState(false)
-
-    // let vid = document.getElementById("openingVideo");
-    // vid.playbackRate = 0.5;
+    const navigate = useNavigate();
+    const [showContent, setShowContent] = useState(false);
+    const [startTransition, setStartTransition] = useState(false);
 
     useEffect(() => {
-        // Change background color after 2 seconds
-        const bgTimer = setTimeout(() => {
-            setBgColor("grey")
-            setIconPosition("top-left");
-        }, 2000);
+        // 延遲顯示內容
+        setTimeout(() => {
+            setShowContent(true);
+        }, 1000);
+    }, []);
 
-        // Show slogan after 2.5 seconds
-        const sloganTimer = setTimeout(() => {
-            setShowSlogan(true);
-            setShowText(true);
-        }, 3800);
+    const handleEnter = () => {
+        setStartTransition(true);
+
+        // 設置已看過開場動畫的標記
+        localStorage.setItem('hasSeenOpening', 'true');
         
-        const maskTimer = setTimeout(() => {
-            setShowMask(true);
-        }, 3500)
+        // 等待轉場動畫完成後導航
+        setTimeout(() => {
+            navigate('/dev');
+        }, 1500);
+    };
 
-        return () => {
-            clearTimeout(bgTimer);
-            clearTimeout(sloganTimer);
-            clearTimeout(maskTimer);
-        }
-    }, [])
-
-  return (
-    <div
-        style={{
-            width:"100%",
-            height:"100vh",
-            transition:"background-color 0.5s ease" //smooth transition for background color
-        }}
-    >
-        <div
-            className='OpeningLogo'
-            style={{
-                position: "absolute",
-                top: iconPosition === "top-left" ? '0px' : '',
-                left: iconPosition === "top-left" ? '0px' : '',
-                transform: iconPosition === "top-left" ? 'translate(-40%, -30%)' : '',
-                transition: iconPosition === "top-left" ? 'all 1.5s ease-in-out' : '',
-                zIndex:45
-            }}
-        >
-            <FaMicrochip
-                size={72}
-                color='var(--openingLogo)'
-              
-            />
-        </div>
-
-        {showSlogan && (
-            <div
-                style={{
-                    position: "absolute",
-                    top: "30%",
-                    left: "10%",
-                    fontSize: "24px",
-                    color: "#fff",
-                    zIndex:45,
-                    transition: 'all 0.5s ease-in-out'
-                }}
+    return (
+        <div className={`opening-container ${startTransition ? 'fade-out' : ''}`} onClick={handleEnter}>
+            {/* 背景視頻 */}
+            <video 
+                className="background-video" 
+                autoPlay 
+                muted 
+                loop
+                playsInline
             >
-                <h1 style={{fontSize:"50px", fontWeight:"400"}}>IC, THE FUTURE</h1>
-            </div>
-        )}
+                <source src="/homevideo-2.mp4" type="video/mp4" />
+            </video>
 
-        {showText && (
-            <div
-                style={{
-                    position: "absolute",
-                    top: "45%",
-                    left: "10%",
-                    width:"800px",
-                    padding:"0 10% 0 0",
-                    fontSize: "24px",
-                    color: "#fff",
-                    zIndex:45,
-                    transition: 'all 1s ease'
-                }}
-            >
-                <h1 className='mg-b-20'>一顆晶片，看見未來</h1>
-                <p>半導體是科技的核心，我們結合業界龍頭 Synopsys 與頂尖學術機構陽明交大，打造全台第一專注於 IC 設計與半導體製程的營隊，讓國高中生學習基礎知識、拓展產業視野，成為引領未來的關鍵人才</p>
-            </div>
-        )}
 
-        <div className="OpeningBG">
-            <div
-                style={{
-                    // width:"100%",
-                    // height:"100%",
-                    overflow:"hidden",
-                    // backgroundColor: showMask ? 'var(--openingBG-mask)' : '',
-                    // backgroundColor:{`${showMask ? 'var(--openingBG-mask)' : ''}`},
-                    transition:"all 1s ease-in-out"
-                }}>
-                    {/* <video style={{width:"100%"}} autoPlay muted loop className='openingVideo'>
-                        <source src='/homevideo.mp4' type='video/mp4' style={{width:"100%"}}/>
-                    </video> */}
+            {/* 主要內容 */}
+            <div className={`content ${showContent ? 'visible' : ''} ${startTransition ? 'fade-out' : ''}`}>
+                <div>
+                    <h1 className="title">IC, THE FUTURE</h1>
+                    <div className="enter-button">CLICK TO ENTER</div>
+                </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Opening

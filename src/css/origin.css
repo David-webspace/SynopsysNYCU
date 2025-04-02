@@ -37,13 +37,13 @@
     float: left;
     margin-right: 30px;
     margin-bottom: 20px;
-  }
+}
   
-  .float-right {
+.float-right {
     float: right;
     margin-left: 30px;
     margin-bottom: 20px;
-  }
+}
 
 /* 響應式設計 */
 @media (max-width: 768px) {

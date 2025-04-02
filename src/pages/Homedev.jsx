@@ -1,6 +1,7 @@
 import Event_Content from '../components/Event_Content'
 import Indicator from '../components/Indicator';
 import Opening from '../components/Opening';
+import Homemain from '../components/Homemain';
 import ScrollPage from '../hooks/ScrollPage'
 
 const Homedev = () => {
@@ -11,6 +12,7 @@ const Homedev = () => {
     <div className='xContainer' style={{marginTop:"-160px"}}>
         {/* <ScrollPage /> */}
         <Opening />
+        <Homemain />
         <Indicator />
         <Event_Content />
     </div>

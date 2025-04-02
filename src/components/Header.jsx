@@ -8,6 +8,7 @@ import menuItems from '../datas/menuList.json'
 import '../i18n'
 import { useTranslation } from 'react-i18next'
 // import ReloadMenu from '../hooks/ReloadMenu';
+import '../css/header.css'
 
 
 const Header = () => {
@@ -26,22 +27,22 @@ const Header = () => {
 
   const handleReloadMenu = (pathname) => {
     switch(pathname){
-      case '/event2025':
+      case '/dev/event2025':
         setMenuItem('event2025');
         break;
-      case '/event-review':
+      case '/dev/event-review':
         setMenuItem('pastHeights')
         break;
-      case '/online-resource':
+      case '/dev/online-resource':
         setMenuItem('onlineResources')
         break;
-      case '/origin':
+      case '/dev/origin':
         setMenuItem('origin')
         break;
-      case '/faqs':
+      case '/dev/faqs':
         setMenuItem('faqs')
         break;
-      case '/contacts':
+      case '/dev/contacts':
         setMenuItem('contactUs')
         break;
     }

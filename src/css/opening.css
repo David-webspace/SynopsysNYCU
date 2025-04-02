@@ -1,0 +1,100 @@
+.opening-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 60;
+    transition: all 1s 2s ease-out;
+}
+
+.opening-container.fade-out {
+    opacity: 0;
+    z-index: -10;
+}
+
+/* 背景視頻樣式 */
+.background-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* 主要內容樣式 */
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    text-align: center;
+    color: #333;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease-out;
+}
+
+.content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content.fade-out {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2em;
+    color: #000;
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.enter-button {
+    display: inline-block;
+    padding: 12px 24px;
+    /* border: 1px solid #333; */
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    color: #000;
+    animation: breathing 2s ease-in-out infinite;
+    /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); */
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); */
+    transition: all 0.3 ease;
+}
+
+.enter-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes breathing {
+    0% {
+        opacity: 0.4;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        opacity: 0.4;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+}

@@ -3,6 +3,7 @@ import onlineResource from '../datas/onlineResource.json'
 import { FaMapPin } from "react-icons/fa";
 import '../i18n'
 import { useTranslation } from 'react-i18next'
+import '../css/online_resource.css'
 
 const Online_Free_Resource = () => {
 

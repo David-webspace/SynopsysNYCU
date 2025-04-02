@@ -1,0 +1,7 @@
+.indexNav{
+    width: 300px;
+    position:sticky;
+    bottom: 250px;
+    left: 0;
+    margin-left: -100px;
+}
