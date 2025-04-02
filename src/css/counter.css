@@ -1,0 +1,45 @@
+.counter-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 240px; */
+}
+
+.circle-progress {
+    position: relative;
+}
+
+.progress-ring {
+    transform: rotate(-90deg);
+}
+
+.progress-ring__circle {
+    transition: stroke-dashoffset 0.3s ease;
+}
+
+.circle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circle-text span {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.circle-text small {
+    font-size: 20px;
+    color: #ffffff;
+}
+  

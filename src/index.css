@@ -13,14 +13,16 @@
   /* background-color: #e9e9e9; */
   /* background-color: var(--primary-blue); */
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgb(0, 0, 80) 3%,
     rgb(82, 2, 82) 20%,
     rgb(0, 0, 80) 30%, 
     rgb(82, 2, 82) 60%,
     rgb(0, 0, 0) 85%,
-    rgb(0, 0, 0) 100%);
+    rgb(0, 0, 0) 100%); */
+
+  background-color: #121534;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -33,6 +35,7 @@
   --content-grey: rgba(0, 0, 0, 0.6);
   --blue-1: #212433;
   --blue-2: #1a2240;
+  --blue-3: #3c4257;
   --white: #ffffff;
   --grey-0:#ebebeb;
   --grey-1:#d2d2d2;
@@ -43,6 +46,7 @@
   --grey-trans-1: rgba(255, 255, 255, 0.3);
   --grey-trans-2: rgba(255, 255, 255, 0.1);
   --brown-1:#e2e0de;
+  --green-1: #4FBBAE;
   --purple-1: rgba(230, 100, 230, 0.763);
   --tag-BG:#e06900;
   --tag-orange-1: #CA7508;
@@ -74,8 +78,7 @@ a {
 }
 
 a:hover {
-  /* color: #383838; */
-  color: var(--purple-1);
+  color: var(--green-1);
 }
 
 .imgActive:hover{

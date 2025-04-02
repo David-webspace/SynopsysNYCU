@@ -7,7 +7,6 @@ import { FaEarthAfrica, FaBasketball } from "react-icons/fa6";
 import menuItems from '../datas/menuList.json'
 import '../i18n'
 import { useTranslation } from 'react-i18next'
-// import ReloadMenu from '../hooks/ReloadMenu';
 import '../css/header.css'
 
 
@@ -89,7 +88,7 @@ const Header = () => {
         <Link
           to={`/dev/${menu.url}`} 
           className={`pd-10 db ${menu.id==menuItem ? 'menuItemActive' : ''}`}
-          style={{color:`${menu.id==menuItem ? 'var(--purple-1)' : ''}`}}
+          style={{color:`${menu.id==menuItem ? 'var(--green-1)' : ''}`}}
         >
           {t(menu.menu)}
         </Link>
