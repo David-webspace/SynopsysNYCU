@@ -42,17 +42,7 @@
         "episode": [
             {
                 "EP": "EP1",
-                "content": "解構半導體產業鍊",
-                "youtubeEmbed": "https://www.youtube.com/embed/_Z9VAvI-v-Y?si=hOp4yOYZUvrb4gNG"
-            },
-            {
-                "EP": "EP2",
-                "content": "公司之間的互動與面臨的挑戰",
-                "youtubeEmbed": "https://www.youtube.com/embed/_Z9VAvI-v-Y?si=hOp4yOYZUvrb4gNG"
-            },
-            {
-                "EP": "EP3",
-                "content": "給高中生的話",
+                "content": "IC設計流程簡介",
                 "youtubeEmbed": "https://www.youtube.com/embed/_Z9VAvI-v-Y?si=hOp4yOYZUvrb4gNG"
             }
         ]

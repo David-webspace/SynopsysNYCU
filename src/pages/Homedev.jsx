@@ -9,7 +9,7 @@ const Homedev = () => {
 
   return (
     <div className='xContainer' style={{marginTop:"-160px"}}>
-        <ScrollPage />
+        {/* <ScrollPage /> */}
         <Opening />
         <Indicator />
         <Event_Content />

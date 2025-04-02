@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
 import onlineResource from '../datas/onlineResource.json'
 import { FaMapPin } from "react-icons/fa";
+import '../i18n'
+import { useTranslation } from 'react-i18next'
 
 const Online_Free_Resource = () => {
+
+  const { t, i18n } = useTranslation()
 
   const [selectSourceItem, setSelectSourceItem] = useState('analytics')
   
@@ -39,7 +43,7 @@ const Online_Free_Resource = () => {
 
     return(
       <div key={index}>
-        <h2 className='mg-b-20' id={`${resource.id}`}>前導課程 {resource.topic}</h2>
+        <h2 className='mg-b-20' id={`${resource.id}`}>{t('前導課程')} {t(resource.topic)}</h2>
         {youtubeRender}
       </div>
     )
@@ -66,7 +70,7 @@ const Online_Free_Resource = () => {
     const episodeRender = resource.episode.map((episode, episodeIndex) => {
       return(
         <div key={episodeIndex}>
-          <h4>{episode.EP} {episode.content}</h4>
+          <h4>{t(episode.EP)} {t(episode.content)}</h4>
         </div>
       )
     })
@@ -86,7 +90,7 @@ const Online_Free_Resource = () => {
           handleSelectedSource(resource.id)
         }}
       >
-        <h3><FaMapPin size={16}/> {resource.topic}</h3>
+        <h3><FaMapPin size={16}/> {t(resource.topic)}</h3>
         <h4>{episodeRender}</h4>
       </a>
     )
@@ -95,7 +99,7 @@ const Online_Free_Resource = () => {
   return (
     <div style={{position:"relative"}} className='xContainer'>
       <div className={`df fd-c aln-itm-c`}>
-        <h1 className='mg-b-50'>線上課程免費資源</h1>
+        <h1 className='mg-b-50'>{t('線上課程免費資源')}</h1>
         {resourceRender}
       </div>
       <div className='indexNav'>{indexRender}</div>

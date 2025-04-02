@@ -32,8 +32,8 @@ const Curriculum = () => {
       <h3 style={{
         margin: "0 20px 10px 0",
         padding: "2px",
-        backgroundColor: "var(--grey-trans-1)",
-        filter:"blur(0.2)",
+        // backgroundColor: "var(--grey-trans-1)",
+        // filter:"blur(0.2)",
         borderRadius: "8px",
         border: "1px solid var(--grey-3)"
       }}>
