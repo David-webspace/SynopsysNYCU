@@ -8,7 +8,7 @@ const Event_Content = () => {
 
   return (
     <div
-      className='df jc-sb aln-itm-c OuterLink'
+      className='df jc-sb aln-itm-c OuterLink xContainer'
       style={{
           // height:`${ScreenHeight-138}px`,
           height:ScreenHeight,

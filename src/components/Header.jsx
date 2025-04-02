@@ -133,9 +133,9 @@ const Header = () => {
         <ul
           ref={languageSelectorRef}
           style={{position:'relative'}}
-          className='df fd-c pd-w-10 fh jc-c aln-itm-c'
+          className='df fh fd-c pd-w-10 jc-c aln-itm-c mg-r-30'
         >
-          <div onClick={handleLanguageSelect} >
+          <div onClick={handleLanguageSelect} className='df jc-ca aln-itm-c'>
             {/* <FaEarthAfrica size={20}/> */}
             <FaBasketball size={20}/>
           </div>
@@ -163,6 +163,9 @@ const Header = () => {
             </li>
           </ul>
         </ul>
+        <Link to='https://docs.google.com/forms/d/e/1FAIpQLScG196gYjMEf62hNkytam3tLChveSGopPgyPkzIBOrgc1WYPA/viewform?pli=1' target='_blank'>
+          <button className='registerBtn'>立即報名</button>
+        </Link>
       </header>
     </>
   )

@@ -53,13 +53,13 @@ const Event_2025 = () => {
   })
 
   return (
-    <div style={{position:"relative"}} className='xContainer'>
-      <div style={{marginLeft:"100px"}}>
+    <div style={{position:"relative", padding:"160px 50px"}} className='Container'>
+      <div>
         <Curriculum />
         <Event_info_fee />
         <Event_rule />
       </div>
-      <div className='indexEvent'>{indexRender}</div>
+      {/* <div className='indexEvent'>{indexRender}</div> */}
     </div>
   )
 }

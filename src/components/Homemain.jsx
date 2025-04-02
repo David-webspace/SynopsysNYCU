@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { FaApple, FaMicrochip } from "react-icons/fa";
 import '../css/homemain.css'
 
-const Opening = () => {
+const Homemain = () => {
 
     const [bgColor, setBgColor] = useState("transparent")
     const [iconPosition, setIconPosition] = useState("center")
@@ -45,7 +45,7 @@ const Opening = () => {
             transition:"background-color 0.5s ease" //smooth transition for background color
         }}
     >
-        <div
+        {/* <div
             className='OpeningLogo'
             style={{
                 position: "absolute",
@@ -61,9 +61,9 @@ const Opening = () => {
                 color='var(--openingLogo)'
               
             />
-        </div>
+        </div> */}
 
-        {showSlogan && (
+        {/* {showSlogan && (
             <div
                 style={{
                     position: "absolute",
@@ -77,9 +77,9 @@ const Opening = () => {
             >
                 <h1 style={{fontSize:"50px", fontWeight:"400"}}>IC, THE FUTURE</h1>
             </div>
-        )}
+        )} */}
 
-        {showText && (
+        {/* {showText && (
             <div
                 style={{
                     position: "absolute",
@@ -96,7 +96,7 @@ const Opening = () => {
                 <h1 className='mg-b-20'>一顆晶片，看見未來</h1>
                 <p>半導體是科技的核心，我們結合業界龍頭 Synopsys 與頂尖學術機構陽明交大，打造全台第一專注於 IC 設計與半導體製程的營隊，讓國高中生學習基礎知識、拓展產業視野，成為引領未來的關鍵人才</p>
             </div>
-        )}
+        )} */}
 
         <div className="OpeningBG">
             <div
@@ -117,4 +117,4 @@ const Opening = () => {
   )
 }
 
-export default Opening
+export default Homemain

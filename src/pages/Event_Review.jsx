@@ -5,7 +5,7 @@ import '../css/event_review.css'
 
 const Event_Review = () => {
   return (
-    <div className='xContainer'>
+    <div className='Container'>
       <Reflection />
       <Review_Highlight />
     </div>

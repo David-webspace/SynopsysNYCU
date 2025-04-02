@@ -53,14 +53,13 @@ const Indicator = () => {
   })
 
   return (
-    <div style={{height:ScreenHeight, width:"100%"}} className='df fd-c jc-c'>
-        {/* <h1 className='mg-b-30'>我們的特色</h1> */}
-        {/* <div className='df'>
-          <ul className='df fd-c' style={{width:"60%"}}>
-            {pointerRender}
-          </ul>
-          {bgRender}
-        </div> */}
+    <div 
+      style={{
+        // height:ScreenHeight,
+        width:"100%"
+      }}
+      className='df fd-c jc-c xContainer'
+    >
         <FeatureSlider />
     </div>
   )

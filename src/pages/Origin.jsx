@@ -27,13 +27,13 @@ const Origin = () => {
   }, []);
 
   const TextBlock = ({ text, bold, className = '' }) => (
-    <h3 className={`mg-b-20 fade-in ${className}`} style={{ fontWeight: bold ? 'bold' : '300' }}>
+    <h4 className={`mg-b-20 fade-in ${className}`} style={{ fontWeight: bold ? 'bold' : '300' }}>
       {t(text)}
-    </h3>
+    </h4>
   )
 
   return (
-    <div className='xContainer'>
+    <div className='Container'>
       <div className='mg-b-50 fade-in'>
         <h1 className='mg-b-30'>{t(originData.title)}</h1>
         <div className='content-section'>

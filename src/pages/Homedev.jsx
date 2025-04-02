@@ -4,6 +4,7 @@ import Opening from '../components/Opening';
 import Homemain from '../components/Homemain';
 import ScrollPage from '../hooks/ScrollPage'
 import Counter from '../components/Counter';
+import HomeSlogan from '../components/HomeSlogan';
 
 const Homedev = () => {
 
@@ -11,10 +12,11 @@ const Homedev = () => {
   const targetDate = "2025-07-10T23:59:59";
 
   return (
-    <div className='xContainer' style={{marginTop:"-160px"}}>
+    <div style={{marginTop:"0px"}}>
         {/* <ScrollPage /> */}
-        {/* <Opening /> */}
+        <Opening />
         <Homemain />
+        <HomeSlogan />
         <Counter targetDate={targetDate}/>
         <Indicator />
         <Event_Content />

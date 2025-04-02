@@ -1,27 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Iansui&display=swap');
 
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: "Inter", sans-serif;
+  font-family: "Iansui", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
   line-height: 1.5;
   font-weight: 400;
-
-  /* color-scheme: light dark; */
-  /* color: #8C8383; */
-  color: #ffffff;
-  /* background-color: #e9e9e9; */
-  /* background-color: var(--primary-blue); */
-
-  /* background: linear-gradient(
-    180deg,
-    rgb(0, 0, 80) 3%,
-    rgb(82, 2, 82) 20%,
-    rgb(0, 0, 80) 30%, 
-    rgb(82, 2, 82) 60%,
-    rgb(0, 0, 0) 85%,
-    rgb(0, 0, 0) 100%); */
-
+  color: var(--white);
   background-color: #121534;
 
   font-synthesis: none;
@@ -64,6 +52,11 @@
 }
 
 .xContainer{
+  padding: 0 180px;
+  margin-bottom: 300px;
+}
+
+.Container{
   padding: 160px 180px;
 }
 
@@ -165,7 +158,7 @@ h5{
 button{
   width: fit-content;
   display: inline;
-  padding: 6px 30px;
+  padding: 6px 10px;
   background-color: #e8e8e8;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 6px;

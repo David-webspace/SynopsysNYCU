@@ -12,7 +12,7 @@ const Contacts = () => {
 
 
   return (
-    <div className='xContainer'>
+    <div className='Container'>
       <h1 className='fw-b' style={{marginBottom:'20px'}}>{t('聯繫我們')}</h1>
       <h1 className='fw-b' style={{marginBottom:'80px'}}>{t('歡迎合作邀約')}</h1>
       <div style={{marginBottom:'80px'}}>

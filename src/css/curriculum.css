@@ -1,0 +1,90 @@
+/* competitionInfo.css */
+
+.competition-info-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.left-section {
+    flex: 1;
+    max-width: 300px;
+    padding-right: 20px;
+    /* border-right: 1px solid #ddd; */
+}
+
+.left-section .title{
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #ffffff;
+    writing-mode: vertical-lr;
+    font-size: 32px;
+}
+
+.left-section .date {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.left-section .location p {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.schedule-section .title {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.schedule-section {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.schedule-section .day-container {
+    width: 45%;
+}
+
+.schedule-section .day-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.schedule-section .day-number {
+    position: absolute;
+    top: -80px;
+    left: -40px;
+    font-size: 96px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #f0c040;
+    background: linear-gradient(180deg, #f0c040, transparent); /* 漸層顏色 */
+    -webkit-background-clip: text; /* 讓背景剪裁到文字 */
+    -webkit-text-fill-color: transparent; /* 讓文字顏色透明，顯示背景 */
+}
+
+.schedule-section .day-name {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.schedule-section .schedule-list {
+    list-style: none;
+    padding: 0;
+}
+
+.schedule-section .schedule-list li {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.schedule-list li .time{
+    width: 160px;
+    margin-right: 10px;
+}

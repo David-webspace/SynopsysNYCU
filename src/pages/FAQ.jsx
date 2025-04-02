@@ -45,7 +45,7 @@ const FAQ = () => {
   })
 
   return (
-    <div className='xContainer'>
+    <div className='Container'>
       <h1 className='mg-b-30 fade-in'>{t('常見問題：')}</h1>
       {faqRender}
     </div>

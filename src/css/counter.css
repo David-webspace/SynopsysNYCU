@@ -1,7 +1,15 @@
 .counter-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
     text-align: center;
     font-family: Arial, sans-serif;
     color: #ffffff;
+}
+
+.counter-container.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .counter {
@@ -12,6 +20,14 @@
 
 .circle-progress {
     position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.circle-progress.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .progress-ring {

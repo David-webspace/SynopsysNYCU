@@ -21,3 +21,16 @@
     transform: translateX(-50%);
     cursor: pointer;
 }
+
+.registerBtn{
+    padding: 10px 10px;
+    width: 160px;
+    background-color: var(--green-1);
+    color: var(--black-0);
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+}
+
+.registerBtn:hover{
+    transform: translateY(-3px);
+}
