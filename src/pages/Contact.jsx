@@ -26,7 +26,7 @@ const Contacts = () => {
       <>
         <div className={`${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}`}>
           <ul className='df'>
-            <a href='https://maps.app.goo.gl/bR5LAyeQiwJNsrxx8' className='outerLink mg-r-30' target='_blank'><li>{t('地址')}</li></a>
+            <a href='https://maps.app.goo.gl/YuKrLBgWdcw2Y8L69' className='outerLink mg-r-30' target='_blank'><li>{t('地址')}</li></a>
             <a href='https://www.youtube.com/@nycu_synopsys_semi' className='outerLink mg-r-30' target='_blank'><li>{t('線上課程')}</li></a>
             <a href='https://www.facebook.com/NYCU.SYNOPSYS.SEMICONDUCTOR.ICDESIGN/' className='outerLink mg-r-30' target='_blank'><li>{t('臉書')}</li></a>
           </ul>

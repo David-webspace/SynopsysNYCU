@@ -16,7 +16,7 @@ const FooterContact = () => {
           <ul className='df'>
             <a href='https://www.facebook.com/NYCU.SYNOPSYS.SEMICONDUCTOR.ICDESIGN/' target='_blank' className='mg-r-20'><FaFacebook size={20}/></a>
             <a href='https://www.youtube.com/@nycu_synopsys_semi' target='_blank' className='mg-r-20'><FaYoutube size={20}/></a>
-            <a href='https://maps.app.goo.gl/A4tttWxRBfXKYTRf8' target='_blank' className='mg-r-20'><FaMapMarkerAlt size={20}/></a>
+            <a href='https://maps.app.goo.gl/YuKrLBgWdcw2Y8L69' target='_blank' className='mg-r-20'><FaMapMarkerAlt size={20}/></a>
             <a href='' target='_blank' className='mg-r-20'></a>
           </ul>
         </div>
