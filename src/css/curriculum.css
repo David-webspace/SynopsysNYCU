@@ -17,12 +17,14 @@
     font-weight: 400;
     margin-bottom: 20px;
     color: #ffffff;
-    writing-mode: vertical-lr;
-    font-size: 32px;
+    writing-mode: vertical-rl;
+    font-size: 40px;
 }
 
 .left-section .date {
     color: #ffffff;
+    font-size: 40px;
+    width: 60px;
     margin-bottom: 20px;
 }
 
@@ -41,41 +43,45 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 40px;
 }
 
 .schedule-section .day-container {
     width: 45%;
+    margin-bottom: 80px;
 }
 
 .schedule-section .day-header {
+    position: absolute;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    position: relative;
 }
 
 .schedule-section .day-number {
     position: absolute;
-    top: -80px;
+    top: -60px;
     left: -40px;
-    font-size: 96px;
+    font-size: 120px;
     font-weight: bold;
-    margin-right: 10px;
+    line-height: 1;
     color: #f0c040;
-    background: linear-gradient(180deg, #f0c040, transparent); /* 漸層顏色 */
+    z-index: -10;
+    background: linear-gradient(180deg, rgba(240, 192, 64, 0.5), #121534 95%); /* 漸層顏色 */
     -webkit-background-clip: text; /* 讓背景剪裁到文字 */
-    -webkit-text-fill-color: transparent; /* 讓文字顏色透明，顯示背景 */
+    -webkit-text-fill-color: transparent;
 }
 
-.schedule-section .day-name {
+.schedule-section .week-name {
     font-weight: bold;
     color: #ffffff;
+    font-size: 40px;
+    margin-left: 50px;
 }
 
 .schedule-section .schedule-list {
     list-style: none;
     padding: 0;
+    margin-top: 100px;
 }
 
 .schedule-section .schedule-list li {
@@ -87,4 +93,39 @@
 .schedule-list li .time{
     width: 160px;
     margin-right: 10px;
+}
+
+.campBtn{
+    width: 80%;
+}
+
+.campBtn button{
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid var(--white);
+    background-color: transparent;
+    color: var(--white);
+    transition: all 0.4s ease-in-out;
+}
+
+.campBtn button:hover{
+    background-color: rgb(57, 63, 120);
+    color: var(--white);
+}
+
+.campBtn ul{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.campBtn ul li{
+    margin-bottom: 10px;
+    background-color: rgb(57, 63, 120);
+    border-radius: 5px;
+    padding: 6px 10px;
+}
+
+.campBtn ul li:hover{
+    background-color: rgb(80, 84, 124);
 }

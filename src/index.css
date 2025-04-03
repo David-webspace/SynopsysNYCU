@@ -166,10 +166,10 @@ button{
 }
 
 .button{
+  font-family: "Iansui", cursive;
   width: fit-content;
   display: inline;
   padding: 6px 30px;
-  background-color: #e8e8e8;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   color: black;

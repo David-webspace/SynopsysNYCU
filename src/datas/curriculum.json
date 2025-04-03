@@ -1,9 +1,13 @@
 [
     {
-        "id": "ch",
+        "id": "ch1",
+        "date": "7/10（四）- 7/12（六）",
+        "camp": "第一梯次（中文授課）",
         "schedule": [
             {
                 "day": "1",
+                "date": "10",
+                "weekday": "Thursday",
                 "class": [
                     {
                         "titleCh": "學員報到",
@@ -46,10 +50,11 @@
                         "time": "21:00-隔日"
                     }
                 ]
-                
             },
             {
                 "day": "2",
+                "date": "11",
+                "weekday": "Friday",
                 "class": [
                     {
                         "titleCh": "早餐",
@@ -95,6 +100,146 @@
             },
             {
                 "day": "3",
+                "date": "12",
+                "weekday": "Saturday",
+                "class": [
+                    {
+                        "titleCh": "早餐",
+                        "buildingCh": "工程四館2F|220教室",
+                        "time": "08:30-09:30"
+                    },
+                    {
+                        "titleCh": "成果發表",
+                        "buildingCh": "二餐1001空間",
+                        "time": "09:30-12:00"
+                    },
+                    {
+                        "titleCh": "午餐",
+                        "buildingCh": "二餐1001空間",
+                        "time": "12:00-13:30"
+                    },
+                    {
+                        "titleCh": "總經理演講",
+                        "buildingCh": "二餐1001空間",
+                        "time": "13:30-14:30"
+                    },
+                    {
+                        "titleCh": "閉幕式",
+                        "buildingCh": "二餐1001空間",
+                        "time": "14:30-17:30"
+                    },
+                    {
+                        "titleCh": "賦歸",
+                        "buildingCh": "同學自行離開交大博愛校區",
+                        "time": "17:30 ～"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ch2",
+        "date": "7/13（日）- 7/15（二）",
+        "camp": "第二梯次（中文授課）",
+        "schedule": [
+            {
+                "day": "1",
+                "date": "13",
+                "weekday": "Sunday",
+                "class": [
+                    {
+                        "titleCh": "學員報到",
+                        "buildingCh": "工程一館|B1報到區",
+                        "time": "09:30-10:00"
+                    },
+                    {
+                        "titleCh": "開幕式暨半導體產業沙龍",
+                        "buildingCh": "工程一館|合勤講堂",
+                        "time": "10:00-12:00"
+                    },
+                    {
+                        "titleCh": "午餐",
+                        "buildingCh": "工程四館2F|220教室",
+                        "time": "12:00-13:30"
+                    },
+                    {
+                        "titleCh": "半導體技術發展",
+                        "buildingCh": "工程四館B1|合勤講堂",
+                        "time": "13:30-14:30"
+                    },
+                    {
+                        "titleCh": "數位邏輯基礎到數位電路設計",
+                        "buildingCh": "工程四館B1|合勤講堂",
+                        "time": "14:30-17:30"
+                    },
+                    {
+                        "titleCh": "晚餐",
+                        "buildingCh": "科學三館|教室",
+                        "time": "17:30-18:30"
+                    },
+                    {
+                        "titleCh": "交流活動",
+                        "buildingCh": "科學三館|教室",
+                        "time": "18:30-21:00"
+                    },
+                    {
+                        "titleCh": "就寢休息",
+                        "buildingCh": "宿舍",
+                        "time": "21:00-隔日"
+                    }
+                ]
+            },
+            {
+                "day": "2",
+                "date": "14",
+                "weekday": "Monday",
+                "class": [
+                    {
+                        "titleCh": "早餐",
+                        "buildingCh": "工程四館2F|220教室",
+                        "time": "08:00-08:30"
+                    },
+                    {
+                        "titleCh": "半導體製程概論（柏村）",
+                        "buildingCh": "工程一館|合勤講堂",
+                        "time": "08:30-10:30"
+                    },
+                    {
+                        "titleCh": "數位電路設計實驗（一）",
+                        "buildingCh": "工程四館2F|220教室",
+                        "time": "10:30-12:30"
+                    },
+                    {
+                        "titleCh": "午餐",
+                        "buildingCh": "工程四館2F|220教室",
+                        "time": "12:00-13:30"
+                    },
+                    {
+                        "titleCh": "數位電路設計實驗（二）",
+                        "buildingCh": "資訊技術中心|電腦教室",
+                        "time": "13:30-17:30"
+                    },
+                    {
+                        "titleCh": "晚餐",
+                        "buildingCh": "科學三館|教室",
+                        "time": "17:30-18:30"
+                    },
+                    {
+                        "titleCh": "準備成果發表",
+                        "buildingCh": "科學三館|教室",
+                        "time": "18:30-21:00"
+                    },
+                    {
+                        "titleCh": "就寢休息",
+                        "buildingCh": "宿舍",
+                        "time": "21:00-隔日"
+                    }
+                ]
+            },
+            {
+                "day": "3",
+                "date": "15",
+                "weekday": "Tuesday",
                 "class": [
                     {
                         "titleCh": "早餐",
@@ -132,9 +277,13 @@
     },
     {
         "id": "en",
+        "date": "7/16（三）- 7/19（日）",
+        "camp": "第三梯次（英文授課）",
         "schedule": [
             {
                 "day": "1",
+                "date": "16",
+                "weekday": "Wednesday",
                 "class": [
                     {
                         "titleCh": "學員報到",
@@ -181,6 +330,8 @@
             },
             {
                 "day": "2",
+                "date": "17",
+                "weekday": "Thursday",
                 "class": [
                     {
                         "titleCh": "早餐",
@@ -226,6 +377,8 @@
             },
             {
                 "day": "3",
+                "date": "18",
+                "weekday": "Friday",
                 "class": [
                     {
                         "titleCh": "早餐",
@@ -266,6 +419,8 @@
             },
             {
                 "day": "4",
+                "date": "19",
+                "weekday": "Saturday",
                 "class": [
                     {
                         "titleCh": "早餐",
