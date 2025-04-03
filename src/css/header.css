@@ -32,5 +32,6 @@
 }
 
 .registerBtn:hover{
-    transform: translateY(-3px);
+    background-color: var(--green-2);
+    /* transform: translateY(-3px); */
 }

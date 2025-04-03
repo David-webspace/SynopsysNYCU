@@ -2,7 +2,7 @@ import './App.css'
 import './css/semi_btn.css'
 import { useEffect, useState } from 'react'
 import { Route, Routes, useLocation, useParams } from 'react-router'
-import { Documents, Home, Homedev, Contact, Online_Free_Resource, Event_2025, Event_Review, Origin, FAQ } from './pages'
+import { Documents, Doc, Home, Homedev, Contact, Online_Free_Resource, Event_2025, Event_Review, Origin, FAQ } from './pages'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Backend from './pages/Backend'
@@ -29,7 +29,7 @@ function App() {
         <Route path='/dev/*' element={
           <Routes>
             <Route path='/event2025' element={<Event_2025 />} />
-            <Route path='/documents' element={<Documents />} />
+            <Route path='/documents' element={<Doc />} />
             <Route path='/event-review' element={<Event_Review />} />
             <Route path='/online-resource' element={<Online_Free_Resource />} />
     

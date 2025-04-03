@@ -1,10 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Iansui&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Iansui&family=Noto+Sans+HK:wght@100..900&family=Noto+Sans+TC:wght@100..900&display=swap');
+
+@font-face {
+  font-family: 'EnglishFont';
+  src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Iansui&family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans+HK:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap') format('woff2');
+}
+
+@font-face {
+  font-family: 'PointerFont';
+  src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Iansui&family=Noto+Sans+HK:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap') format('woff2');
+}
+
+@font-face {
+  font-family: 'ChineseFont';
+  src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Iansui&family=Noto+Sans+HK:wght@100..900&family=Noto+Sans+TC:wght@100..900&display=swap') format('woff2');
+}
 
 :root {
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: "Iansui", cursive;
+  /* font-family: "Iansui", cursive; */
+  /* font-family: "Cormorant Garamond", serif; */
+  font-family: 'ChineseFont', serif;
+  font-family: 'EnglishFont', serif;
+  /* font-family: "Cormorant Garamond", serif; */
   font-optical-sizing: auto;
   font-style: normal;
   line-height: 1.5;
@@ -35,6 +52,7 @@
   --grey-trans-2: rgba(255, 255, 255, 0.1);
   --brown-1:#e2e0de;
   --green-1: #4FBBAE;
+  --green-2: #88dbd2;
   --purple-1: rgba(230, 100, 230, 0.763);
   --tag-BG:#e06900;
   --tag-orange-1: #CA7508;
