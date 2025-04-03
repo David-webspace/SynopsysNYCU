@@ -17,11 +17,8 @@
 }
 
 :root {
-  /* font-family: "Iansui", cursive; */
-  /* font-family: "Cormorant Garamond", serif; */
   font-family: 'ChineseFont', serif;
   font-family: 'EnglishFont', serif;
-  /* font-family: "Cormorant Garamond", serif; */
   font-optical-sizing: auto;
   font-style: normal;
   line-height: 1.5;
