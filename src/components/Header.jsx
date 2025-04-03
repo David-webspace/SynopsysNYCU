@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState, useEffect, useRef } from 'react'
 import { useLocation } from 'react-router'
 import { Link } from 'react-router-dom'
@@ -28,6 +27,9 @@ const Header = () => {
     switch(pathname){
       case '/dev/event2025':
         setMenuItem('event2025');
+        break;
+      case '/dev/documents':
+        setMenuItem('documents')
         break;
       case '/dev/event-review':
         setMenuItem('pastHeights')

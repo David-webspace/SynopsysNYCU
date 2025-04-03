@@ -97,6 +97,7 @@
 
 .campBtn{
     width: 80%;
+    cursor: pointer;
 }
 
 .campBtn button{

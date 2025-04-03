@@ -10,6 +10,11 @@
         "url":"event2025"
     },
     {
+        "menu" : "活動辦法",
+        "id": "documents",
+        "url":"documents"
+    },
+    {
         "menu" : "活動回顧",
         "id": "pastHeights",
         "url":"event-review"

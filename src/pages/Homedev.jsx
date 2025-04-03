@@ -14,7 +14,7 @@ const Homedev = () => {
   return (
     <div style={{marginTop:"0px"}}>
         {/* <ScrollPage /> */}
-        {/* <Opening /> */}
+        <Opening />
         <Homemain />
         <HomeSlogan />
         <Counter targetDate={targetDate}/>
