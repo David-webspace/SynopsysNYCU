@@ -189,6 +189,15 @@
 }
 
 @media (max-width:425px) {
+    .schedule-list li {
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+
+    .schedule-list li .title {
+        margin-bottom: 10px;
+    }
+
     .left-section{
         text-align: center;
     }
