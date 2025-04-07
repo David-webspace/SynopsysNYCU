@@ -212,4 +212,7 @@ td{
     padding: 0 20px;
     margin-bottom: 300px;
   }
+  .Container{
+    padding: 160px 20px;
+  }
 }

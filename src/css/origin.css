@@ -46,11 +46,30 @@
 }
 
 /* 響應式設計 */
-@media (max-width: 768px) {
-.section-image {
-    width: 100%;
-    height: auto;
-    float: none;
-    margin: 0 0 20px 0;
+@media (max-width: 1024px) {
+    .content-section {
+        margin-bottom: 40px;
+        overflow: hidden;
+    }
+
+    .section-image {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 0 0 20px 0;
+    }
 }
+
+@media (max-width: 768px) {
+    .content-section {
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+
+    .section-image {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 0 0 20px 0;
+    }
 }
