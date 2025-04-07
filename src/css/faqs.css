@@ -1,33 +1,36 @@
 /* 基本淡入效果 */
 .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  .fade-in-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  /* 問題標題的動畫延遲 */
-  .question.fade-in {
-    transition-delay: 0.1s;
-  }
-  
-  /* 答案的動畫延遲 */
-  .answer.fade-in {
-    transition-delay: 0.4s;
-  }
-  
-  /* 為每個 FAQ 項目設置不同的基礎延遲 */
-  .faq-item:nth-child(1) .fade-in { transition-delay: 0.1s; }
-  .faq-item:nth-child(2) .fade-in { transition-delay: 0.2s; }
-  .faq-item:nth-child(3) .fade-in { transition-delay: 0.3s; }
-  /* 可以根據需要添加更多 */
-  
-  /* 答案額外延遲 */
-  .faq-item:nth-child(1) .answer.fade-in { transition-delay: 0.3s; }
-  .faq-item:nth-child(2) .answer.fade-in { transition-delay: 0.4s; }
-  .faq-item:nth-child(3) .answer.fade-in { transition-delay: 0.5s; }
-  
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 問題標題的動畫延遲 */
+.question.fade-in {
+  transition-delay: 0.1s;
+}
+
+/* 答案的動畫延遲 */
+.answer.fade-in {
+  transition-delay: 0.4s;
+}
+
+.faq-item{
+  margin-bottom: 50px;
+}
+
+/* 為每個 FAQ 項目設置不同的基礎延遲 */
+.faq-item:nth-child(1) .fade-in { transition-delay: 0.1s; }
+.faq-item:nth-child(2) .fade-in { transition-delay: 0.2s; }
+.faq-item:nth-child(3) .fade-in { transition-delay: 0.3s; }
+/* 可以根據需要添加更多 */
+
+/* 答案額外延遲 */
+.faq-item:nth-child(1) .answer.fade-in { transition-delay: 0.3s; }
+.faq-item:nth-child(2) .answer.fade-in { transition-delay: 0.4s; }
+.faq-item:nth-child(3) .answer.fade-in { transition-delay: 0.5s; }

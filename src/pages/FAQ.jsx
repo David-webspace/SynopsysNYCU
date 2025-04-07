@@ -40,7 +40,7 @@ const FAQ = () => {
             <b>{t(faq.faq)}</b>
         </h3>
         <h3 className='mg-b-10 fade-in answer'>{t(faq.answer1)}</h3>
-        <h3 className='mg-b-20 fade-in answer'>{t(faq.answer2)}</h3>
+        <h3 className='fade-in answer'>{t(faq.answer2)}</h3>
       </div>
     )
   })
