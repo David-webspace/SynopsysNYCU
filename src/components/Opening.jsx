@@ -56,7 +56,7 @@ const Opening = () => {
         playsInline
         onLoadedData={handleVideoLoaded} // 監聽影片是否加載完成
       >
-        <source src="/homevideo-2.mp4" type="video/mp4" style={{width:"100%"}}/>
+        {/* <source src="/homevideo-2.mp4" type="video/mp4" sizes="100vh"/> */}
       </video>
 
       {/* 主要內容 */}
