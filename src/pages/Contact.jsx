@@ -36,7 +36,7 @@ const Contacts = () => {
             <a href='https://www.facebook.com/NYCU.SYNOPSYS.SEMICONDUCTOR.ICDESIGN/' className='outerLink mg-r-30' target='_blank'><li>{t('臉書')}</li></a>
           </ul>
         </div> */}
-        <div className={`${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}`}>
+        <div>
           <ul className='df'>
             <a href={locationLink} className='mediaLink' target='_blank'><li><IoLocationSharp size={20}/></li></a>
             <a href={instagramLink} className='mediaLink' target='_blank'><li><IoLogoInstagram size={20}/></li></a>
