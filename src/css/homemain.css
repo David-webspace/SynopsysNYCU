@@ -1,3 +1,4 @@
+/* 1440px */
 .OpeningLogo{
     position: absolute;
     top: 0;
@@ -11,12 +12,65 @@
     z-index: 45;
 }
 
-.OpeningBG{
-    width: 100%;
+.OpeningBG {
+    width: 100vw;
     height: 760px;
     z-index: 40;
     background-image: url("http://live.staticflickr.com/65535/54427165601_36a6d84eba_k.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
+}
+
+/* 1024px */
+@media (max-width: 1024px) {
+    .OpeningBG {
+        height: 600px; /* 縮小高度 */
+        background-size: cover; /* 改為全屏覆蓋 */
+    }
+
+    .OpeningLogo {
+        font-size: 20px; /* 縮小文字大小 */
+    }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+    .OpeningBG {
+        height: 500px; /* 再次縮小高度 */
+        background-size: cover;
+    }
+
+    .OpeningLogo {
+        font-size: 18px; /* 調整文字大小 */
+        padding: 20px; /* 增加間距 */
+    }
+}
+
+/* 425px */
+@media (max-width: 425px) {
+    .OpeningBG {
+        height: 400px; /* 更小的高度 */
+        background-image: none; /* 隱藏背景圖片 */
+        background-color: #f5f5f5; /* 使用純色背景 */
+    }
+
+    .OpeningLogo {
+        font-size: 16px; /* 縮小文字大小 */
+        padding: 15px; /* 增加間距 */
+    }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+    .OpeningBG {
+        height: 300px; /* 最小高度 */
+        background-image: none; /* 隱藏背景圖片 */
+        background-color: #fff; /* 使用純白背景 */
+    }
+
+    .OpeningLogo {
+        font-size: 14px; /* 最小文字大小 */
+        padding: 10px; /* 增加間距 */
+    }
 }

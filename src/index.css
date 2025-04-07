@@ -95,11 +95,7 @@ a:hover {
 }
 
 body {
-  /* Maintenance Test Close*/
-  /* margin: 150px 0 660px;
-  padding: 0 180px; 
-  min-width: 320px;
-  min-height: 100vh; */
+
 }
 
 .maintenanceText{
@@ -107,28 +103,6 @@ body {
   font-weight: 200;
   font-family: "Boldonse", system-ui;
   margin-bottom: 20px;
-}
-
-header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  /* background-color: var(--blue-1); */
-  /* background-color: rgb(0, 0, 80); */
-  padding: 60px auto;
-  z-index: 50;
-}
-
-header a{
-  /* color: #8C8383; */
-  color: #ffffff;
-  font-weight: 900;
-}
-
-header ul ul li a{
-  color: #8C8383;
-  font-weight: 400;
 }
 
 footer{
@@ -216,24 +190,30 @@ td{
 
 @media (max-width:1250px) {
   body {
-    padding: 0 180px;
+    /* padding: 0 180px; */
   }
 }
 
 @media (max-width:1024px) {
   body {
-    padding: 0 120px;
+    /* padding: 0 120px; */
+  }
+  .Container{
+    padding: 160px 140px;
   }
 }
 
 @media (max-width:768px) {
   body {
-    padding: 0 80px;
+    /* padding: 0 80px; */
+  }
+  .Container{
+    padding: 160px 80px;
   }
 }
 
 @media (max-width:425px) {
   body {
-    padding: 0 20px;
+    /* padding: 0 20px; */
   }
 }

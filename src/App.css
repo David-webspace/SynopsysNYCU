@@ -357,11 +357,11 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width:1250px){
+/* @media (max-width:1250px){
   .pd-x-align{
     padding: 0 180px;
   }
-}
+} */
 
 @media (max-width:1024px){
   .Logo{
@@ -370,7 +370,7 @@
   }
   
   .pd-x-align{
-    padding: 0 120px;
+    /* padding: 0 120px; */
   }
 }
 

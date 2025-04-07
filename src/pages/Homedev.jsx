@@ -12,7 +12,7 @@ const Homedev = () => {
   const targetDate = "2025-07-10T23:59:59";
 
   return (
-    <div style={{marginTop:"0px"}}>
+    <div>
         {/* <ScrollPage /> */}
         <Opening />
         <Homemain />
