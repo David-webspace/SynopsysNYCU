@@ -1,0 +1,40 @@
+.sloganContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sloganContainer .textContainer{
+    width: 60%;
+}
+
+.sloganContainer .imgContainer{
+    width: 40%;
+}
+
+.sloganContainer .imgContainer img{
+    width: 130%;
+    margin: -20px;
+}
+
+
+@media (max-width:1024px) {
+    .sloganContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .sloganContainer .textContainer{
+        width: 100%;
+    }
+    
+    .sloganContainer .imgContainer{
+        width: 0%;
+        display: none;
+    }
+    
+    .sloganContainer .imgContainer img{
+        width: 130%;
+    }
+}
