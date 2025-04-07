@@ -189,7 +189,7 @@ td{
 /* ======================= */
 @media (max-width:1024px) {
   .xContainer{
-    padding: 0 180px;
+    padding: 0 140px;
     margin-bottom: 300px;
   }
   .Container{
@@ -198,8 +198,9 @@ td{
 }
 
 @media (max-width:768px) {
-  body {
-    /* padding: 0 80px; */
+  .xContainer{
+    padding: 0 80px;
+    margin-bottom: 300px;
   }
   .Container{
     padding: 160px 80px;
@@ -207,7 +208,8 @@ td{
 }
 
 @media (max-width:425px) {
-  body {
-    /* padding: 0 20px; */
+  .xContainer{
+    padding: 0 20px;
+    margin-bottom: 300px;
   }
 }
