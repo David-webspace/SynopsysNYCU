@@ -1,9 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaFacebook, FaYoutube, FaMapMarkerAlt } from 'react-icons/fa'
+import { IoLocationSharp, IoLogoInstagram, IoLogoFacebook, IoLogoYoutube } from "react-icons/io5";
 import '../css/footer_contact.css'
 
+const locationLink = 'https://maps.app.goo.gl/YuKrLBgWdcw2Y8L69'
+const instagramLink = 'https://www.instagram.com/sawago88/'
+const facebookLink = 'https://www.facebook.com/NYCU.SYNOPSYS.SEMICONDUCTOR.ICDESIGN/'
+const youtubeLink = 'https://www.youtube.com/@nycu_synopsys_semi'
+
 const FooterContact = () => {
+  const ScreenWidth = window.innerWidth
+
   return (
     <div className='footerContact pd-x-align'>
         <div className='mg-b-20'>
@@ -14,10 +22,10 @@ const FooterContact = () => {
         </div>
         <div>
           <ul className='df'>
-            <a href='https://www.facebook.com/NYCU.SYNOPSYS.SEMICONDUCTOR.ICDESIGN/' target='_blank' className='mg-r-20'><FaFacebook size={20}/></a>
-            <a href='https://www.youtube.com/@nycu_synopsys_semi' target='_blank' className='mg-r-20'><FaYoutube size={20}/></a>
-            <a href='https://maps.app.goo.gl/YuKrLBgWdcw2Y8L69' target='_blank' className='mg-r-20'><FaMapMarkerAlt size={20}/></a>
-            <a href='' target='_blank' className='mg-r-20'></a>
+            <a href={locationLink} className='mediaLink' target='_blank'><li><IoLocationSharp size={20}/></li></a>
+            <a href={instagramLink} className='mediaLink' target='_blank'><li><IoLogoInstagram size={20}/></li></a>
+            <a href={facebookLink} className='mediaLink' target='_blank'><li><IoLogoFacebook size={20}/></li></a>
+            <a href={youtubeLink} className='mediaLink' target='_blank'><li><IoLogoYoutube size={20}/></li></a>
           </ul>
         </div>
     </div>

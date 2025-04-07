@@ -3,7 +3,7 @@ import itinerarys from '../../datas/curriculum.json'
 import "../../css/curriculum.css";
 
 const CompetitionInfo = () => {
-
+  const ScreenWidth = window.innerWidth
   const [campSelected, setCampSelected] = useState('ch1')
   const [campBtn, setCampBtn] = useState(false)
 
@@ -67,6 +67,15 @@ const CompetitionInfo = () => {
       {/* 右側行程表 */}
       <div className="schedule-section">
           {scheduleRender}
+      </div>
+
+      <div className={`campBtn ${ScreenWidth <= 768 ? '' : 'dn'}`}>
+        <button onClick={toggleCampBtn}>查看其他梯次</button>
+        <ul className={`${campBtn ? '' : 'dn'}`}>
+          <li onClick={() => {setCampSelected('ch1'); setCampBtn(false)}}>第一梯次（中文授課）</li>
+          <li onClick={() => {setCampSelected('ch2'); setCampBtn(false)}}>第二梯次（中文授課）</li>
+          <li onClick={() => {setCampSelected('en'); setCampBtn(false)}}>第三梯次（英文授課）</li>
+        </ul>
       </div>
     </div>
   );

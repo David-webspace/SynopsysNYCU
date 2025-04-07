@@ -10,3 +10,26 @@
     border-top: 1px solid var(--grey-1);
     background-color: transparent;
 }
+
+.mediaLink{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    color: #979797;
+    margin-right: 10px;
+}
+
+@media (max-width:768px) {
+    .footerContact{
+        text-align: center;
+    }
+    
+    .mediaLink{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}

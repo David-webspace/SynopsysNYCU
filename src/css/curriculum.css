@@ -104,7 +104,7 @@
 
 .campBtn button{
     width: 100%;
-    padding: 6px 10px;
+    padding: 10px 10px;
     border: 1px solid var(--white);
     background-color: transparent;
     color: var(--white);
@@ -131,4 +131,74 @@
 
 .campBtn ul li:hover{
     background-color: rgb(80, 84, 124);
+}
+
+@media (max-width:1024px) {
+    .competition-info-container {
+        padding: 40px;
+    }
+    .schedule-section {
+        flex-direction: column;
+    }
+
+    .schedule-section .day-container {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width:768px) {
+    .competition-info-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-section {
+        max-width: 100%;
+        padding-right: 0px;
+        margin-bottom: 150px;
+    }
+    
+    .left-section .title{
+        writing-mode: horizontal-tb;
+    }
+    
+    .left-section .date {
+        color: #ffffff;
+        width: auto;
+    }
+
+    .schedule-section {
+        flex-direction: column;
+    }
+
+    .schedule-section .day-container {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .schedule-list li .time{
+        width: 120px;
+        margin-right: 0px;
+    }
+
+    .campBtn{
+        width: 300px;
+    }
+}
+
+@media (max-width:425px) {
+    .left-section{
+        text-align: center;
+    }
+
+    .left-section .title{
+        margin-bottom: 0px;
+    }
+
+    .campBtn{
+        width: 200px;
+        margin: 0 auto;
+    }
 }
