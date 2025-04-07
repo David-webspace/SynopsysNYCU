@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import faqs from './../datas/faqs.json'
 import '../i18n'
 import { useTranslation } from 'react-i18next'
+import '../css/faqs.css'
 
 const FAQ = () => {
   const { t, i18n } = useTranslation()

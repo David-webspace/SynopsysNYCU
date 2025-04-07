@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect} from 'react';
 import { useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import { FaMicrochip } from "react-icons/fa";
@@ -8,13 +8,13 @@ import menuItems from '../datas/menuList.json';
 import '../i18n';
 import { useTranslation } from 'react-i18next';
 import '../css/header.css';
+import LngSelector from './LngSelector';
 
 const Header = () => {
   const ScreenWidth = window.innerWidth;
   const location = useLocation();
 
   const [menuItem, setMenuItem] = useState(''); // Initialize the value of menuItem
-  const [lngSubClose, setLngSubClose] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // 控制漢堡菜單顯示狀態
 
   // ==================== Reload function ====================
@@ -53,37 +53,6 @@ const Header = () => {
   const { t, i18n } = useTranslation();
   const [langActive, setLangActive] = useState(false);
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-    setLangActive(false);
-    console.log('Language Changed');
-  };
-
-  const handleLanguageSelect = () => {
-    setLangActive(!langActive);
-    console.log('Language Clicked');
-  };
-
-  const handleCloseLng = () => {
-    setLngSubClose(false);
-  };
-
-  const languageSelectorRef = useRef(null); // Add this ref
-
-  // Add this useEffect for click outside handling
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (languageSelectorRef.current && !languageSelectorRef.current.contains(event.target)) {
-        setLangActive(false);
-        console.log('Click Outside');
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
 
   const menuItemRender = menuItems.map((menu, index) => {
     return (
@@ -149,38 +118,8 @@ const Header = () => {
         </div>
 
         {/* Language Select */}
-        <ul
-          ref={languageSelectorRef}
-          style={{ position: 'relative' }}
-          className='lngSelector'
-        >
-          <div onClick={handleLanguageSelect} className='df jc-ca aln-itm-c'>
-            <FaBasketball size={20} />
-          </div>
-          <ul
-            className='df fd-c'
-            style={{
-              position: "absolute",
-              top: "100%",
-              left: "50%",
-              display: `${langActive ? '' : 'none'}`
-            }}
-            onClick={() => handleCloseLng(false)}
-          >
-            <li
-              className='lngSub pointer'
-              onClick={() => { changeLanguage('ch'); }}
-            >
-              {t('中文')}
-            </li>
-            <li
-              className='lngSub pointer'
-              onClick={() => { changeLanguage('en'); }}
-            >
-              {t('英文')}
-            </li>
-          </ul>
-        </ul>
+        <LngSelector />
+
         <Link to='https://docs.google.com/forms/d/e/1FAIpQLScG196gYjMEf62hNkytam3tLChveSGopPgyPkzIBOrgc1WYPA/viewform?pli=1' target='_blank'>
           <button className='registerBtn'>立即報名</button>
         </Link>

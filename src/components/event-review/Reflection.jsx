@@ -1,9 +1,12 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import feedbacks from '../../datas/reflections.json';
+import '../../css/reflection.css'
 
 // 新增的 FeedbackCard 組件
 const FeedbackCard = ({ feedback, isOdd, index }) => {
+  const ScreenWidth = window.innerWidth;
+
   const { ref, inView } = useInView({
     threshold: 0.2,
     triggerOnce: true
@@ -12,12 +15,11 @@ const FeedbackCard = ({ feedback, isOdd, index }) => {
   return (
     <div
       ref={ref}
-      className='mg-b-30'
+      className='feedbackCard'
       style={{
-        width: "48%",
         float: isOdd ? "left" : "right",
-        transform: isOdd ? "" : "translateY(60%)",
-        marginBottom: "8%",
+        marginTop: ScreenWidth > 1024 ? ` ${isOdd ? '' : '80px'}` : '20px',
+        marginBottom: `10px`,
         opacity: inView ? 1 : 0,
         transition: `all 0.6s ease-out ${index * 0.2}s`
       }}
@@ -44,12 +46,11 @@ const Reflection = () => {
   });
 
   return (
-    <div>
+    <div className='mg-b-50'>
       <div className='txt-aln-c mg-b-50'>
         <h1>學員回饋</h1>
-        {/* <h4>Participants Feedback</h4> */}
       </div>
-      <div className='reflectionArrange' style={{ overflow: "auto" }}>
+      <div className='reflectionArrange'>
         {feedbackRender}
       </div>
     </div>

@@ -1,12 +1,54 @@
-.reflectionArrange{
+.reflectionArrange {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.reflectionTxt{
+  }
+  
+  .reflectionTxt {
     padding: 16px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
+  }
+  
+  .feedbackCard {
+    margin-bottom: 30px;
+    width: 48%;
+  }
+  
+  /* 在螢幕寬度小於 1024px 時，改為垂直排列 */
+  @media (max-width: 1024px) {
+    .reflectionArrange {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .feedbackCard {
+      width: 100%; /* 每個卡片佔據整行 */
+      justify-content: start;
+      float: none; /* 移除 float */
+      transform: none; /* 移除 transform */
+      margin-bottom: 20px; /* 調整間距 */
+    }
+}
+
+@media (max-width:768px) {
+    .reflectionArrange{
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .reflectionTxt{
+        padding: 16px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+    }
+    
+    .feedbackCard{
+        margin-bottom: 30px;
+        width: 100%;
+    }
 }
