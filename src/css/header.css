@@ -93,7 +93,7 @@ header ul ul li a{
     position: fixed;
     top: 40px;
     right: 20px;
-    z-index: 100;
+    z-index: 50;
     cursor: pointer;
     display: none;
   }
