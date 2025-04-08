@@ -5,7 +5,6 @@ import { FaMicrochip } from "react-icons/fa";
 import { FaEarthAfrica, FaBasketball } from "react-icons/fa6";
 import { FaBars, FaTimes } from "react-icons/fa"; // 漢堡按鈕和關閉按鈕
 import menuItems from '../datas/menuList.json';
-import '../i18n';
 import { useTranslation } from 'react-i18next';
 import '../css/header.css';
 import LngSelector from './LngSelector';
@@ -28,8 +27,8 @@ const Header = () => {
       case '/dev/event2025':
         setMenuItem('event2025');
         break;
-      case '/dev/documents':
-        setMenuItem('documents');
+      case '/dev/guidelines':
+        setMenuItem('guidelines');
         break;
       case '/dev/event-review':
         setMenuItem('pastHeights');
@@ -121,7 +120,7 @@ const Header = () => {
         <LngSelector />
 
         <Link to='https://docs.google.com/forms/d/e/1FAIpQLScG196gYjMEf62hNkytam3tLChveSGopPgyPkzIBOrgc1WYPA/viewform?pli=1' target='_blank'>
-          <button className='registerBtn'>立即報名</button>
+          <button className='registerBtn'>{t('立即報名')}</button>
         </Link>
       </header>
     </>

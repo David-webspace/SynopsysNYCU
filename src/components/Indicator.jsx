@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import { FaDiceD20, FaCommentDollar, FaErlang, FaSchool, FaChalkboardTeacher } from "react-icons/fa";
 import { TbBackground } from 'react-icons/tb';
 import FeatureSlider from './FeatureSlider';
-// import iconList from '../datas/iconList.json'
+import { useTranslation } from 'react-i18next';
 import '../css/Indicator.css'
 
 const Indicator = () => {
 
   const ScreenHeight = window.innerHeight
+  // ==================== Language Select ====================
+  const { t, i18n } = useTranslation();
 
   const [iconActive, setIconActive] = useState('leader')
   const [iconHover, setIconHover] = useState('')
@@ -37,7 +39,7 @@ const Indicator = () => {
         onClick={()=>setIconActive(icon.id)}
       >
         <IconFrame size={50} />
-        <h4>{icon.text}</h4>
+        <h4>{t(icon.text)}</h4>
       </li>
     )
   })

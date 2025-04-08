@@ -2,7 +2,7 @@ import React from 'react';
 import eventInfos from '../datas/event_info.json';
 import rules from '../datas/event_rules.json';
 
-const Documents = () => {
+const Guidelinessss = () => {
   // ContentRender: 根據 id 渲染對應的規則
   const ContentRender = ({ id }) => {
     const filteredRules = rules.filter((rule) => rule.id === id);
@@ -73,4 +73,4 @@ const Documents = () => {
   );
 };
 
-export default Documents;
+export default Guidelinessss;

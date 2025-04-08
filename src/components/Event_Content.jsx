@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/home_event.css';
+import { useTranslation } from 'react-i18next';
 
 const Event_Content = () => {
   const ScreenHeight = window.innerHeight;
+  const { t, i18n } = useTranslation();
 
   return (
     <div className=''>
-      <h2 style={{padding:"20px"}}>活動整理讓你知</h2>
+      <h2 style={{padding:"20px"}}>{t('活動整理讓你知')}</h2>
       <div
         className='OuterLink'
         style={{
@@ -16,7 +18,7 @@ const Event_Content = () => {
         }}
       >
         <Link to='/dev/event2025'>
-          <h2>2025 活動內容</h2>
+          <h2>{t('2025 活動內容')}</h2>
           <div style={{ position: "relative" }}>
             <div className="mask"></div>
             <img
@@ -26,7 +28,7 @@ const Event_Content = () => {
           </div>
         </Link>
         <Link to='/dev/event-review'>
-          <h2>過去活動回顧</h2>
+          <h2>{t('過去活動回顧')}</h2>
           <div style={{ position: "relative" }}>
             <div className="mask"></div>
             <img
@@ -36,7 +38,7 @@ const Event_Content = () => {
           </div>
         </Link>
         <Link to='/dev/online-resource'>
-          <h2>線上活動免費資源</h2>
+          <h2>{t('線上課程免費資源')}</h2>
           <div style={{ position: "relative" }}>
             <div className="mask"></div>
             <img

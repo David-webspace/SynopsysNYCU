@@ -6,8 +6,13 @@ import 'swiper/css/bundle';
 import 'swiper/css/pagination';
 import 'swiper/swiper-bundle.css'
 import '../slider.css'
+import { useTranslation } from 'react-i18next';
+
 
 const FeatureSlider = () => {
+   // ==================== Language Select ====================
+  const { t, i18n } = useTranslation();
+  
   const slides = [
     {
         image: "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -33,7 +38,7 @@ const FeatureSlider = () => {
 
   return (
     <div className="service-slider">
-      <h1 className='mg-b-30'>我們的特色</h1>
+      <h1 className='mg-b-30'>{t('我們的特色')}</h1>
       {/* <p>數位轉型是工廠管理的靈藥，更是團隊蛻變的過程</p> */}
       
       <Swiper
@@ -59,7 +64,7 @@ const FeatureSlider = () => {
           <SwiperSlide key={index}>
             <div className="slide-content">
               <img src={slide.image} alt={slide.title} />
-              <h5>{slide.title}</h5>
+              <h5>{t(slide.title)}</h5>
             </div>
           </SwiperSlide>
         ))}

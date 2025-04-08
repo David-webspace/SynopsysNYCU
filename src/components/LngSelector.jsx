@@ -69,7 +69,7 @@ const LngSelector = () => {
                 className='lngSub pointer'
                 onClick={() => { changeLanguage('en'); }}
             >
-                {t('英文')}
+                {t('English')}
             </li>
         </ul>
         </ul>

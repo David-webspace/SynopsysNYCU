@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useTranslation } from 'react-i18next';
 import "../css/counter.css";
 
 const Counter = ({ targetDate }) => {
+  const { t, i18n } = useTranslation();
+
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -69,7 +72,7 @@ const Counter = ({ targetDate }) => {
       className={`counter-container xContainer ${isVisible ? "show" : ""}`}
       ref={containerRef}
     >
-      <h1 className="mg-b-50 topicDefault">距離第一梯活動開始還有</h1>
+      <h1 className="mg-b-50 topicDefault">{t('距離第一梯活動開始還有')}</h1>
       <div className="counter">
         <CircleProgress value={timeLeft.days} label="Days" isVisible={circleVisible[0]} />
         <CircleProgress value={timeLeft.hours} label="Hours" isVisible={circleVisible[1]} />
