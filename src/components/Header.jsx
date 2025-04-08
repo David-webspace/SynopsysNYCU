@@ -52,7 +52,6 @@ const Header = () => {
   const { t, i18n } = useTranslation();
   const [langActive, setLangActive] = useState(false);
 
-
   const menuItemRender = menuItems.map((menu, index) => {
     return (
       <li key={index} onClick={() => { setMenuItem(menu.id); }} className='pd-w-10'>

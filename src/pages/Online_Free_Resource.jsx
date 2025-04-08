@@ -41,7 +41,7 @@ const Online_Free_Resource = () => {
               ></iframe>
             <div className='sourceTxt'>
               <h2>{episode.EP} {t(episode.content)}</h2>
-              <h4>{episode.description}</h4>
+              <h4>{t(episode.description)}</h4>
             </div>
           </div>
         ))}

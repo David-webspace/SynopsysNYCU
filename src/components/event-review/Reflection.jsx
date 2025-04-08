@@ -2,9 +2,14 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import feedbacks from '../../datas/reflections.json';
 import '../../css/reflection.css'
+import { useTranslation } from 'react-i18next';
+
+
 
 // 新增的 FeedbackCard 組件
 const FeedbackCard = ({ feedback, isOdd, index }) => {
+  const { t, i18n } = useTranslation();
+
   const ScreenWidth = window.innerWidth;
 
   const { ref, inView } = useInView({
@@ -25,14 +30,16 @@ const FeedbackCard = ({ feedback, isOdd, index }) => {
       }}
     >
       <h4 className='mg-b-5'>
-        {feedback.student} | {feedback.degree} | {feedback.school}
+        {t(feedback.student)} | {t(feedback.degree)} | {t(feedback.school)}
       </h4>
-      <h3 className='reflectionTxt'>{feedback.feedback}</h3>
+      <h3 className='reflectionTxt'>{t(feedback.feedback)}</h3>
     </div>
   );
 };
 
 const Reflection = () => {
+  const { t, i18n } = useTranslation();
+  
   const feedbackRender = feedbacks.map((feedback, index) => {
     const isOdd = feedback.id % 2 !== 0;
     return (
@@ -48,7 +55,7 @@ const Reflection = () => {
   return (
     <div className='mg-b-50'>
       <div className='txt-aln-c mg-b-50'>
-        <h1>學員回饋</h1>
+        <h1>{t('學員回饋')}</h1>
       </div>
       <div className='reflectionArrange'>
         {feedbackRender}

@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { FaEarthAfrica, FaBasketball } from "react-icons/fa6";
+
 import '../i18n';
 import { useTranslation } from 'react-i18next';
 

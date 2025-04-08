@@ -34,7 +34,7 @@ const Guidelines = () => {
             
             <p>{t('2. 英文梯次：定價 $33,000NT')}</p>
             <ul>
-                <li>{('折扣方案 A：兩人同行，一人享半價')}</li>
+                <li>{t('折扣方案 A：兩人同行，一人享半價')}</li>
                 <li>{t('折扣方案 B：符合下列任一身份折扣 $1,600NT')}</li>
                 <li>{t('交大/陽明交大校友子女、新思員工子女、中華民國護照持有人')}</li>
                 <li>{t('A、B方案可疊加使用')}</li>
@@ -62,7 +62,7 @@ const Guidelines = () => {
 
         {/* Call to Action Button */}
         <div className="cta-container">
-            <Link to='https://docs.google.com/forms/d/e/1FAIpQLScG196gYjMEf62hNkytam3tLChveSGopPgyPkzIBOrgc1WYPA/viewform?pli=1' target='_blank' className="cta-button">立即報名</Link>
+            <Link to='https://docs.google.com/forms/d/e/1FAIpQLScG196gYjMEf62hNkytam3tLChveSGopPgyPkzIBOrgc1WYPA/viewform?pli=1' target='_blank' className="cta-button">{t('立即報名')}</Link>
         </div>
     </div>
   );
