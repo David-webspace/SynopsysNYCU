@@ -115,6 +115,10 @@ footer{
   z-index: 30;
 }
 
+.topicDefault{
+
+}
+
 h1 {
   font-size: 32px;
   line-height: 1.1;
@@ -235,7 +239,7 @@ td{
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
   
   h2 {
@@ -265,7 +269,7 @@ td{
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
   
   h2 {

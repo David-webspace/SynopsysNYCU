@@ -69,7 +69,7 @@ const Counter = ({ targetDate }) => {
       className={`counter-container xContainer ${isVisible ? "show" : ""}`}
       ref={containerRef}
     >
-      <h1 className="mg-b-50">距離第一梯活動開始還有</h1>
+      <h1 className="mg-b-50 topicDefault">距離第一梯活動開始還有</h1>
       <div className="counter">
         <CircleProgress value={timeLeft.days} label="Days" isVisible={circleVisible[0]} />
         <CircleProgress value={timeLeft.hours} label="Hours" isVisible={circleVisible[1]} />
@@ -80,13 +80,35 @@ const Counter = ({ targetDate }) => {
   );
 };
 
+
+
 const CircleProgress = ({ value, label, isVisible }) => {
-  const radius = 110; // 圓圈的半徑
+
+  const [radius, setRadius] = useState(getRadius(document.documentElement.clientWidth)); // 初始化 radius
+  const [counterWidth, setCounterWidth] = useState(getCounterWidth(document.documentElement.clientWidth)); // 初始化 counterWidth
+  const ScreenWidth = window.innerWidth;
+
+  useEffect(() => {
+    const handleResize = () => {
+      setRadius(getRadius(document.documentElement.clientWidth)); // 當螢幕寬度改變時更新 radius
+      setCounterWidth(getCounterWidth(document.documentElement.clientWidth))
+    };
+
+    window.addEventListener("resize", handleResize); // 監聽螢幕大小變化
+    return () => window.removeEventListener("resize", handleResize); // 清除事件監聽器
+  }, []);
+
+  // console.log(radius);
+
+  // 圓圈的半徑
   const circumference = 2 * Math.PI * radius; // 動態計算圓周長
+  const maxCounterDivider = label === "Seconds" || label === "Mins" ? 60 : label === "Hours" ? 24 : 100;
+  const maxCounterWidth = ScreenWidth <= 425 ? 80 : ScreenWidth <= 768 ? 120 : ScreenWidth <= 1024 ? 160 : 240
+  console.log(maxCounterWidth)
 
   return (
     <div className={`circle-progress ${isVisible ? "show" : ""}`}>
-      <svg className="progress-ring" width="240" height="240">
+      <svg className="progress-ring" width={counterWidth} height={counterWidth}>
         {/* 背景灰色圓圈 */}
         <circle
           className="progress-ring__background"
@@ -94,8 +116,8 @@ const CircleProgress = ({ value, label, isVisible }) => {
           strokeWidth="8"
           fill="transparent"
           r={radius}
-          cx="120"
-          cy="120"
+          cx={counterWidth/2}
+          cy={counterWidth/2}
         />
         {/* 進度綠色圓圈 */}
         <circle
@@ -104,11 +126,11 @@ const CircleProgress = ({ value, label, isVisible }) => {
           strokeWidth="8"
           fill="transparent"
           r={radius}
-          cx="120"
-          cy="120"
+          cx={counterWidth/2}
+          cy={counterWidth/2}
           style={{
             strokeDasharray: circumference, // 動態計算的圓周長
-            strokeDashoffset: circumference - (value / 100) * circumference, // 根據百分比計算偏移量
+            strokeDashoffset: circumference - (value / maxCounterDivider) * circumference, // 根據百分比計算偏移量
           }}
         />
       </svg>
@@ -119,5 +141,28 @@ const CircleProgress = ({ value, label, isVisible }) => {
     </div>
   );
 };
+
+// 計算 radius 的輔助函數
+const getRadius = (screenWidth) => {
+  return (
+    screenWidth <= 425
+    ? 50
+    : screenWidth <= 768
+    ? 60
+    : screenWidth <= 1024
+    ? 80
+    : 110
+  )
+};
+
+const getCounterWidth = (screenWidth) => {
+  return  screenWidth <= 425 
+    ? 80 : 
+    screenWidth <= 768 
+    ? 120 :
+    screenWidth <= 1024 
+    ? 160 :
+    240
+}
 
 export default Counter;

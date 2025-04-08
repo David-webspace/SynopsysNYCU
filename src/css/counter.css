@@ -2,9 +2,8 @@
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    color: #ffffff;
+    position: relative;
+    margin-bottom: 400px;
 }
 
 .counter-container.show {
@@ -15,7 +14,12 @@
 .counter {
     display: flex;
     justify-content: space-between;
-    /* gap: 240px; */
+    position: absolute;
+    width: 80%;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* padding: 0 20px; */
 }
 
 .circle-progress {
@@ -59,67 +63,91 @@
     color: #ffffff;
 }
 
+@media (max-width:1440px) {
+    .counter {
+        width: 90%;
+        padding: 0 0px;
+    }
+}
 
 @media (max-width:1024px) {
-    .counter-container {
-        display: none;
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
-        text-align: center;
-        font-family: Arial, sans-serif;
-        color: #ffffff;
-    }
-    
-    .counter-container.show {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
     .counter {
-        display: flex;
-        justify-content: space-between;
-        /* gap: 240px; */
+        width: 80%;
+        padding: 0 20px;
     }
     
+    /* .circle-progress{
+        width: 25%;
+    } */
+}
+
+@media (max-width:768px) {
+    .counter-container {
+        margin-bottom: 120px;
+    }
+
+    .counter {
+        width: 100%;
+        padding: 0 0px;
+        position: static;
+        transform: translateX(-0%);
+    }
+
     .circle-progress {
         position: relative;
         opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        transform: translateY(0%);
+        width: 25%;
     }
-    
-    .circle-progress.show {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
+
     .progress-ring {
-        transform: rotate(-90deg);
+        display: none;
+    }
+
+    .circle-text{
+        position: static;
+        top: 0%;
+        left: 0%;
+        margin-right: 0px;
     }
     
-    .progress-ring__circle {
-        transition: stroke-dashoffset 0.3s ease;
-    }
-    
-    .circle-text {
+    .circle-text::after {
+        content: '：';
         position: absolute;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        left: 80%;
+        transform: translateY(-50%);
+        font-size: 40px;
+    }
+
+    .circle-text:last-of-type()::after{
+        content: 'dhgfn';
+        background-color: #fff;
     }
     
     .circle-text span {
-        font-size: 36px;
-        font-weight: bold;
+        font-size: 20px;
     }
     
     .circle-text small {
         font-size: 20px;
-        color: #ffffff;
+    }
+}
+
+@media (max-width:425px) {
+    .counter-container {
+        margin-bottom: 120px;
+    }
+
+    .counter {
+        padding: 0 20px;
+    }
+    
+    .circle-text span {
+        font-size: 18px;
+    }
+    
+    .circle-text small {
+        font-size: 14px;
     }
 }
