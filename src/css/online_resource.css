@@ -1,7 +1,165 @@
-.indexNav{
+/* 卡片式設計 */
+.videoCard {
+    background: var(--blue-4);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.videoCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.videoCardItem{
+    display: flex;
+}
+
+.videoCard iframe {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    aspect-ratio: 16 / 9;
+}
+
+.videoCard h2 {
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.videoCard p {
+    font-size: 14px;
+    color: var(--white);
+
+}
+  
+.sourceTxt{
+    width: 60%;
+    margin-left: 30px;
+}
+
+.sourceTxt h2{
+    margin-bottom: 20px;
+}
+
+.sourceTxt h3{
+    color: var(--white);
+}
+  
+/* 導航欄樣式 */
+.indexNav {
+    position: fixed;
+    top: 100px;
+    right: 20px;
     width: 300px;
-    position:sticky;
-    bottom: 250px;
-    left: 0;
-    margin-left: -100px;
+    background: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: var(--blue-4);
+}
+
+.indexNav a {
+    display: block;
+    margin-bottom: 15px;
+    color: var(--blue-4);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.indexNav a:hover {
+    color: var(--purple-1);
+}
+
+.indexNav a.active {
+    color: var(--purple-1);
+}
+
+/* 響應式設計 */
+/* @media (max-width: 768px) {
+    .Container {
+        flex-direction: column;
+    }
+
+    .indexNav {
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+} */
+
+
+
+/* 基本樣式已經存在，不變 */
+
+/* 響應式設計 */
+
+/* 1024px */
+@media (max-width: 1024px) {
+    .Container {
+        flex-direction: column;
+    }
+
+    .indexNav {
+        position: static;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .videoCard {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .videoCardItem {
+        flex-direction: column;
+        justify-content: start;
+        margin-bottom: 50px;
+    }
+
+    .videoCard iframe {
+        width: 100%;
+    }
+
+    .sourceTxt {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0px;
+    }
+
+    .sourceTxt h2{
+        margin-bottom: 5px;
+    }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+    .videoCard iframe {
+    }
+
+    .sourceTxt {
+        width: 100%;
+    }
+
+    h1.mg-b-50 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .indexNav h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .indexNav a {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+/* 425px */
+@media (max-width: 425px) {
 }

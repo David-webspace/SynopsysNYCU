@@ -6,17 +6,20 @@
             {
                 "EP": "EP1",
                 "content": "解構半導體產業鍊",
-                "youtubeEmbed": "https://www.youtube.com/embed/KXY1EOkVm-A?si=V_RWR5okwvTv2bqN"
+                "youtubeEmbed": "https://www.youtube.com/embed/KXY1EOkVm-A?si=V_RWR5okwvTv2bqN",
+                "description": "解析半導體產業的「大合奏」，我們常聽到的科技大廠分別在其中扮演什麼角色呢？本支影片帶您一窺半導體產業全貌，挖掘合作中的亮點與挑戰，透過上中下游齊力合作，共同推動半導體市場的革新與進步！"               
             },
             {
                 "EP": "EP2",
                 "content": "公司之間的互動與面臨的挑戰",
-                "youtubeEmbed": "https://www.youtube.com/embed/OkHUhHPTvgE?si=C15QPcO6IPWHA4M-"
+                "youtubeEmbed": "https://www.youtube.com/embed/OkHUhHPTvgE?si=C15QPcO6IPWHA4M-",
+                "description": "半導體技術是不斷的創新，過去這個產業的歷史，是如何發展成今日的樣貌?未來，我們又將往哪個方向邁進？藉由學長們的分享，了解半導體產業的發展。"               
             },
             {
                 "EP": "EP3",
                 "content": "給高中生的話",
-                "youtubeEmbed": "https://www.youtube.com/embed/bjPNcXNUesk?si=i-8Sp-_EQkEmDTwP"
+                "youtubeEmbed": "https://www.youtube.com/embed/bjPNcXNUesk?si=i-8Sp-_EQkEmDTwP",
+                "description": "想踏入半導體領域但不確定自己適不適合？我可以做哪些準備以因應未來挑戰呢？如果你也有這些疑問，那就一起來聽聽前輩們提供哪些建議吧！"               
             }
         ]
     },
@@ -27,12 +30,14 @@
             {
                 "EP": "EP1",
                 "content": "半導體與晶片設計",
-                "youtubeEmbed": "https://www.youtube.com/embed/SuPsA4h8Yc0?si=zhoi8Ppmq4vrLRB8"
+                "youtubeEmbed": "https://www.youtube.com/embed/SuPsA4h8Yc0?si=zhoi8Ppmq4vrLRB8",
+                "description": "近年來半導體產業蓬勃發展台灣作為半導體產業的重要據點，如何在全球科技領域站有一席之地呢？這支影片將從半導體產業的發展與歷史出發一起探討台灣與半導體產業在發展、技術創新以及人才培育的密切關係✨"               
             },
             {
                 "EP": "EP2",
                 "content": "台灣產業現況",
-                "youtubeEmbed": "https://www.youtube.com/embed/J3egSP-vRCw?si=UlOaZWG4dxckBHn8"
+                "youtubeEmbed": "https://www.youtube.com/embed/J3egSP-vRCw?si=UlOaZWG4dxckBHn8",
+                "description": "跟著講師聚焦台灣半導體業在國際上的發展從IC設計、製造到封裝與測試，台灣為何可以常居全球IC產業的領先地位呢？一起回顧過去十年間台灣IC設計業的發展見證台灣在推動產業發展方面的方法與貢獻✨"               
             }
         ]
     },
@@ -43,7 +48,8 @@
             {
                 "EP": "EP1",
                 "content": "IC設計流程簡介",
-                "youtubeEmbed": "https://www.youtube.com/embed/_Z9VAvI-v-Y?si=hOp4yOYZUvrb4gNG"
+                "youtubeEmbed": "https://www.youtube.com/embed/_Z9VAvI-v-Y?si=hOp4yOYZUvrb4gNG",
+                "description": "將IC設計擬作房屋設計 詳細了解IC設計的細部流程！這支影片主要講述「IC設計」各階段分工，如何從零開始設計出晶片✨將設計對照蓋房子的步驟，讓IC設計不再艱深難懂！"               
             }
         ]
     },
@@ -54,17 +60,20 @@
             {
                 "EP": "EP1",
                 "content": "數位系統基礎",
-                "youtubeEmbed": "https://www.youtube.com/embed/jXyUEvvuOT4?si=D79XqCKfYY_aX1IS"
+                "youtubeEmbed": "https://www.youtube.com/embed/jXyUEvvuOT4?si=D79XqCKfYY_aX1IS",
+                "description": "我們的生活中每天都會接觸到不同的訊號究竟哪些是類比訊號？哪些是數位訊號呢？藉由講師的分享，一起了解訊號間的差異以及生活中的應用吧！"               
             },
             {
                 "EP": "EP2",
                 "content": "從十進位制邁向二進位制",
-                "youtubeEmbed": "https://www.youtube.com/embed/XVcwt7XWwHI?si=1n_-HIShWYdGm5Um"
+                "youtubeEmbed": "https://www.youtube.com/embed/XVcwt7XWwHI?si=1n_-HIShWYdGm5Um",
+                "description": "在半導體產業中，常常會運用到「二進位制」！到底什麼是二進位制呢？透過數值系統轉換，認識二進位制與十進位制的差異讓我們跟著老師的步伐，一起學習不同進位制的轉換～"               
             },
             {
                 "EP": "EP3",
                 "content": "交換電路和基本邏輯",
-                "youtubeEmbed": "https://www.youtube.com/embed/dbF9ktdtAyE?si=jyDoRNKnc2ab_caZ"
+                "youtubeEmbed": "https://www.youtube.com/embed/dbF9ktdtAyE?si=jyDoRNKnc2ab_caZ",
+                "description": "邏輯設計在當今數字時代，扮演著至關重要的角色無論是半導體，或是日常生活中常見的計算機及智能裝置等，邏輯設計的應用無所不在本集影片深入探討邏輯設計的概念和工作原理揭開邏輯設計的神秘面紗！"               
             }
         ]
     }

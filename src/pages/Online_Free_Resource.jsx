@@ -1,111 +1,94 @@
-import React, { useState } from 'react'
-import onlineResource from '../datas/onlineResource.json'
+import React, { useState, useEffect } from 'react';
+import onlineResource from '../datas/onlineResource.json';
 import { FaMapPin } from "react-icons/fa";
-import '../i18n'
-import { useTranslation } from 'react-i18next'
-import '../css/online_resource.css'
+import '../i18n';
+import { useTranslation } from 'react-i18next';
+import '../css/online_resource.css';
 
 const Online_Free_Resource = () => {
+  const { t } = useTranslation();
+  const [activeSection, setActiveSection] = useState('');
 
-  const { t, i18n } = useTranslation()
+  // 監聽滾動事件，實現導航欄高亮
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = onlineResource.map(resource => document.getElementById(resource.id));
+      const scrollPosition = window.scrollY + 150; // Offset for sticky navbar
 
-  const [selectSourceItem, setSelectSourceItem] = useState('analytics')
-  
-  const handleSelectedSource = (source) => {
-    setSelectSourceItem(source)
-  }
-
-  // ===========================resourceRender ===============================
-  const resourceRender = onlineResource.map((resource, index) => {
-    const youtubeRender = resource.episode.map((episode, episodeIndex) => {
-      return(
-        <div key={episodeIndex} className='mg-b-50'>
-          <iframe
-            width="560"
-            height="315"
-            src={episode.youtubeEmbed}
-            title="YouTube video player"
-            frameborder="0"
-            allow="
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture;
-              web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          >
-          </iframe>
-        </div>
-      )
-    })
-
-    return(
-      <div key={index}>
-        <h2 className='mg-b-20' id={`${resource.id}`}>{t('前導課程')} {t(resource.topic)}</h2>
-        {youtubeRender}
-      </div>
-    )
-  })
-
-  // ===========================indexRender ===============================
-  const handleScrollToElement = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const topOffset = 100; // Adjust this value to control the space between the top of the viewport and the element
-      const elementPosition = element.getBoundingClientRect().top; //This gives the distance from the top of the viewport to target element
-      const offsetPosition = elementPosition + window.pageYOffset - topOffset;
-      //pageYOffset gets the current scroll postion of the page
-      //topOffset is the extra amount by which you want to adjust the scroll pisition. In this case, you're moving it down by 100px.
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
+      sections.forEach(section => {
+        if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
+          setActiveSection(section.id);
+        }
       });
-    }
-  }
+    };
 
-  const indexRender = onlineResource.map((resource, index) => {
-    const episodeRender = resource.episode.map((episode, episodeIndex) => {
-      return(
-        <div key={episodeIndex}>
-          <h4>{t(episode.EP)} {t(episode.content)}</h4>
-        </div>
-      )
-    })
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-    return(
-      <a
-        key={index} 
-        className='mg-b-20 db'
-        // white version
-        // style={{color:`${selectSourceItem == resource.id ? '#383838' : '#b7b7b7'}`}}
-        // dark version
-        style={{color:`${selectSourceItem == resource.id ? 'var(--purple-1)' : '#fff'}`}}
-        href={`#${resource.id}`}
-        onClick={(e) => {
-          e.preventDefault();
-          handleScrollToElement(resource.id)
-          handleSelectedSource(resource.id)
-        }}
-      >
-        <h3><FaMapPin size={16}/> {t(resource.topic)}</h3>
-        <h4>{episodeRender}</h4>
-      </a>
-    )
-  })
+  const resourceRender = onlineResource.map((resource, index) => {
+    return (
+      <div key={index} id={resource.id}  className="videoCard">
+        <h2>{t('前導課程')} {t(resource.topic)}</h2>
+        {resource.episode.map((episode, episodeIndex) => (
+          <div key={episodeIndex} className='videoCardItem'>
+            <iframe
+              src={episode.youtubeEmbed}
+              title={`YouTube video ${episodeIndex}`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              ></iframe>
+            <div className='sourceTxt'>
+              <h2>{episode.EP} {t(episode.content)}</h2>
+              <h4>{episode.description}</h4>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  });
+
+  const indexRender = onlineResource.map((resource, index) => (
+    <a
+      key={index}
+      href={`#${resource.id}`}
+      className={activeSection === resource.id ? 'active' : ''}
+      onClick={(e) => {
+        e.preventDefault();
+        const targetElement = document.getElementById(resource.id);
+
+        if (targetElement) {
+          // 計算目標元素的位置並加入偏移量
+          const headerHeight = 80; // 假設 Header 的高度為 100px
+          const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+          console.log(window.scrollY)
+          const offsetPosition = elementPosition - headerHeight;
+
+          // 平滑滾動到指定位置
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth',
+          });
+        }
+      }}
+    >
+      <h3><FaMapPin size={16} /> {t(resource.topic)}</h3>
+    </a>
+  ));
 
   return (
-    <div style={{position:"relative"}} className='Container'>
-      <div className={`df fd-c aln-itm-c`}>
+    <div className="Container" style={{position:"relative"}}>
+      <div>
         <h1 className='mg-b-50'>{t('線上課程免費資源')}</h1>
         {resourceRender}
       </div>
-      <div className='indexNav'>{indexRender}</div>
+      <div className="indexNav">
+        <h2>{t('目錄')}</h2>
+        {indexRender}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Online_Free_Resource
+export default Online_Free_Resource;

@@ -35,9 +35,11 @@
   --primary-blue: #050C28;
   --black-0: rgb(0, 0, 0);
   --content-grey: rgba(0, 0, 0, 0.6);
+  --white: rgb(255, 255, 255);
   --blue-1: #212433;
   --blue-2: #1a2240;
   --blue-3: #3c4257;
+  --blue-4: #5f6783;
   --white: #ffffff;
   --grey-0:#ebebeb;
   --grey-1:#d2d2d2;
