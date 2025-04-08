@@ -1,16 +1,107 @@
+/* 主容器樣式 */
+.OuterLink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap; /* 小屏幕時自動換行 */
+    margin-bottom: 300px;
+}
 
-.OuterLink h2{
+/* 每個區塊的樣式 */
+.OuterLink a {
+    width: 31%;
+    position: relative;
+    border-radius: 12px; /* 圓角設計 */
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 卡片陰影 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 動態效果 */
+}
+
+.OuterLink a:hover {
+    transform: translateY(-5px); /* 懸停時上浮效果 */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* 懸停時陰影加強 */
+}
+
+/* 標題文字樣式 */
+.OuterLink h2 {
     color: #ffffff;
     position: absolute;
     width: 100%;
     top: 50%;
+    transform: translateY(-50%); /* 垂直居中 */
     text-align: center;
+    font-size: 20px;
+    font-weight: bold;
     z-index: 30;
+    transition: color 0.3s ease; /* 動態文字效果 */
 }
 
-.mask{
-    background-color: rgba(0, 0, 0, 0.3);
+.OuterLink a:hover h2 {
+    color: #ffd700; /* 懸停時文字高亮顏色 */
+}
+
+/* 遮罩樣式 */
+.mask {
+    background-color: rgba(0, 0, 0, 0.5); /* 增強遮罩效果 */
     width: 100%;
-    height: 99%;
+    height: 100%;
     position: absolute;
+    z-index: 20;
+    transition: background-color 0.3s ease; /* 動態遮罩效果 */
+}
+
+.OuterLink a:hover .mask {
+    background-color: rgba(0, 0, 0, 0.3); /* 懸停時遮罩變淡 */
+}
+
+/* 背景圖片樣式 */
+.OuterLink img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 圖片裁剪適配 */
+    transition: transform 0.3s ease; /* 動態圖片效果 */
+}
+
+.OuterLink a:hover img {
+    transform: scale(1.1); /* 懸停時背景圖片放大 */
+}
+
+/* 響應式設計 */
+@media (max-width: 1024px) {
+    .OuterLink {
+        margin-bottom: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .OuterLink {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: start;
+        margin-bottom: 80px;
+    }
+    .OuterLink a {
+        width: 100%; 
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .OuterLink h2 {
+        font-size: 18px; /* 調整文字大小 */
+    }
+}
+
+@media (max-width: 425px) {
+    .OuterLink {
+        margin-bottom: 40px;
+    }
+
+    .OuterLink a {
+        height: 220px;
+    }
+
+    .OuterLink h2 {
+        font-size: 16px; /* 調整文字大小 */
+    }
 }
