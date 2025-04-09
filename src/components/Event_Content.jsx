@@ -8,7 +8,7 @@ const Event_Content = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className='fw'>
+    <div className='OuterLinkContainer'>
       <h1 style={{padding:"20px 80px", textAlign:"center"}}>{t('活動整理讓你知')}</h1>
       <div className='OuterLink'>
         <Link to='/dev/event2025'>

@@ -1,4 +1,8 @@
 /* 主容器樣式 */
+.OuterLinkContainer{
+    margin-bottom: 500px;
+}
+
 .OuterLink {
     display: flex;
     justify-content: space-between;
@@ -71,6 +75,10 @@
 
 /* 響應式設計 */
 @media (max-width: 1024px) {
+    .OuterLinkContainer{
+        margin-bottom: 0px;
+    }
+
     .OuterLink {
         margin-bottom: 160px;
         padding: 20px 80px;
