@@ -71,7 +71,7 @@ const Header = () => {
   };
 
   return (
-    <>
+    <div className='headerContainer'>
       {/* 漢堡按鈕 */}
       <div className="hamburger" onClick={toggleMenu}>
         {isMenuOpen ? <FaTimes size={30} color="white" /> : <FaBars size={30} color="white" />}
@@ -122,7 +122,7 @@ const Header = () => {
           <button className='registerBtn'>{t('立即報名')}</button>
         </Link>
       </header>
-    </>
+    </div>
   );
 };
 

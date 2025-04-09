@@ -1,7 +1,15 @@
-header{
+.headerContainer{
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 50;
+}
+
+header{
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,7 +17,6 @@ header{
     padding: 0 80px;
     background-color: var(--primary-blue);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    z-index: 50;
 }
 
 header a{
@@ -102,10 +109,13 @@ header ul ul li a{
 /* 在小螢幕顯示漢堡按鈕 */
 @media (max-width: 1024px) {
     header{
+        position: fixed;
+        top: 0;
+        left: 0;
         left: auto;
         left: 100%;
         width: 40%;
-        height: 100%;
+        height: 120%;
         flex-direction: column;
         background-color: var(--black-0);
         padding: 20px 20px;
@@ -156,8 +166,19 @@ header ul ul li a{
         border-bottom: 1px solid #ffffff;
     }
 
+    .lngSelector{
+        height: auto;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        padding: 30px 30px;
+    }
+    
     .hamburger {
         display: block;
+    }
+
+    .registerBtn{
+        width: 320px;
     }
 }
 
@@ -165,9 +186,14 @@ header ul ul li a{
     header{
         width: 360px;
     }
+    
     .defaultLogo{
         left: 20px;
         padding: 20px 0 ;
+    }
+
+    .registerBtn{
+        width: 240px;
     }
 }
 
