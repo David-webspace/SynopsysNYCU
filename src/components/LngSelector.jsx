@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { FaEarthAfrica, FaBasketball } from "react-icons/fa6";
-
+import { RiEarthFill } from "react-icons/ri";
 import '../i18n';
 import { useTranslation } from 'react-i18next';
 
@@ -48,7 +48,7 @@ const LngSelector = () => {
             className='lngSelector'
         >
         <div onClick={handleLanguageSelect} className='df jc-ca aln-itm-c'>
-            <FaBasketball size={20} />
+            <RiEarthFill size={20} />
         </div>
         <ul
             className='df fd-c'

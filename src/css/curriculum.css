@@ -1,8 +1,6 @@
-/* competitionInfo.css */
-
 .competition-info-container {
-    display: flex;
-    justify-content: space-between;
+    width: 80vw;
+    /* background-color: rgba(255, 255, 255, 0.3); */
     padding: 40px;
 }
 
@@ -10,21 +8,18 @@
     flex: 1;
     max-width: 300px;
     padding-right: 20px;
-    /* border-right: 1px solid #ddd; */
 }
 
 .left-section .title{
     font-weight: 400;
     margin-bottom: 20px;
     color: #ffffff;
-    writing-mode: vertical-rl;
     font-size: 40px;
 }
 
 .left-section .date {
     color: #ffffff;
     font-size: 40px;
-    width: 60px;
     margin-bottom: 20px;
 }
 
@@ -43,15 +38,17 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top:160px;
 }
 
 .schedule-section .day-container {
-    width: 45%;
+    /* width: 45%; */
     margin-bottom: 80px;
+    margin-right: 30px;
 }
 
 .schedule-section .day-header {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -76,7 +73,7 @@
     font-weight: bold;
     color: #ffffff;
     font-size: 40px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     font-family: "Iansui", cursive;
 }
 
@@ -137,12 +134,15 @@
     .competition-info-container {
         padding: 40px;
     }
-    .schedule-section {
-        flex-direction: column;
+
+    .schedule-section { 
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .schedule-section .day-container {
-        width: 100%;
+        width: 40%;
         margin-bottom: 80px;
     }
 }
@@ -157,7 +157,8 @@
     .left-section {
         max-width: 100%;
         padding-right: 0px;
-        margin-bottom: 150px;
+        margin-bottom: 50px;
+        text-align: center;
     }
     
     .left-section .title{
@@ -170,12 +171,32 @@
     }
 
     .schedule-section {
+        width: 100%;
         flex-direction: column;
     }
-
+    
     .schedule-section .day-container {
         width: 100%;
-        margin-bottom: 80px;
+        margin-bottom: 120px;
+        margin-right: 0;
+    }
+
+    .schedule-section .day-header{
+        justify-content: center;
+    }
+
+    .schedule-section .day-number {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .schedule-section .schedule-list {
+        margin-top: 20px;
+    }
+
+    .schedule-list li{
+        display: block;
+        text-align: center;
     }
 
     .schedule-list li .time{
@@ -204,6 +225,11 @@
 
     .left-section .title{
         margin-bottom: 0px;
+    }
+
+    .schedule-section .day-container {
+        text-align: center;
+        margin-right: 0;
     }
 
     .campBtn{

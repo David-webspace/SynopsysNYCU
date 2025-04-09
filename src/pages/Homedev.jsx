@@ -9,7 +9,7 @@ import HomeSlogan from '../components/HomeSlogan';
 const Homedev = () => {
 
   const ScreenWidth = window.innerWidth
-  const targetDate = "2025-07-10T23:59:59";
+  const targetDate = "2025-04-20T23:59:59";
 
   return (
     <div>

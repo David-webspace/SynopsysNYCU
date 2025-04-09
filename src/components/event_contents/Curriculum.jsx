@@ -34,7 +34,7 @@ const CompetitionInfo = () => {
           <ul className="schedule-list">
             {daySchedule.class.map((classItem, idx) => (
               <li key={idx} className="df">
-                <h4 className="time">{classItem.time}</h4>
+                {/* <h4 className="time">{classItem.time}</h4> */}
                 <h4 className="title">{classItem.titleCh}</h4>
               </li>
             ))}

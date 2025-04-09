@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Iansui&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Iansui&family=Noto+Sans+HK:wght@100..900&family=Noto+Sans+TC:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+TC:wght@100..900&display=swap');
 @font-face {
   font-family: 'EnglishFont';
   src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Iansui&family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans+HK:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap') format('woff2');
@@ -12,13 +12,14 @@
 }
 
 @font-face {
-  font-family: 'ChineseFont';
-  src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Iansui&family=Noto+Sans+HK:wght@100..900&family=Noto+Sans+TC:wght@100..900&display=swap') format('woff2');
+  font-family: 'Din'; /* 這是字體的名稱 */
+  src: url('./fonts/DIN-Regular.otf') format('otf'); /* 字體文件的路徑 */
 }
 
+
 :root {
-  font-family: 'ChineseFont', serif;
-  font-family: 'EnglishFont', serif;
+  font-family: "Inter", sans-serif;
+  font-family: 'Din', serif;
   font-optical-sizing: auto;
   font-style: normal;
   line-height: 1.5;
@@ -33,6 +34,7 @@
 
   /* variables */
   --primary-blue: #050C28;
+  --primary-blue-1: #121534;
   --black-0: rgb(0, 0, 0);
   --content-grey: rgba(0, 0, 0, 0.6);
   --white: rgb(255, 255, 255);
@@ -97,7 +99,8 @@ a:hover {
 }
 
 body {
-
+  display: flex;
+  justify-content: center;
 }
 
 .maintenanceText{

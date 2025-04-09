@@ -57,7 +57,7 @@ const Event_2025 = () => {
   })
 
   return (
-    <div style={{position:"relative", padding:`${ScreenWidth >= 425 ? '160px 50px' : '160px 20px'}`}}>
+    <div style={{padding:`${ScreenWidth >= 425 ? '160px 50px' : '160px 20px'}`}}>
         <Curriculum />
       {/* <div className='indexEvent'>{indexRender}</div> */}
     </div>

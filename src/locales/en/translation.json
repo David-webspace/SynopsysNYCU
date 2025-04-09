@@ -3,7 +3,7 @@
     "關於我們": "About Us",
     "營隊時程": "Events",
     "活動辦法": "Guidelines",
-    "活動回顧": "Heights",
+    "活動回顧": "Reviews",
     "線上免費資源": "Online Resources",
     "常見問題":"FAQs",
     "聯絡我們":"Contact Us",
@@ -21,6 +21,7 @@
 
     "活動辦法":"Guidelines",
     "重要日期":"Important Dates",
+    "『早鳥優惠時間』：即日起至 4/20 (日) 23:59":"Early Access Discount: From now until Api 20 (Sunday) at 11:59 PM",
     "開始報名：即日起至 5/30 (六) 23:59":"Registration Period: From now until May 30 (Saturday) at 11:59 PM",
     "繳費截止：即日起至 6/15 (六) 23:59":"Payment Deadline: From now until June 15 (Saturday) at 11:59 PM",
     "錄取結果通知：即日起至 6/15 (六) 23:59":"Admission Notification: From now until June 15 (Saturday) at 11:59 PM",
@@ -71,9 +72,10 @@
     "實作環節穿插在靜態課程之中，讓整體的活動更為生動有趣，讓我最為有有感的是產業圓桌及在校生分享的部分，深刻感受到團隊在尋找及安排講師的用心之處，每個分享經驗的學長姐也都是有備而來，並非魚目混珠。":"The practical sessions interspersed within the static courses made the overall activities more lively and interesting. What resonated with me the most were the industry roundtable and the sharing sessions from current students. I deeply felt the team's dedication in finding and arranging speakers. Each alumni sharing their experiences came well-prepared and were genuinely insightful.",
     
     "線上課程免費資源": "Online Free Resources",
+    "目錄": "Index",
     "前導課程": "Preview Courses | ",
     "台灣半導體產業鍊全解析": "Comprehensive Analysis of Taiwan’s Semiconductor Industry Chain",
-    "解構半導體產業鏈": "Deconstructing the Semiconductor Industry Chain",
+    "解構半導體產業鍊": "Deconstructing the Semiconductor Industry Chain",
     "解析半導體產業的「大合奏」，我們常聽到的科技大廠分別在其中扮演什麼角色呢？本支影片帶您一窺半導體產業全貌，挖掘合作中的亮點與挑戰，透過上中下游齊力合作，共同推動半導體市場的革新與進步！": "Exploring the 'Grand Symphony' of the Semiconductor Industry: What roles do major tech companies play? This video offers a glimpse into the entirety of the semiconductor industry, uncovering highlights and challenges in collaboration. Through joint efforts across upstream, midstream, and downstream sectors, we drive innovation and progress in the semiconductor market!",
     "公司之間的互動與面臨的挑戰": "Interactions Between Companies and the Challenges They Face",
     "半導體技術是不斷的創新，過去這個產業的歷史，是如何發展成今日的樣貌?未來，我們又將往哪個方向邁進？藉由學長們的分享，了解半導體產業的發展。": "Semiconductor technology is constantly innovating. How has the history of this industry evolved into its current state? And where will it head in the future? Learn about the development of the semiconductor industry through alumni insights.",
