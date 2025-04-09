@@ -135,12 +135,14 @@ header ul ul li a{
         display: block;
         position: absolute;
         top: 0;
-        left: 20px;
-        padding: 20px 0 ;
+        left: 0px;
+        padding: 10px 40px ;
+        background-color: var(--primary-blue);
+        width: 100%;
     }
 
     .Logo{
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
 
     header.header-open {
@@ -189,8 +191,7 @@ header ul ul li a{
     }
     
     .defaultLogo{
-        left: 20px;
-        padding: 20px 0 ;
+        padding: 10px 20px ;
     }
 
     .registerBtn{

@@ -1,6 +1,5 @@
 .competition-info-container {
     width: 80vw;
-    /* background-color: rgba(255, 255, 255, 0.3); */
     padding: 40px;
 }
 
@@ -131,10 +130,6 @@
 }
 
 @media (max-width:1024px) {
-    .competition-info-container {
-        padding: 40px;
-    }
-
     .schedule-section { 
         display: flex;
         justify-content: space-between;
@@ -159,6 +154,9 @@
         padding-right: 0px;
         margin-bottom: 50px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .left-section .title{
@@ -210,6 +208,11 @@
 }
 
 @media (max-width:425px) {
+    .competition-info-container {
+        width: 80vw;
+        padding: 10px;
+    }
+
     .schedule-list li {
         flex-direction: column;
         margin-bottom: 5px;

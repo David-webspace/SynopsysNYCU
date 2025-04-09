@@ -14,7 +14,7 @@ const Homedev = () => {
   return (
     <>
         {/* <ScrollPage /> */}
-        {/* <Opening /> */}
+        <Opening />
         <Homemain />
         <HomeSlogan />
         <Counter targetDate={targetDate}/>
