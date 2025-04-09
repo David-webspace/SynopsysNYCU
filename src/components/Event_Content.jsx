@@ -8,15 +8,9 @@ const Event_Content = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className=''>
-      <h2 style={{padding:"20px"}}>{t('活動整理讓你知')}</h2>
-      <div
-        className='OuterLink'
-        style={{
-          height: "500px",
-          width: "100%",
-        }}
-      >
+    <div className='fw'>
+      <h1 style={{padding:"20px 80px", textAlign:"center"}}>{t('活動整理讓你知')}</h1>
+      <div className='OuterLink'>
         <Link to='/dev/event2025'>
           <h2>{t('2025 活動內容')}</h2>
           <div style={{ position: "relative" }}>

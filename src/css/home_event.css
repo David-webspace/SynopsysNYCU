@@ -3,7 +3,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    width: 100%;
+    height: 500px;
+    padding: 20px 80px;
     flex-wrap: wrap; /* 小屏幕時自動換行 */
     margin-bottom: 300px;
 }
@@ -71,6 +73,7 @@
 @media (max-width: 1024px) {
     .OuterLink {
         margin-bottom: 160px;
+        padding: 20px 80px;
     }
 }
 
@@ -80,6 +83,7 @@
         flex-wrap: nowrap;
         justify-content: start;
         margin-bottom: 80px;
+        padding: 20px 60px;
     }
     .OuterLink a {
         width: 100%; 
@@ -95,6 +99,7 @@
 @media (max-width: 425px) {
     .OuterLink {
         margin-bottom: 40px;
+        padding: 20px 20px;
     }
 
     .OuterLink a {

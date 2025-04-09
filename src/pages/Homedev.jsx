@@ -12,15 +12,15 @@ const Homedev = () => {
   const targetDate = "2025-04-20T23:59:59";
 
   return (
-    <div>
+    <>
         {/* <ScrollPage /> */}
-        <Opening />
+        {/* <Opening /> */}
         <Homemain />
         <HomeSlogan />
         <Counter targetDate={targetDate}/>
         <Indicator />
         <Event_Content />
-    </div>
+    </>
   )
 }
 

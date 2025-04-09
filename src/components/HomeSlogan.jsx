@@ -8,7 +8,7 @@ const HomeSlogan = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className='sloganContainer xContainer' style={{width:"100%", height:"100%"}}>
+    <div className='sloganContainer xContainer'>
         <div className='textContainer'>
             <h1 className='titleEn'>{t('IC, THE FUTURE')}</h1>
             <h1 className='titleZh'>{t('一顆晶片，看見未來')}</h1>

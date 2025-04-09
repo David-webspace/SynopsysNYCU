@@ -84,6 +84,7 @@ const Header = () => {
             color='var(--white)'
             className='mg-r-20'
           />
+          {/* <img src="/vite.svg" alt="" /> */}
           <div style={{ width: '200px', color: "#fff" }}>
             <h3 style={{ fontSize: '14px' }}>新思科技 X 陽明交大</h3>
             <h3 style={{ fontSize: '14px' }}>Synopsys X NYCU</h3>
