@@ -79,12 +79,7 @@ const Header = () => {
 
       <Link to='/dev' className='defaultLogo'>
         <div className="Logo">
-          <FaMicrochip
-            size={80}
-            color='var(--white)'
-            className='mg-r-20'
-          />
-          {/* <img src="/vite.svg" alt="" /> */}
+          <img src="/logo_white.svg" alt="" className='mg-r-20'/>
           <div style={{ width: '200px', color: "#fff" }}>
             <h3 style={{ fontSize: '14px' }}>新思科技 X 陽明交大</h3>
             <h3 style={{ fontSize: '14px' }}>Synopsys X NYCU</h3>
@@ -100,11 +95,7 @@ const Header = () => {
         <div className={`menuContainer ${location.pathname !== '/' ? 'df' : 'dn'}`}>
           {/* Logo Container */}
           <Link to='/dev' className='Logo' style={{ marginRight: '0px' }}>
-            <FaMicrochip
-              size={40}
-              color='var(--white)'
-              className='mg-r-20'
-            />
+            <img src="/logo_white.svg" alt="" className='mg-r-20'/>
             <div style={{ width: '200px', color: "#fff" }}>
               <h3 style={{ fontSize: '14px' }}>新思科技 X 陽明交大</h3>
               <h3 style={{ fontSize: '14px' }}>Synopsys X NYCU</h3>
