@@ -14,7 +14,7 @@ const LngSelector = () => {
         const handleClickOutside = (event) => {
             if (languageSelectorRef.current && !languageSelectorRef.current.contains(event.target)) {
             setLangActive(false);
-            console.log('Click Outside');
+            // console.log('Click Outside');
             }
         };
 

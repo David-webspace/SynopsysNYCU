@@ -107,7 +107,7 @@ const CircleProgress = ({ value, label, isVisible }) => {
   const circumference = 2 * Math.PI * radius; // 動態計算圓周長
   const maxCounterDivider = label === "Seconds" || label === "Mins" ? 60 : label === "Hours" ? 24 : 100;
   const maxCounterWidth = ScreenWidth <= 425 ? 80 : ScreenWidth <= 768 ? 120 : ScreenWidth <= 1024 ? 160 : 240
-  console.log(maxCounterWidth)
+  // console.log(maxCounterWidth)
 
   return (
     <div className={`circle-progress ${isVisible ? "show" : ""}`}>

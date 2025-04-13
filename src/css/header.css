@@ -61,6 +61,30 @@ header ul ul li a{
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    position: relative;
+}
+
+.submenuContainer {
+    position: absolute;
+    top: 100%;
+    width: auto;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+.submenuItem {
+    margin-top: 5px;
+    border-bottom: 1px solid var(--black-0);
+    padding: 10px;
+}
+
+.submenuLink {
+    color: #8C8383; /* Default color for submenu items */
+    font-weight: 400;
+}
+
+.menuItemActive .submenuContainer {
+    display: block; /* Show submenu when parent menu is active */
 }
 
 .lngSelector{
@@ -112,8 +136,6 @@ header ul ul li a{
     header{
         position: fixed;
         top: 0;
-        left: 0;
-        left: auto;
         left: 100%;
         width: 40%;
         height: 100%;
@@ -167,6 +189,28 @@ header ul ul li a{
         width: 100%;
         padding: 10px;
         border-bottom: 1px solid #ffffff;
+    }
+
+    .submenuContainer {
+        position: static;
+        width: auto;
+        background-color: transparent;
+        flex-direction: column;
+    }
+    
+    .submenuItem {
+        margin-top: 5px;
+        border-bottom: 1px solid var(--black-0);
+        padding: 10px;
+    }
+    
+    .submenuLink {
+        color: #8C8383; /* Default color for submenu items */
+        font-weight: 400;
+    }
+    
+    .menuItemActive .submenuContainer {
+        display: block; /* Show submenu when parent menu is active */
     }
 
     .lngSelector{

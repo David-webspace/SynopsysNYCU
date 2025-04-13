@@ -2,36 +2,60 @@
     {
         "menu" : "關於我們",
         "id": "origin",
-        "url":"origin"
+        "url":"origin",
+        "sub": [
+            {
+                "menu": "緣起與宗旨",
+                "root": "origin",
+                "id": "About",
+                "url": "about"
+            },
+            {
+                "menu": "台灣交通大學校友總會",
+                "root": "origin",
+                "id": "About",
+                "url": "about"
+            }
+        ]
     },
     {
         "menu" : "營隊時程",
         "id": "event2025",
-        "url":"event2025"
+        "url":"event2025",
+        "sub": []
     },
     {
         "menu" : "活動辦法",
         "id": "guidelines",
-        "url":"guidelines"
+        "url":"guidelines",
+        "sub": []
     },
     {
         "menu" : "活動回顧",
         "id": "pastHeights",
-        "url":"event-review"
+        "url":"event-review",
+        "sub": []
+        
     },
     {
         "menu" : "線上免費資源",
         "id": "onlineResources",
-        "url":"online-resource"
+        "url":"online-resource",
+        "sub": []
+        
     },
     {
         "menu" : "常見問題",
         "id": "faqs",
-        "url":"faqs"
+        "url":"faqs",
+        "sub": []
+        
     },
     {
         "menu" : "聯絡我們",
         "id" :"contactUs",
-        "url":"contacts"
+        "url":"contacts",
+        "sub": []
+        
     }
   ]
