@@ -3,20 +3,7 @@
         "menu" : "關於我們",
         "id": "origin",
         "url":"origin",
-        "sub": [
-            {
-                "menu": "緣起與宗旨",
-                "root": "origin",
-                "id": "About",
-                "url": "about"
-            },
-            {
-                "menu": "台灣交通大學校友總會",
-                "root": "origin",
-                "id": "About",
-                "url": "about"
-            }
-        ]
+        "sub": []
     },
     {
         "menu" : "營隊時程",
