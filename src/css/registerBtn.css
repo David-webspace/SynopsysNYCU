@@ -1,0 +1,125 @@
+.scene {
+    position: relative;
+}
+
+.registerBtn{
+    padding: 10px 10px;
+    width: 160px;
+    background-color: var(--green-1);
+    color: var(--black-0);
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+    animation: bounce 2s infinite;
+    animation: none;
+}
+
+.registerBtn:hover{
+    animation: shake 0.5s infinite;
+}
+
+/* .registerBtn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s, opacity 0.5s;
+    opacity: 0;
+}
+  
+.registerBtn:hover::before {
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+} */
+
+.ripple-button {
+    position: relative;
+    overflow: hidden;
+    /* background-color: var(--green-1); */
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.ripple-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.6s, opacity 0.6s;
+    pointer-events: none;
+}
+  
+.ripple-button:hover::after {
+    transform: scale(4);
+    opacity: 0;
+    transition: transform 0.6s, opacity 0.6s;
+}
+
+.bouncy-letter {
+    display: inline-block;
+    animation: bounce 1s infinite;
+    animation-delay: calc(0.2s * var(--i));
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+  
+.registerBtn .bouncy-letter:nth-child(1) { --i: 0; }
+.registerBtn .bouncy-letter:nth-child(2) { --i: 1; }
+.registerBtn .bouncy-letter:nth-child(3) { --i: 2; }
+.registerBtn .bouncy-letter:nth-child(4) { --i: 3; }
+  
+.registerBtn .bouncy-letter:last-child {
+    animation-delay: calc(0.2s * var(--i) + 2s); /* Add extra delay after last letter */
+}
+
+@media (max-width: 1024px) {
+    .registerBtn{
+        width: 320px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .registerBtn{
+        width: 240px;
+    }
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+}
+  
+
+@keyframes bounceAll {
+    from, to {
+      opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    5%, 15% { transform: translateX(-2.5px); }
+    10%, 20% { transform: translateX(2.5px); }
+    25%, 35%, 45%, 60%, 80% { transform: translateX(-5px); }
+    30%, 40%, 50%, 70%, 90% { transform: translateX(5px); }
+}

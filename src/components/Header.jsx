@@ -7,6 +7,7 @@ import { FaBars, FaTimes } from "react-icons/fa"; // 漢堡按鈕和關閉按鈕
 import menuItems from '../datas/menuList.json';
 import { useTranslation } from 'react-i18next';
 import '../css/header.css';
+import '../css/registerBtn.css'
 import LngSelector from './LngSelector';
 
 const Header = () => {
@@ -165,9 +166,22 @@ const Header = () => {
         {/* Language Select */}
         <LngSelector />
 
-        <Link to='https://docs.google.com/forms/d/e/1FAIpQLScG196gYjMEf62hNkytam3tLChveSGopPgyPkzIBOrgc1WYPA/viewform?pli=1' target='_blank'>
+        {/* <Link to='https://docs.google.com/forms/d/e/1FAIpQLScG196gYjMEf62hNkytam3tLChveSGopPgyPkzIBOrgc1WYPA/viewform?pli=1' target='_blank'>
           <button className='registerBtn'>{t('立即報名')}</button>
-        </Link>
+        </Link> */}
+
+        <div className="scene">
+          {/* <div className="animal">jjjjjjjjjjj</div> */}
+          <Link to='https://docs.google.com/forms/d/e/1FAIpQLScG196gYjMEf62hNkytam3tLChveSGopPgyPkzIBOrgc1WYPA/viewform?pli=1' target='_blank'>
+            <button className='registerBtn ripple-button'>
+              {t('立即報名').split('').map((char, index) => (
+                <span key={index} className='bouncy-letter'>{char}</span>
+              ))}
+            </button>
+            <div class="firework-container"></div>
+          </Link>
+        </div>
+
       </header>
     </div>
   );

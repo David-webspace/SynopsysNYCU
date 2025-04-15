@@ -16,6 +16,12 @@ const Opening = () => {
         setShowContent(true);
       }, 1000);
     }
+
+    const timer = setTimeout(() => {
+      handleEnter();
+    }, 10000);
+
+    return () => clearTimeout(timer)
   }, [videoLoaded]);
 
   const handleEnter = () => {
@@ -56,7 +62,7 @@ const Opening = () => {
         playsInline
         onLoadedData={handleVideoLoaded} // 監聽影片是否加載完成
       >
-        <source src="/homevideo-2.mp4" type="video/mp4" sizes="100vh"/>
+        <source src="/homevideo-3.mp4" type="video/mp4" sizes="100vh"/>
       </video>
 
       {/* 主要內容 */}

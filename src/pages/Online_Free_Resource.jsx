@@ -78,7 +78,7 @@ const Online_Free_Resource = () => {
   ));
 
   return (
-    <div className="Container" style={{position:"relative"}}>
+    <div className="videoCardContainer" style={{position:"relative"}}>
       <div>
         <h1 className='mg-b-50'>{t('線上課程免費資源')}</h1>
         {resourceRender}

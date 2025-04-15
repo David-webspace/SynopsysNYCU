@@ -107,20 +107,6 @@ header ul ul li a{
     cursor: pointer;
 }
 
-.registerBtn{
-    padding: 10px 10px;
-    width: 160px;
-    background-color: var(--green-1);
-    color: var(--black-0);
-    font-weight: 500;
-    transition: all 0.4s ease-in-out;
-}
-
-.registerBtn:hover{
-    background-color: var(--green-2);
-    /* transform: translateY(-3px); */
-}
-
 /* 漢堡按鈕樣式 */
 .hamburger {
     position: fixed;
@@ -223,10 +209,6 @@ header ul ul li a{
     .hamburger {
         display: block;
     }
-
-    .registerBtn{
-        width: 320px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -236,10 +218,6 @@ header ul ul li a{
     
     .defaultLogo{
         padding: 10px 20px ;
-    }
-
-    .registerBtn{
-        width: 240px;
     }
 }
 

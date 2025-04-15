@@ -1,4 +1,9 @@
 /* 卡片式設計 */
+.videoCardContainer{
+    width: 80%;
+    padding: 160px 60px;
+}
+
 .videoCard {
     background: var(--blue-4);
     border-radius: 12px;
@@ -15,10 +20,11 @@
 
 .videoCardItem{
     display: flex;
+    margin-bottom: 20px;
 }
 
 .videoCard iframe {
-    width: 100%;
+    width: 40%;
     border-radius: 8px;
     margin-bottom: 10px;
     aspect-ratio: 16 / 9;
@@ -99,8 +105,9 @@
 
 /* 1024px */
 @media (max-width: 1024px) {
-    .Container {
-        flex-direction: column;
+    .videoCardContainer{
+        width: 100%;
+        padding: 160px 60px;
     }
 
     .indexNav {
@@ -137,6 +144,10 @@
 
 /* 768px */
 @media (max-width: 768px) {
+    .videoCardContainer{
+        padding: 160px 20px;
+    }
+
     .videoCard iframe {
     }
 
