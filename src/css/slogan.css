@@ -3,11 +3,26 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* height: 100%; */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.sloganContainer.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .sloganContainer .textContainer{
     width: 60%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.textContainer.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .textContainer .titleEn{
@@ -31,6 +46,14 @@
 .sloganContainer .imgContainer img{
     width: 100%;
     margin: -20px;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.imgContainer img.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 

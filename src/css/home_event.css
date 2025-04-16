@@ -1,6 +1,14 @@
 /* 主容器樣式 */
 .OuterLinkContainer{
     margin-bottom: 500px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.OuterLinkContainer.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .OuterLink {
@@ -22,6 +30,14 @@
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 卡片陰影 */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* 動態效果 */
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+  
+.OuterLink a.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .OuterLink a:hover {

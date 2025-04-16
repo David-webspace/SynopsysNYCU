@@ -1,13 +1,24 @@
+.indicatorContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 180px;
+    margin-bottom: 100px;
+}
+
 .iconList{
     width: 520px;
     padding: 10px 50px;
-    /* margin-bottom: 20px; */
     transition: .2s;
-  }
-  
-  .iconListActive{
-    /* background-color: rgb(246, 246, 246); */
+}
+
+.iconListActive{
     background-color: rgba(255, 255, 255, 0.1);
     filter: blur(0.2);
-    /* border-left: 4px solid rgb(0, 0, 0); */
-  }
+}
+
+@media (max-width:1440px) {
+    .indicatorContainer{
+        padding: 160px 80px;
+    }
+}

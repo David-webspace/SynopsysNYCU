@@ -8,6 +8,7 @@ const Opening = () => {
   const [showContent, setShowContent] = useState(false);
   const [startTransition, setStartTransition] = useState(false);
   const [videoLoaded, setVideoLoaded] = useState(false); // 追蹤影片是否已加載
+  const [timer, setTimer] = useState(null); // 保存計時器
 
   useEffect(() => {
     if (videoLoaded) {
@@ -17,14 +18,22 @@ const Opening = () => {
       }, 1000);
     }
 
-    const timer = setTimeout(() => {
+    const newTimer = setTimeout(() => {
       handleEnter();
     }, 10000);
+
+    setTimer(newTimer); // 保存計時器
+
+    return () => clearTimeout(newTimer);
 
     return () => clearTimeout(timer)
   }, [videoLoaded]);
 
   const handleEnter = () => {
+    if (timer) {
+      clearTimeout(timer); // 清除計時器
+    }
+
     setStartTransition(true);
 
     // 設置已看過開場動畫的標記
