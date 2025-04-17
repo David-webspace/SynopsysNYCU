@@ -117,9 +117,7 @@
 }
 
 @keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    5%, 15% { transform: translateX(-2.5px); }
-    10%, 20% { transform: translateX(2.5px); }
-    25%, 35%, 45%, 60%, 80% { transform: translateX(-5px); }
-    30%, 40%, 50%, 70%, 90% { transform: translateX(5px); }
+    0%, 90%, 100% { transform: translateX(0); }
+    25%, 55%, 85% { transform: translateX(-5px); }
+    40%, 70% { transform: translateX(5px); }
 }

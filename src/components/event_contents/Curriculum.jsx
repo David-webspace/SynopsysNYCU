@@ -1,84 +1,127 @@
 import React, { useState } from "react";
-import itinerarys from '../../datas/curriculum.json'
-import "../../css/curriculum.css";
+import curriculums from '../../datas/curriculum.json';
+import '../../css/curriculum.css';
 
-const CompetitionInfo = () => {
-  const ScreenWidth = window.innerWidth
-  const [campSelected, setCampSelected] = useState('ch1')
-  const [campBtn, setCampBtn] = useState(false)
+const Curriculum = () => {
+  const [courseTab, setCourseTab] = useState('ch1');
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const toggleCampBtn = () => {
-    setCampBtn(!campBtn)
-  }
+  // Tab data
+  const tabs = [
+    { id: 'ch1', label: '第一梯次' },
+    { id: 'ch2', label: '第二梯次' },
+    { id: 'en', label: '第三梯次（英文授課）' }
+  ];
 
+  // Separate components
+  const ClassBlock = ({ title, building, time }) => (
+    <div className="classBlock">
+      <h4 style={{ fontSize: "14px" }}>{title}</h4>
+      <h5>{building}</h5>
+      <h5>{time}</h5>
+    </div>
+  );
 
-  const dateRender = itinerarys.map((daySchedule, index) => {
-    return(
-      <div key={index} style={{display: `${daySchedule.id === campSelected ? '' : 'none'}`}}>
-        <p>梯次 | {daySchedule.camp}</p>
-        <p>時間 | {daySchedule.date}</p>
+  const DaySchedule = ({ day, classes }) => (
+    <div>
+      <h3 className="dayHeader">DAY{day}</h3>
+      <div style={{ marginRight: "20px", width: "260px" }}>
+        {classes.map((classItem, index) => (
+          <ClassBlock
+            key={index}
+            title={classItem.titleCh}
+            building={classItem.buildingCh}
+            time={classItem.time}
+          />
+        ))}
       </div>
-    )
-  })
+    </div>
+  );
 
-  const scheduleRender = itinerarys
-    .filter((itinerary) => itinerary.id === campSelected)
-    .flatMap((filterSchedule) => 
-      filterSchedule.schedule.map((daySchedule, index) =>  (
-        <div className="day-container" key={index}>
-          {console.log(daySchedule.weekday)}
-          <div className="day-header">
-            <h4 className="day-number">{daySchedule.date}</h4>
-            <h4 className="week-name">{daySchedule.weekday}</h4>
-          </div>
-          <ul className="schedule-list">
-            {daySchedule.class.map((classItem, idx) => (
-              <li key={idx} className="df">
-                {/* <h4 className="time">{classItem.time}</h4> */}
-                <h4 className="title">{classItem.titleCh}</h4>
+  const DetailContent = ({ camp, date, id }) => (
+    <div className={`${id === courseTab ? '' : 'dn'}`}>
+      <h4>梯次｜{camp}</h4>
+      <h4>時間｜{date}</h4>
+    </div>
+  );
+
+  const CurriculumContent = ({ type }) => {
+    const curriculum = curriculums.find(c => c.id === type);
+    if (!curriculum) return null;
+
+    return (
+      <div
+        style={{
+          borderCollapse: "collapse",
+          width: "100%",
+          border: "none",
+          textAlign: "center"
+        }}
+        className={`${courseTab === type ? '' : 'dn'}`}
+      >
+        <div className="df">
+          {[1, 2, 3, 4].map(day => {
+            const daySchedule = curriculum.schedule.find(s => s.day === day.toString());
+            if (!daySchedule) return null;
+
+            return (
+              <DaySchedule
+                key={day}
+                day={day}
+                classes={daySchedule.class}
+              />
+            );
+          })}
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <div className="mg-b-50" id="curriculum">
+      <h1 className="mg-b-30">活動時程</h1>
+
+      <div style={{ marginBottom: "20px" }}>
+        <h4>地點｜國立陽明交通大學</h4>
+        {curriculums.map(info => (
+          <DetailContent
+            key={info.id}
+            camp={info.camp}
+            date={info.date}
+            id={info.id}
+          />
+        ))}
+      </div>
+
+      {/* Dropdown Button */}
+      <div className="dropdown">
+        <button onClick={() => setDropdownOpen(!dropdownOpen)} className="dropdownButton">
+          {/* {tabs.find(tab => tab.id === courseTab).label} */}
+          查看其他梯次
+        </button>
+        {dropdownOpen && (
+          <ul className="dropdownMenu">
+            {tabs.map(tab => (
+              <li
+                key={tab.id}
+                className="dropdownItem"
+                onClick={() => {
+                  setCourseTab(tab.id);
+                  setDropdownOpen(false);
+                }}
+              >
+                {tab.label}
               </li>
             ))}
           </ul>
-        </div>
-    ))
-  )
-
-
-  return (
-    <div className="competition-info-container">
-      {/* 左側資訊 */}
-      <div className="left-section">
-        <h2 className="title">活動時程</h2>
-        <p className="date">July, 2025</p>
-        <div className="location mg-b-20">
-          <p>地點 | 國立陽明交通大學</p>
-          {dateRender}
-        </div>
-        <div className="campBtn">
-          <button onClick={toggleCampBtn}>查看其他梯次</button>
-          <ul className={`${campBtn ? '' : 'dn'}`}>
-            <li onClick={() => {setCampSelected('ch1'); setCampBtn(false)}}>第一梯次（中文授課）</li>
-            <li onClick={() => {setCampSelected('ch2'); setCampBtn(false)}}>第二梯次（中文授課）</li>
-            <li onClick={() => {setCampSelected('en'); setCampBtn(false)}}>第三梯次（英文授課）</li>
-          </ul>
-        </div>
+        )}
       </div>
 
-      {/* 右側行程表 */}
-      <div className="schedule-section">
-          {scheduleRender}
-      </div>
-
-      <div className={`campBtn ${ScreenWidth <= 768 ? '' : 'dn'}`}>
-        <button onClick={toggleCampBtn}>查看其他梯次</button>
-        <ul className={`${campBtn ? '' : 'dn'}`}>
-          <li onClick={() => {setCampSelected('ch1'); setCampBtn(false)}}>第一梯次（中文授課）</li>
-          <li onClick={() => {setCampSelected('ch2'); setCampBtn(false)}}>第二梯次（中文授課）</li>
-          <li onClick={() => {setCampSelected('en'); setCampBtn(false)}}>第三梯次（英文授課）</li>
-        </ul>
-      </div>
+      <CurriculumContent type="ch1" />
+      <CurriculumContent type="ch2" />
+      <CurriculumContent type="en" />
     </div>
   );
 };
 
-export default CompetitionInfo;
+export default Curriculum;

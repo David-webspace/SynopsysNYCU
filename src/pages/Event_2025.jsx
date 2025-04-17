@@ -57,9 +57,11 @@ const Event_2025 = () => {
   })
 
   return (
-    <div style={{padding:`${ScreenWidth >= 425 ? '160px 50px' : '160px 20px'}`}} className='df fd-c aln-itm-c'>
+    <div
+      // style={{padding:`${ScreenWidth >= 425 ? '160px 50px' : '160px 20px'}`}}
+      className='Container'
+    >
         <Curriculum />
-      {/* <div className='indexEvent'>{indexRender}</div> */}
     </div>
   )
 }
