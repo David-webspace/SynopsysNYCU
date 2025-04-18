@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 const Curriculum = () => {
   const { t, i18n } = useTranslation();
+  const ScreenWidth = window.ScreenWidth
 
   const [courseTab, setCourseTab] = useState('ch1');
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -84,9 +85,9 @@ const Curriculum = () => {
 
   return (
     <div className="mg-b-50" id="curriculum">
-      <h1 className="mg-b-30" style={{textAlign:"center"}}>{t('活動時程')}</h1>
+      <h1 className="mg-b-30" style={{textAlign:`${ScreenWidth <= 768 ? 'center' : ''}`}}>{t('活動時程')}</h1>
 
-      <div style={{ marginBottom: "20px", textAlign:"center"}}>
+      <div style={{ marginBottom: "20px", textAlign:`${ScreenWidth <= 768 ? 'center' : ''}`}}>
         <h4>{t('地點｜國立陽明交通大學')}</h4>
         {curriculums.map(info => (
           <DetailContent
