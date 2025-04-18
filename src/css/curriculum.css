@@ -1,102 +1,155 @@
 .indexEvent{
-    display: inline-block;
-    position:sticky;
-    bottom: 550px;
-    left: 0;
-    margin-left: -100px;
+  display: inline-block;
+  position:sticky;
+  bottom: 550px;
+  left: 0;
+  margin-left: -100px;
 }
 
 .tabItemDefault{
-    width: 260px;
-    text-align: center;
-    font-size: 18px;
-    cursor: pointer;
-    padding: 5px 24px;
-    border-radius: 5px 5px 0 0;
-    color: #fff;
-    transition: all 0.3s ease-in-out;
-    border: 1px solid #d5d5d5;
+  width: 260px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 24px;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #d5d5d5;
 }
 
 .tabItemActive{
-    background-color: var(--table-tab);
+  background-color: var(--table-tab);
 }
 
-.curriculumItm{
-    background-color: #d5d5d5;
-    width: 33%;
-    margin-bottom: 5px;
+.curriculumContent{
+  border-collapse: collapse;
+  width: 100%;
+  border: none;
+  text-align: center;
 }
 
 .topicTag{
-    display: inline-block;
-    color: #ffffff;
-    background-color: #E9A621;
-    padding: 5px 10px;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #E9A621;
+  padding: 5px 10px;
 }
 
 .classBlock{
-    background-color: var(--grey-trans-1);
-    filter: blur(0.7);
-    padding: 8px 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    border-radius: 8px;
-    border: 1px solid var(--grey-3);
+  background-color: var(--grey-trans-1);
+  filter: blur(0.7);
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid var(--grey-3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+.classBlock h4, .classBlock h5{
+  letter-spacing: 0.1em;
 }
 
 .dayHeader{
-    margin: 0 20px 10px 0;
-    padding: 2px;
-    background-color: var(--grey-trans-1);
-    filter: blur(0.2);
-    border-radius: 8px;
-    border: 1px solid var(--grey-3);
+  margin: 0 20px 10px 0;
+  padding: 2px;
+  background-color: var(--grey-trans-1);
+  filter: blur(0.2);
+  border-radius: 8px;
+  border: 1px solid var(--grey-3);
 }
 
 /* Dropdown button */
 .dropdownButton {
-    background-color: var(--grey-trans-2);
-    border: none;
-    padding: 10px 20px;
-    margin-bottom: 50px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-    color: #fff;
-  }
+  background-color: var(--grey-trans-2);
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  color: #fff;
+}
   
-  .dropdownButton:hover {
-    background-color: var(--grey-trans-1);
-  }
+.dropdownButton:hover {
+  background-color: var(--grey-trans-1);
+}
   
   /* Dropdown menu */
-  .dropdownMenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border: 1px solid #ffffff;
-    background-color: var(--white);
-    color: black;
-    position: absolute;
-    top: 50%;
-    z-index: 1000;
-    width: 200px;
-  }
+.dropdownMenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ffffff;
+  background-color: var(--white);
+  color: black;
+  position: absolute;
+  top: 50%;
+  z-index: 1000;
+  width: 240px;
+  border-radius: 3px;
+}
   
-  .dropdownItem {
+.dropdownItem {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdownItem:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+/* Container styling */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+@media (max-width: 768px) {
+  .curriculumContent{
+    overflow-x: scroll;
+  }
+
+  .classBlock {
+    width: 100%;
+    height: auto;
     padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  }
+
+  .dropdown{
+    display: flex;
+    justify-content: center;
   }
   
-  .dropdownItem:hover {
-    background-color: rgb(216, 216, 216);
+  .dropdownMenu {
+    width: 100%;
+    text-align: center;
   }
-  
-  /* Container styling */
-  .dropdown {
-    position: relative;
-    display: inline-block;
+}
+
+/* 手机设备 */
+@media (max-width: 480px) {
+  .classBlock {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 5px;
   }
-  
+
+  .dayHeader {
+    font-size: 14px;
+  }
+
+  .dropdownButton {
+    width: 100%;
+  }
+
+  .dropdownMenu {
+    width: 100%;
+  }
+}

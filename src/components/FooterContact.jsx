@@ -24,7 +24,6 @@ const FooterContact = () => {
         <div>
           <ul className='df'>
             <Link to={locationLink} className='mediaLink' target='_blank'><li><IoLocationSharp size={20}/></li></Link>
-            {/* <Link to={instagramLink} className='mediaLink' target='_blank'><li><IoLogoInstagram size={20}/></li></Link> */}
             <Link to={facebookLink} className='mediaLink' target='_blank'><li><IoLogoFacebook size={20}/></li></Link>
             <Link to={youtubeLink} className='mediaLink' target='_blank'><li><IoLogoYoutube size={20}/></li></Link>
           </ul>
