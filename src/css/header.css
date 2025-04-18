@@ -3,6 +3,8 @@
     top: 0;
     left: 0;
     width: 100%;
+    padding-top: -20%;
+    padding-bottom: -20%;
     display: flex;
     justify-content: center;
     background-color: var(--primary-blue);
@@ -95,6 +97,7 @@ header ul ul li a{
     align-items: center;
     margin-right: 30px;
     padding: 0 10px;
+    z-index: 10;
 }
 
 .lngSub{
@@ -218,6 +221,25 @@ header ul ul li a{
     
     .defaultLogo{
         padding: 10px 20px ;
+    }
+
+    .lngSelector{
+        width: 100%;
+        padding: 10px 30px;
+    }
+    
+    .lngContainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px;
+    }
+
+    .lngSub{
+        background-color: #fff;
+        width: 240px;
+        color: black;
     }
 }
 
