@@ -31,7 +31,7 @@ const Event_Content = () => {
     <div className='OuterLinkContainer' ref={containerRef}>
       <h1 style={{ padding: "20px 80px", textAlign: "center" }}>{t('活動整理讓你知')}</h1>
       <div className='OuterLink'>
-        <Link to='/dev/event2025'>
+        <Link to='/event2025'>
           <h2>{t('2025 活動內容')}</h2>
           <div style={{ position: "relative" }}>
             <div className="mask"></div>
@@ -41,7 +41,7 @@ const Event_Content = () => {
             />
           </div>
         </Link>
-        <Link to='/dev/event-review'>
+        <Link to='/event-review'>
           <h2>{t('過去活動回顧')}</h2>
           <div style={{ position: "relative" }}>
             <div className="mask"></div>
@@ -51,7 +51,7 @@ const Event_Content = () => {
             />
           </div>
         </Link>
-        <Link to='/dev/online-resource'>
+        <Link to='/online-resource'>
           <h2>{t('線上課程免費資源')}</h2>
           <div style={{ position: "relative" }}>
             <div className="mask"></div>
