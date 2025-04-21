@@ -41,7 +41,7 @@ const Opening = () => {
 
     // 等待轉場動畫完成後導航
     setTimeout(() => {
-      navigate("/dev");
+      navigate("/");
     }, 1500);
   };
 

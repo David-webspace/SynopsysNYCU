@@ -23,7 +23,7 @@ const Contacts = () => {
       <div style={{marginBottom:'80px'}}>
         <h3 className='mg-b-20'>{t('聯絡人：謝沅祐先生、高湘琪小姐')}</h3>
         <h3 className='mg-b-20'>{t('主辦單位：台灣新思科技股份有限公司、台灣交通大學校友總會、半導體與晶片設計科普夏令營籌備團隊')}</h3>
-        <h3 className='mg-b-20'>{t('聯絡電話：謝沅祐先生0955739565、高湘琪小姐0912205799')}</h3>
+        <h3 className='mg-b-20'>{t('聯絡電話：謝沅祐先生 0955739565')}</h3>
         <h3 className='mg-b-20'>{t('營隊地址：新竹市東區大學路1001號 國立陽明交通大學')}</h3>
         <h3 className='mg-b-20'>{t('EMAIL：nycuxsynopsys.semi@gmail.com')}</h3>
       </div>

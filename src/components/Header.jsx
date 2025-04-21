@@ -1,8 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
-import { FaMicrochip } from "react-icons/fa";
-import { FaEarthAfrica, FaBasketball } from "react-icons/fa6";
 import { FaBars, FaTimes } from "react-icons/fa"; // 漢堡按鈕和關閉按鈕
 import menuItems from '../datas/menuList.json';
 import { useTranslation } from 'react-i18next';
@@ -27,25 +25,25 @@ const Header = () => {
 
   const handleReloadMenu = (pathname) => {
     switch (pathname) {
-      case '/dev/event2025':
+      case '/event2025':
         setMenuItem('event2025');
         break;
-      case '/dev/guidelines':
+      case '/guidelines':
         setMenuItem('guidelines');
         break;
-      case '/dev/event-review':
+      case '/event-review':
         setMenuItem('pastHeights');
         break;
-      case '/dev/online-resource':
+      case '/online-resource':
         setMenuItem('onlineResources');
         break;
-      case '/dev/origin':
+      case '/origin':
         setMenuItem('origin');
         break;
-      case '/dev/faqs':
+      case '/faqs':
         setMenuItem('faqs');
         break;
-      case '/dev/contacts':
+      case '/contacts':
         setMenuItem('contactUs');
         break;
     }
@@ -93,7 +91,7 @@ const Header = () => {
     return (
       <li key={index} onClick={handleMenuClick} className='pd-w-10' >
         <Link
-          to={`/dev/${menu.url}`}
+          to={`/${menu.url}`}
           className={`pd-10 db ${menu.id === menuItem ? 'menuItemActive' : ''}`}
           style={{ color: `${menu.id === menuItem ? 'var(--green-1)' : ''}` }}
         >
@@ -133,7 +131,7 @@ const Header = () => {
         {isHeaderOpen ? <FaTimes size={30} color="white" /> : <FaBars size={30} color="white" />}
       </div>
 
-      <Link to='/dev' className='defaultLogo'>
+      <Link to='/' className='defaultLogo'>
         <div className="Logo">
           <img src="/logo_white.svg" alt="" className='mg-r-20'/>
           <div style={{ width: '200px', color: "#fff" }}>
@@ -150,7 +148,7 @@ const Header = () => {
       >
         <div className={`menuContainer ${location.pathname !== '/' ? 'df' : 'dn'}`}>
           {/* Logo Container */}
-          <Link to='/dev' className='Logo' style={{ marginRight: '0px' }}>
+          <Link to='/' className='Logo' style={{ marginRight: '0px' }}>
             <img src="/logo_white.svg" alt="" className='mg-r-20'/>
             <div style={{ width: '200px', color: "#fff" }}>
               <h3 style={{ fontSize: '14px' }}>新思科技 X 陽明交大</h3>

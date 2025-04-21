@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <ScrolltoTop />
-      <Routes>
+      {/* <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/dev' element={<Homedev />} />
         <Route path='/dev/*' element={
@@ -41,6 +41,21 @@ function App() {
             <Route path='/visit' element={<Backend />}/>
           </Routes>
         } />
+      </Routes> */}
+
+      <Routes>
+        <Route path='/' element={<Homedev />} />
+        <Route path='/event2025' element={<Event_2025 />} />
+        <Route path='/guidelines' element={<Guidelines />} />
+        <Route path='/event-review' element={<Event_Review />} />
+        <Route path='/online-resource' element={<Online_Free_Resource />} />
+
+        <Route path='/origin' element={<Origin />} />
+        <Route path='/faqs' element={<FAQ />} />
+        <Route path='/contacts' element={<Contact />} />
+
+        <Route path='/backend' element={<Backend />}/>
+        <Route path='/visit' element={<Backend />}/>
       </Routes>
 
       <div className='semiButton'>
@@ -50,7 +65,8 @@ function App() {
       </div>
 
 
-      {location.pathname != '/' && <Header />}
+      {/* {location.pathname != '/' && <Header />} */}
+      <Header />
       <FooterContact />
       <Footer />
     </>

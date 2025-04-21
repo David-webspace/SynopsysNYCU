@@ -4,8 +4,6 @@ import feedbacks from '../../datas/reflections.json';
 import '../../css/reflection.css'
 import { useTranslation } from 'react-i18next';
 
-
-
 // 新增的 FeedbackCard 組件
 const FeedbackCard = ({ feedback, isOdd, index }) => {
   const { t, i18n } = useTranslation();

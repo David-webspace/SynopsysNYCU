@@ -8,8 +8,8 @@ import HomeSlogan from '../components/HomeSlogan';
 
 const Homedev = () => {
 
-  const ScreenWidth = window.innerWidth
-  const targetDate = "2025-04-20T23:59:59";
+  // const ScreenWidth = window.innerWidth
+  // const targetDate = "2025-04-20T23:59:59";
 
   return (
     <>
@@ -17,7 +17,7 @@ const Homedev = () => {
         <Opening />
         <Homemain />
         <HomeSlogan />
-        <Counter targetDate={targetDate}/>
+        {/* <Counter targetDate={targetDate}/> */}
         <Indicator />
         <Event_Content />
     </>
