@@ -32,7 +32,7 @@ const HomeSlogan = () => {
   }, []);
 
   return (
-    <div className='sloganContainer xContainer' ref={containerRef}>
+    <div className='sloganContainer' ref={containerRef}>
       <div className='textContainer'>
         <h1 className='titleEn'>{t('IC, THE FUTURE')}</h1>
         <h1 className='titleZh'>{t('一顆晶片，看見未來')}</h1>

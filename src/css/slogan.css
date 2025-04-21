@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 50px 140px 300px;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
@@ -62,6 +63,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 50px 80px 50px;
     }
     
     .sloganContainer .textContainer{
@@ -87,6 +89,10 @@
 }
 
 @media (max-width:768px) {
+    .sloganContainer{
+        padding: 50px 40px 50px;
+    }
+    
     .textContainer .titleEn{
         font-size: 36px;
     }
@@ -101,6 +107,10 @@
 }
 
 @media (max-width:425px) {
+    .sloganContainer{
+        padding: 50px 20px 50px;
+    }
+
     .textContainer .titleEn{
         font-size: 30px;
     }

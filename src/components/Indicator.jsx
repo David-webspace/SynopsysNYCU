@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { FaDiceD20, FaCommentDollar, FaErlang, FaSchool, FaChalkboardTeacher } from "react-icons/fa";
-import { TbBackground } from 'react-icons/tb';
 import FeatureSlider from './FeatureSlider';
 import { useTranslation } from 'react-i18next';
 import '../css/Indicator.css'
@@ -55,12 +54,7 @@ const Indicator = () => {
   })
 
   return (
-    <div 
-      style={{
-        width:"100%"
-      }}
-      className='xContainer indicatorContainer'
-    >
+    <div className='indicatorContainer'>
         <FeatureSlider />
     </div>
   )
