@@ -45,7 +45,7 @@ const Guidelines = () => {
         {/* Admission Standards Section */}
         <Section title={t('錄取標準')}>
             <ul>
-                <li>{t('2025/04/20 23:59 前報名享有')}<span className="highlight">{t('早鳥優惠價格')}</span></li>
+                <li>{t('2025/04/30 23:59 前報名享有')}<span className="highlight">{t('早鳥優惠價格')}</span></li>
                 <li>{t('低/中低收入户學生、身心障礙學生或殘障人士子女、特殊境遇家庭之子女報名申請者，主辦方將根據申請資料擇 30 名同學免收報名費，申請結果將統一於錄取信中說明。')}</li>
             </ul>
         </Section>
