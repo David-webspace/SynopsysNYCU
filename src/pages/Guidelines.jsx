@@ -18,8 +18,9 @@ const Guidelines = () => {
         <Section title={t('重要日期')}>
                 <TimelineItem icon="📅" text={t('『早鳥優惠時間』：即日起至 4/30 (三) 23:59')} />
                 <TimelineItem icon="📅" text={t('開始報名：即日起至 5/30 (六) 23:59')} />
-                <TimelineItem icon="📅" text={t('繳費截止：即日起至 6/15 (六) 23:59')} />
-                <TimelineItem icon="📅" text={t('錄取結果通知：即日起至 6/15 (六) 23:59')} />
+                {/* <TimelineItem icon="📅" text={t('繳費截止：即日起至 6/15 (六) 23:59')} /> */}
+                {/* <TimelineItem icon="📅" text={t('錄取結果通知：即日起至 6/15 (六) 23:59')} /> */}
+                <TimelineItem icon="📅" text={t('錄取結果通知：6/15 (六) 23:59')} />
         </Section>
 
         {/* Registration Fees Section */}
