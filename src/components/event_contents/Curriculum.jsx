@@ -14,7 +14,8 @@ const Curriculum = () => {
   const tabs = [
     { id: 'ch1', label: '第一梯次' },
     { id: 'ch2', label: '第二梯次' },
-    { id: 'en', label: '第三梯次（英文授課）' }
+    { id: 'en', label: '第三梯次（英文授課）' },
+    { id: 'ch3', label: '加開梯次' }
   ];
 
   // Separate components
@@ -126,6 +127,7 @@ const Curriculum = () => {
       <CurriculumContent type="ch1" />
       <CurriculumContent type="ch2" />
       <CurriculumContent type="en" />
+      <CurriculumContent type="ch3" />
     </div>
   );
 };
