@@ -6,8 +6,8 @@ import '../css/footer_contact.css'
 
 const locationLink = 'https://maps.app.goo.gl/YuKrLBgWdcw2Y8L69'
 const instagramLink = 'https://www.instagram.com/sawago88/'
-const facebookLink = 'https://www.facebook.com/NYCU.SYNOPSYS.SEMICONDUCTOR.ICDESIGN/'
-const youtubeLink = 'https://www.youtube.com/@nycu_synopsys_semi'
+const facebookLink = 'https://www.facebook.com/NCTU Alumni.SYNOPSYS.SEMICONDUCTOR.ICDESIGN/'
+const youtubeLink = 'https://www.youtube.com/@NCTU Alumni_synopsys_semi'
 
 const FooterContact = () => {
   const ScreenWidth = window.innerWidth

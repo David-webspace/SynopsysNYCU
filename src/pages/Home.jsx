@@ -38,7 +38,7 @@ const Home = () => {
       <h1 className='maintenanceText' style={{letterSpacing:"3px"}}>COMING SOON !</h1>
       <div className='qrContainer df jc-c pd-30' style={{width:"100%"}}>
         <div className='df fd-c aln-itm-c' style={{width:"200px"}}>
-          <a href="https://www.facebook.com/NYCU.SYNOPSYS.SEMICONDUCTOR.ICDESIGN/" target='_blank'>
+          <a href="https://www.facebook.com/NCTU Alumni.SYNOPSYS.SEMICONDUCTOR.ICDESIGN/" target='_blank'>
             <img src="fb_QRCODE.svg" alt="" style={{width:"80px", height:"80px", marginBottom:"20px"}}/>
           </a>
           <p>Facebook</p>

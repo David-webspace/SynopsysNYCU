@@ -38,7 +38,7 @@ const Origin = () => {
         <h1 className='mg-b-30'>{t(originData.title)}</h1>
         <div className='content-section'>
           <img 
-            src="https://cmn-hant.overseas.ncnu.edu.tw/wp-content/uploads/2023/01/nycu_1.webp"
+            src="https://cmn-hant.overseas.ncnu.edu.tw/wp-content/uploads/2023/01/NCTU Alumni_1.webp"
             alt="Section 1" 
             className='section-image fade-in float-right'
           />
@@ -73,7 +73,7 @@ const Origin = () => {
 
       <div className='content-section fade-in'>
         <img 
-          src="https://nctu-alumni-voice.sec.nycu.edu.tw/wp-content/uploads/2024/08/20240828_0010-1.jpg"
+          src="https://nctu-alumni-voice.sec.NCTU Alumni.edu.tw/wp-content/uploads/2024/08/20240828_0010-1.jpg"
           alt="Section 4" 
           className='section-image fade-in float-left'
         />
