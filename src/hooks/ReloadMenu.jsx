@@ -14,22 +14,22 @@ const ReloadMenu = (menuItem) => {
 
     // const handleReloadMenu = (pathname) => {
     //     switch(pathname){
-    //         case '/SynopsysNYCU/event2025':
+    //         case '/SynopsysNCTU Alumni/event2025':
     //         setMenuItem('event2025');
     //         break;
-    //         case '/SynopsysNYCU/event-review':
+    //         case '/SynopsysNCTU Alumni/event-review':
     //         setMenuItem('pastHeights')
     //         break;
-    //         case '/SynopsysNYCU/online-resource':
+    //         case '/SynopsysNCTU Alumni/online-resource':
     //         setMenuItem('onlineResources')
     //         break;
-    //         case '/SynopsysNYCU/origin':
+    //         case '/SynopsysNCTU Alumni/origin':
     //         setMenuItem('origin')
     //         break;
-    //         case '/SynopsysNYCU/faqs':
+    //         case '/SynopsysNCTU Alumni/faqs':
     //         setMenuItem('faqs')
     //         break;
-    //         case '/SynopsysNYCU/contacts':
+    //         case '/SynopsysNCTU Alumni/contacts':
     //         setMenuItem('contactUs')
     //         break;
     //     }

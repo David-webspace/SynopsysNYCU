@@ -10,7 +10,7 @@ const Guidelines = () => {
   return (
     <div className="Container">
         <header>
-            {/* <h1>新思科技 X 陽明交大</h1> */}
+            {/* <h1>新思科技 X 交大校友總會</h1> */}
             {/* <p className="subtitle">報名流程與詳細資訊</p> */}
         </header>
 
@@ -38,7 +38,7 @@ const Guidelines = () => {
             <ul>
                 <li>{t('折扣方案 A：兩人同行，一人享半價')}</li>
                 <li>{t('折扣方案 B：符合下列任一身份折扣 $1,600NT')}</li>
-                <li>{t('交大/陽明交大校友子女、新思員工子女、中華民國護照持有人')}</li>
+                <li>{t('交大/交大校友總會校友子女、新思員工子女、中華民國護照持有人')}</li>
                 <li>{t('A、B方案可疊加使用')}</li>
             </ul>
         </Section>

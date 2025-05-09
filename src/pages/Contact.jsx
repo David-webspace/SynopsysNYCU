@@ -13,8 +13,8 @@ const Contacts = () => {
   const ScreenWidth = window.innerWidth
   const locationLink = 'https://maps.app.goo.gl/YuKrLBgWdcw2Y8L69'
   const instagramLink = 'https://www.instagram.com/sawago88/'
-  const facebookLink = 'https://www.facebook.com/NYCU.SYNOPSYS.SEMICONDUCTOR.ICDESIGN/'
-  const youtubeLink = 'https://www.youtube.com/@nycu_synopsys_semi'
+  const facebookLink = 'https://www.facebook.com/NCTU Alumni.SYNOPSYS.SEMICONDUCTOR.ICDESIGN/'
+  const youtubeLink = 'https://www.youtube.com/@NCTU Alumni_synopsys_semi'
 
   return (
     <div className='Container'>
@@ -25,15 +25,15 @@ const Contacts = () => {
         <h3 className='mg-b-20'>{t('主辦單位：台灣新思科技股份有限公司、台灣交通大學校友總會、半導體與晶片設計科普夏令營籌備團隊')}</h3>
         <h3 className='mg-b-20'>{t('聯絡電話：謝沅祐先生 0955739565')}</h3>
         <h3 className='mg-b-20'>{t('營隊地址：新竹市東區大學路1001號 國立陽明交通大學')}</h3>
-        <h3 className='mg-b-20'>{t('EMAIL：nycuxsynopsys.semi@gmail.com')}</h3>
+        <h3 className='mg-b-20'>{t('EMAIL：NCTU Alumnixsynopsys.semi@gmail.com')}</h3>
       </div>
 
       <>
         {/* <div className={`${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}`}>
           <ul className='df'>
             <a href='https://maps.app.goo.gl/YuKrLBgWdcw2Y8L69' className='outerLink mg-r-30' target='_blank'><li>{t('地址')}</li></a>
-            <a href='https://www.youtube.com/@nycu_synopsys_semi' className='outerLink mg-r-30' target='_blank'><li>{t('線上課程')}</li></a>
-            <a href='https://www.facebook.com/NYCU.SYNOPSYS.SEMICONDUCTOR.ICDESIGN/' className='outerLink mg-r-30' target='_blank'><li>{t('臉書')}</li></a>
+            <a href='https://www.youtube.com/@NCTU Alumni_synopsys_semi' className='outerLink mg-r-30' target='_blank'><li>{t('線上課程')}</li></a>
+            <a href='https://www.facebook.com/NCTU Alumni.SYNOPSYS.SEMICONDUCTOR.ICDESIGN/' className='outerLink mg-r-30' target='_blank'><li>{t('臉書')}</li></a>
           </ul>
         </div> */}
         <div>
@@ -50,7 +50,7 @@ const Contacts = () => {
             <a href='https://maps.app.goo.gl/bR5LAyeQiwJNsrxx8' style={{width:'100%'}} className='outerLink mg-r-30 mg-b-20 db' target='_blank'><li>地址</li></a>
             <a href='https://www.instagram.com/sawago88/' style={{width:'100%'}} className='outerLink mg-r-30 mg-b-20 db' target='_blank'><li>IG</li></a>
             <a href='https://www.facebook.com/chc888' style={{width:'100%'}} className='outerLink mg-r-30 mg-b-20 db' target='_blank'><li>FB</li></a>
-            <a href='https://www.youtube.com/@nycu_synopsys_semi/videos' style={{width:'100%'}} className='outerLink mg-r-30 mg-b-20 db' target='_blank'><li>紀錄片</li></a>
+            <a href='https://www.youtube.com/@NCTU Alumni_synopsys_semi/videos' style={{width:'100%'}} className='outerLink mg-r-30 mg-b-20 db' target='_blank'><li>紀錄片</li></a>
           </ul>
         </div> */}
 
@@ -59,7 +59,7 @@ const Contacts = () => {
             <a href='https://maps.app.goo.gl/bR5LAyeQiwJNsrxx8' style={{width:'100%'}} className='outerLink mg-b-20 db' target='_blank'><li>地址</li></a>
             <a href='https://www.instagram.com/sawago88/' style={{width:'100%'}} className='outerLink mg-b-20 db' target='_blank'><li>IG</li></a>
             <a href='https://www.facebook.com/chc888' style={{width:'100%'}} className='outerLink mg-b-20 db' target='_blank'><li>FB</li></a>
-            <a href='https://www.youtube.com/@nycu_synopsys_semi/videos' style={{width:'100%'}} className='outerLink mg-b-20 db' target='_blank'><li>紀錄片</li></a>
+            <a href='https://www.youtube.com/@NCTU Alumni_synopsys_semi/videos' style={{width:'100%'}} className='outerLink mg-b-20 db' target='_blank'><li>紀錄片</li></a>
           </ul>
         </div> */}
 
@@ -68,7 +68,7 @@ const Contacts = () => {
             <a href='https://maps.app.goo.gl/bR5LAyeQiwJNsrxx8' style={{width:'100%'}} className='outerLink mg-b-20 db' target='_blank'><li>地址</li></a>
             <a href='https://www.instagram.com/sawago88/' style={{width:'100%'}} className='outerLink mg-b-20 db' target='_blank'><li>IG</li></a>
             <a href='https://www.facebook.com/chc888' style={{width:'100%'}} className='outerLink mg-b-20 db' target='_blank'><li>FB</li></a>
-            <a href='https://www.youtube.com/@nycu_synopsys_semi/videos' style={{width:'100%'}} className='outerLink mg-b-20 db' target='_blank'><li>紀錄片</li></a>
+            <a href='https://www.youtube.com/@NCTU Alumni_synopsys_semi/videos' style={{width:'100%'}} className='outerLink mg-b-20 db' target='_blank'><li>紀錄片</li></a>
           </ul>
         </div> */}
       </>
